@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.cfeclipse.cfml,1.3.5.201002010103,"org.cfeclipse.cfml",1268819620296
+started,bundle,org.cfeclipse.cfml.frameworks,1.0.3.201002010103,"org.cfeclipse.cfml.frameworks",1268819620328
+started,bundle,org.eclipse.ecf.docshare,2.1.0.v20090916-2238,"org.eclipse.ecf.docshare",1268819620359
+os,sysinfo,,,"win32",1268819620359
+arch,sysinfo,,,"x86",1268819620359
+ws,sysinfo,,,"win32",1268819620359
+locale,sysinfo,,,"en_US",1268819620359
+processors,sysinfo,,,"2",1268819620359
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1268819620359
+java.runtime.version,sysinfo,,,"1.6.0_18-b07",1268819620359
+java.specification.name,sysinfo,,,"Java Platform API Specification",1268819620359
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268819620359
+java.specification.version,sysinfo,,,"1.6",1268819620359
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1268819620359
+java.version,sysinfo,,,"1.6.0_18",1268819620359
+java.vm.info,sysinfo,,,"mixed mode",1268819620359
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1268819620359
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1268819620359
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268819620359
+java.vm.specification.version,sysinfo,,,"1.0",1268819620359
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1268819620359
+java.vm.version,sysinfo,,,"16.0-b13",1268819620359
+started,bundle,org.eclipse.mylyn.context.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.core",1268819620593
+started,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1268819621000
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1268819621578

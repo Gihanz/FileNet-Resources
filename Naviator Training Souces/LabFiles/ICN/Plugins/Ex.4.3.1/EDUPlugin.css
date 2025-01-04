@@ -1,0 +1,23 @@
+.eduPropertyEditor {
+	display: table;
+}
+
+.eduPropertyEditor .dijitTextBox {
+	display: table-cell;
+}
+
+.eduPropertyEditor .dijitButton {
+	display: table-cell;
+	width: 1px;
+	white-space: nowrap;
+	padding-left: 10px;
+}
+
+.dijitRtl .eduPropertyEditor .dijitButton {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.eduPropertyEditor .dijitTextBox .dijitInputField {
+	width: 100%;
+}

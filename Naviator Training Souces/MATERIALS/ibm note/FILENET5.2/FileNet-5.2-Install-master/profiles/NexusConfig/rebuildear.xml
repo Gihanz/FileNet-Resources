@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="You must use the configuration and deployment tool to build the IBM Content Navigator web application EAR file. The tool verifies that the EAR file does not contain any errors.&#10;&#10;Tip: If you want to manually deploy the web application, you can close the tool after this task completes." displayName="Build the Web Application" enabled="true" implementorid="">
+<property name="ECMClientConfigFolder">
+        <value>C:\Program Files (x86)\IBM\ECMClient\config</value>
+        <description>Enter the absolute path to the IBM Content Navigator \config directory. By default, the path is: C:\Program Files (x86)\IBM\ECMClient\config 
+
+Important: If you are deploying IBM Content Navigator to a highly available environment, such as a cluster on WebSphere Application Server, you must make the \config directory a shared network directory. All of the nodes in the cluster must have read/write access to the directory.</description>
+        <displayName>IBM Content Navigator configuration directory</displayName>
+    </property>
+    <property name="ApplicationName">
+        <value>navigator</value>
+        <description>Enter the name to display for the IBM Content Navigator application on the web application server (for example, in the administrative console). The default name is ECMClient. See your web application server documentation for naming restrictions. On WebSphere Application Server, each application in a cell must have a unique name.</description>
+        <displayName>IBM Content Navigator application name</displayName>
+    </property>
+    <property name="DatabaseSchema">
+        <value>NEXUS</value>
+        <description>Specify the name that you want to use for the schema when you create the IBM Content Navigator configuration table. See your database documentation for naming restrictions. </description>
+        <displayName>Schema name</displayName>
+    </property>
+    <property name="RebuildScript">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\explodedformat\create_ear.bat</value>
+        <description>Enter the fully qualified path of the build script, create_ear.bat. The default path is C:\Program Files (x86)\IBM\ECMClient\configure\explodedformat\create_ear.bat</description>
+        <displayName>Build script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\tmp</value>
+        <description>Enter the fully qualified path of a temporary directory that the configuration and deployment tool can use when running this task.
+
+You must have read and write access for the directory.
+
+The default directory is: C:\Program Files (x86)\IBM\ECMClient\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>

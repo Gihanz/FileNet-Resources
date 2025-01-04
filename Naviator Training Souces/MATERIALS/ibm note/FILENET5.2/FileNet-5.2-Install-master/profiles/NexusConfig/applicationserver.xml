@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration displayName="WebSphere Application Server" enabled="true" implementorid="websphere">
+<property name="ApplicationServerVersion">
+        <value>8.5</value>
+        <description>Enter one of the following WebSphere Application Server version values: 7.0, 8.0, 8.5</description>
+        <displayName>Application server version</displayName>
+    </property>
+    <property name="ApplicationServerInstallationFolder">
+        <value>C:\Program Files\IBM\WebSphere\AppServer</value>
+        <description>Enter the fully qualified path of the WebSphere Application Server AppServer directory. The default installation directory is C:\Program Files\IBM\WebSphere\AppServer.</description>
+        <displayName>Installation directory</displayName>
+    </property>
+    <property name="ApplicationServerProfileFolder">
+        <value>C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01</value>
+        <description>Enter the fully qualified path of an existing WebSphere Application Server profile to enable the configuration and deployment tool to use the application server client to connect to the instance of the web application server where you plan to deploy IBM Content Navigator.
+
+The default profile is AppSrv01. By default, the profile is located in the following directory: C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01.</description>
+        <displayName>Profile</displayName>
+    </property>
+    <property name="ApplicationServerAdminUsername">
+        <value>P8Admin</value>
+        <description>Important: WebSphere Application Server administrative security must be enabled.
+
+Enter the user name of a WebSphere Application Server administrator.</description>
+        <displayName>Administrator user name</displayName>
+    </property>
+    <property name="ApplicationServerAdminPassword">
+        <value>IBMFileNetP8</value>
+        <description>Enter the password for the specified administrator user name.</description>
+        <displayName>Administrator password</displayName>
+    </property>
+    <property name="ApplicationServerSoapPort">
+        <value>8880</value>
+        <description>Specify the SOAP connector port number of your web application server. For a stand-alone application server, the default value is 8880. For a managed server or cluster, the default value on the deployment manager is 8879.</description>
+        <displayName>SOAP connector port</displayName>
+    </property>
+    <property name="ApplicationServerHostName">
+        <value>localhost</value>
+        <description>Enter the machine name or the IP address of the server where WebSphere Application Server is installed. The server can be local or remote. For a managed server or cluster, use the host name of the deployment manager server.</description>
+        <displayName>Host name</displayName>
+    </property>
+    <property name="ApplicationServerCell">
+        <value>P8Node01Cell</value>
+        <description>Specify the cell where you want to deploy IBM Content Navigator. You must specify an existing cell.</description>
+        <displayName>Cell</displayName>
+    </property>
+    <property name="ApplicationServerTransactionTimeout">
+        <value>180</value>
+        <description>Specify the amount of time, in seconds, that the transaction with the web application server can run before the transaction times out. The default is 180 seconds.
+
+If you have a system that has minimal resources, you might want to increase the session timeout.</description>
+        <displayName>Deployment session timeout</displayName>
+    </property>
+    <property name="TamSSOSupport">
+        <value>false</value>
+        <description>IBM FileNet P8 users only. 
+
+If you have a Tivoli Access Manager environment for SSO, select this option to enable IBM Content Navigator for TAM SSO.
+
+If you have a Kerberos environment for SSO, select this option to enable IBM Content Navigator for Kerberos SSO.
+
+Important: This option does not apply if you configure IBM Content Navigator to connect to IBM Content Manager or IBM Content Manager OnDemand. </description>
+        <displayName>Configure IBM Content Navigator for SSO (P8 only)</displayName>
+    </property>
+    <property name="TurnOffSSLCerticates">
+        <value>false</value>
+        <description>Select this option if SSL security for Configuring Common Secure Interoperability Version 2(CSIV2) is configured on the web application server.
+
+Important: If you have SSL security for CSIV2 configured and you do not select this option, SSL security is disabled. This means that server-to-server communications between IBM Content Navigator and Content Engine or the IBM Content Manager resource manager are not secured.</description>
+        <displayName>Use SSL certificates for the server communication</displayName>
+    </property>
+</configuration>

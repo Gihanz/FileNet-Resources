@@ -1,0 +1,25 @@
+[TEXT]
+FONTTYPE = arial
+FONTHEIGHT = 20
+SEMITRANSPARENT = 0
+BORDER = 0
+TEXT = NOT AN OFFICIAL COPY
+X = 0
+Y = 0
+PAGE = -1
+TRANSPARENT = 1
+LABEL = Text1
+EDIT = 0
+
+[TEXT]
+FONTTYPE = arial
+FONTHEIGHT = 20
+SEMITRANSPARENT = 0
+BORDER = 0
+TEXT = This is copyrighted material owned by Company XYZ.  Please do not distribute.
+X = 0
+Y = 10.5
+PAGE = -1
+TRANSPARENT = 1
+LABEL = Text1
+EDIT = 0

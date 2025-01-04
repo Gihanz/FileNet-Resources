@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed Materials - Property of IBM
+ 5725A15, 5724R81
+ (c) Copyright IBM Corp. 2010, 2011  All Rights Reserved.
+ US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+
+
+-->
+
+<object key="sitePreferences" version="1.1.4">
+    <setting key="listViewMode">1</setting>
+    <setting key="displayConfirmation">1</setting>
+    <setting key="startPage">browse</setting>
+    <setting key="magazinePageSize">10</setting>
+    <setting key="detailedPageSize">20</setting>
+    <setting key="navigationRowSize">12</setting>
+    <setting key="filterDocumentMaxResults">100</setting>
+    <setting key="filterFolderMaxResults">100</setting>
+    <setting key="filterCustomObjectMaxResults">100</setting>
+    <setting key="choiceListSize">50</setting>
+    <setting key="recordsManagementInstalled">false</setting>
+    <setting key="eformsInstalled">false</setting>
+    <setting key="useServerLocale">false</setting>
+    <setting key="dateFormat">0</setting>
+    <setting key="timeFormat">0</setting>
+    <setting key="timeZoneID">useClientTimeZone</setting>
+    <setting key="showTime">false</setting>
+    <setting key="addAsMajorVersion">true</setting>
+    <setting key="checkinAsMajorVersion">true</setting>
+    <setting key="showCustomObjects">false</setting>
+    <setting key="showBrowseTreeview">true</setting>
+    <setting key="defineFolderInheritance">false</setting>
+    <setting key="showFolderFilterAlways">false</setting>
+    <setting key="showSecurityPage">true</setting>
+    <setting key="authoringPageDisplay">0</setting>
+    <setting key="usePathBasedURLs">false</setting>
+    <setting key="keepAliveInterval">5</setting>
+    <setting key="connectionPoint">P8ConnPt1</setting>
+    <setting key="mailHost"></setting>
+    <setting key="mailUser"></setting>
+    <setting key="mailPassword"></setting>
+    <setting key="cmodUser"></setting>
+    <setting key="cmodPassword"></setting>
+    <setting key="simulatorEngineHost">&lt;hostname&gt;:32771/WorkflowSimulator</setting>
+    <setting key="stepMilestoneLevel">1</setting>
+    <setting key="granteeMaximumFilterSize">500</setting>
+    <setting key="showTasksFilter">true</setting>
+    <setting key="taskFilterThreshold">100</setting>
+    <setting key="absoluteMaxResults">500</setting>
+    <setting key="showFooterLinks">false</setting>
+    <setting key="showTabBar">true</setting>
+    <setting key="defaultSearchMode">1</setting>
+    <setting key="selectionTreeMode">1</setting>
+    <setting key="annotUseSecurity">true</setting>
+    <setting key="showStepName">true</setting>
+    <setting key="activeWorkflowMaxResults">1000</setting>
+    <setting key="keepFolderCacheInterval">15</setting>
+    <setting key="useFolderCaching">true</setting>
+    <!--  Default Document Dir = "HOMEPATH", "MYDOCS", "EXACTPATH" for File Tracking -->
+    <setting key="defaultDocumentDirectory">MYDOCS</setting>
+
+    <list key="objectStoreSettings"/>
+
+    <list key="referenceServices">
+        <!-- Image Service -->
+        <object key="referenceService">
+            <label key="name" localizationKey="server.SitePreferences_xml.imageService">
+                <resource>Image Service</resource>
+            </label>
+            <setting key="location">getISContent</setting>
+            <setting key="mimeType">application/x-filenet-external-is</setting>
+            <setting key="uri">filenet:/is</setting>
+            <setting key="urlFormatString">?libraryName={0}&amp;id={1}&amp;objectType=document&amp;pageNumber={2}</setting>
+            <setting key="visible">false</setting>
+            <setting key="includeRedirectFlag">true</setting>
+            <labelArray key="parameterLabels">
+                <label localizationKey="server.SitePreferences_xml.libraryName">
+                    <resource>Library Name</resource>
+                </label>
+                <label localizationKey="server.SitePreferences_xml.documentID">
+                    <resource>Document ID</resource>
+                </label>
+                <label localizationKey="server.SitePreferences_xml.pageNumber">
+                    <resource>Page Number</resource>
+                </label>
+                <label>
+                    <resource></resource>
+                </label>
+            </labelArray>
+            <labelArray key="parameterHints">
+                <label localizationKey="server.SitePreferences_xml.mercuryHint">
+                    <resource>(e.g. mercury)</resource>
+                </label>
+                <label localizationKey="server.SitePreferences_xml.123456Hint">
+                    <resource>(e.g. 123456)</resource>
+                </label>
+                <label localizationKey="server.SitePreferences_xml.5Hint">
+                    <resource>(e.g. 5)</resource>
+                </label>
+                <label>
+                    <resource></resource>
+                </label>
+            </labelArray>
+        </object>
+    </list>
+
+    <list key="authorPageLinks">
+        <object key="authorPageLink" version="3.0">
+            <label key="label" localizationKey="server.SitePreferences_xml.recordsManager">
+                <resource>Records Manager</resource>
+                <resource locale="fr">Rfasdfasdf</resource>
+            </label>
+            <setting key="type">rm</setting> <!-- invisible setting -->
+            <setting key="url"></setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.rmAuthorPageLinkDesc">
+                <resource>Create and modify Records Management structures and manage e-mail, physical and electronic records.</resource>
+            </label>
+            <setting key="isPopup">true</setting>
+        </object>
+        <object key="authorPageLink" version="3.0">
+            <label key="label" localizationKey="server.SitePreferences_xml.requestRecordFolder">
+                <resource>Request Record Folder</resource>
+            </label>
+            <setting key="url"></setting>
+            <setting key="icon">images/action/RequestRecordFolder32.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.requestRecordAuthorPageLinkDesc">
+                <resource>Launches a workflow to send a request to the Records Manager to add a new Record folder in an existing Records Management Structure.</resource>
+            </label>
+            <setting key="isPopup">true</setting>
+        </object>
+    </list>
+
+    <list key="registeredPortlets">
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">Browse</setting>
+            <setting key="imageURL">Browse/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.browseDescription">
+                <resource>Browse Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.browseTitle">
+                <resource>Browse</resource>
+            </label>
+            <setting key="id">10639246082491</setting>
+        </object>
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">Author</setting>
+            <setting key="imageURL">Author/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.authoringDescription">
+                <resource>Authoring Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.authoringTitle">
+                <resource>Authoring</resource>
+            </label>
+            <setting key="id">10639246082492</setting>
+        </object>
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">ExternalUrl</setting>
+            <setting key="imageURL">ExternalUrl/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.externalUrlDescription">
+                <resource>External URL Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.externalUrlTitle">
+                <resource>External URL</resource>
+            </label>
+            <setting key="id">10639246082493</setting>
+        </object>
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">QuickSearch</setting>
+            <setting key="imageURL">QuickSearch/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.quickSearchDescription">
+                <resource>Quick Search Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.quickSearchTitle">
+                <resource>Quick Search</resource>
+            </label>
+            <setting key="id">10742131996635</setting>
+        </object>
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">Inbox</setting>
+            <setting key="imageURL">Inbox/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.inboxDescription">
+                <resource>My Inbox Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.inboxTitle">
+                <resource>My Inbox</resource>
+            </label>
+            <setting key="id">10742131996636</setting>
+        </object>
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">Workflows</setting>
+            <setting key="imageURL">Workflows/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.activeWorkflowsDescription">
+                <resource>My Active Workflows Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.activeWorkflowsTitle">
+                <resource>My Active Workflows</resource>
+            </label>
+            <setting key="id">10742131996637</setting>
+        </object>
+        <object key="portlet" class="com.filenet.wcm.apps.server.util.prefs.PrefsRegisteredPortlet">
+            <setting key="portletServlet">PublicQueue</setting>
+            <setting key="imageURL">PublicQueue/image.gif</setting>
+            <label key="description" localizationKey="server.SitePreferences_xml.publicInboxDescription">
+                <resource>Public Inbox Portlet</resource>
+            </label>
+            <label key="title" localizationKey="server.SitePreferences_xml.publicInboxTitle">
+                <resource>Public Inbox</resource>
+            </label>
+            <setting key="id">10742131996638</setting>
+        </object>
+    </list>
+
+
+    <list key="restrictedFeatures"/>
+    <list key="registeredPalettes"/>
+
+    <array key="pageOrder">
+        <value>home</value>
+        <value>tasks</value>
+        <value>favorites</value>
+        <value>browse</value>
+        <value>search</value>
+        <value>mySearch</value>
+        <value>author</value>
+        <value>admin</value>
+    </array>
+
+    <array key="rmPageOrder">
+        <value>browse</value>
+        <value>search</value>
+        <value>reports</value>
+        <value>disposition</value>
+        <value>configure</value>
+        <value>physical</value>
+    </array>
+
+    <list key="outlookProfiles">
+        <object key="outlookProfiles">
+            <setting key="establishLinks">false</setting>
+            <setting key="id">1</setting>
+            <setting key="cascadeDelete">false</setting>
+            <setting key="messageEditable">true</setting>
+            <setting key="defaultSaveMessage">true</setting>
+            <setting key="declareassinglerecord">false</setting>
+            <setting key="klcReadOnly">false</setting>
+            <setting key="attachmentsEditable">true</setting>
+            <setting key="textEditable">true</setting>
+            <setting key="defaultSaveAttachments">false</setting>
+            <setting key="defaultSaveText">false</setting>
+            <label key="label" localizationKey="server.SitePreferences_xml.outlookProfileslabel">
+                <resource>System Profile</resource>
+            </label>
+            <label key="description" localizationKey="server.SitePreferences_xml.outlookProfilesDescription">
+                <resource>This profile may be deleted.</resource>
+            </label>
+            <setting key="keepLocalCopy">true</setting>
+        </object>
+    </list>
+
+    <object key="appIntPrefs">
+        <setting key="defaultDocumentDirectory">MYDOCS</setting>
+        <setting key="showSaveAsDlg">false</setting>
+        <array key="outlookfiletypes">
+            <value>application/x-filenet-filetype-msg</value>
+            <value>text/plain</value>
+            <value>text/html</value>
+            <value>application/msword</value>
+            <value>application/vnd.ms-excel</value>
+            <value>application/vnd.ms-powerpoint</value>
+        </array>
+        <setting key="useFilenameAsTitle">true</setting>
+        <setting key="generalEntryTemplateVisibility">true</setting>
+    </object>
+
+    <object key="favoritesPrefs" class="com.filenet.wcm.apps.server.util.prefs.FavoritesPrefs">
+        <array key="favoritesDetailedViewCols">
+            <value>ContentSize</value>
+            <value>LastModifier</value>
+            <value>DateLastModified</value>
+            <value>MajorVersionNumber</value>
+        </array>
+        <array key="defaultFavoritesDetailedViewCols">
+            <value>ContentSize</value>
+            <value>LastModifier</value>
+            <value>DateLastModified</value>
+            <value>MajorVersionNumber</value>
+        </array>
+    </object>
+
+    <object key="webDAVPrefs">
+        <list key="folderTemplateAssociations"/>
+    </object>
+
+    <list key="inboxSettings"/>
+
+    <array key="multiDownloadRoles">
+        <value>AEAdmin</value>
+    </array>
+
+    <array key="multiSaveRoles">
+        <value>AEAdmin</value>
+    </array>
+
+    <object key="office2007">
+        <setting key="generalEntryTemplateVisibility">true</setting>
+        <setting key="deleteOnCheckin">false</setting>
+        <setting key="deleteOnCancelCheckout">false</setting>
+        <setting key="deleteOnSave">false</setting>
+        <setting key="deleteOnAdd">false</setting>
+        <setting key="checkinOnClose">false</setting>
+        <setting key="closeTaskPaneOnOpen">true</setting>
+        <setting key="checkoutOnOpen">false</setting>
+        <setting key="useFileNameAsTitle">true</setting>
+        <setting key="outlookPromptDuringAdd">false</setting>
+        <setting key="deleteEmailUponAdd">false</setting>
+        <setting key="addEmailAsReferenceOnly">true</setting>
+        <setting key="defaultDocDir"></setting>
+        <setting key="exactPath"></setting>
+        <array key="documentTypes">
+            <value>otb_Word</value>
+            <value>otb_Excel</value>
+            <value>otb_PowerPoint</value>
+            <value>otb_Outlook</value>
+            <value>otb_PDF</value>
+        </array>
+    </object>
+
+    <list key="fileTypes">
+        <object key="fileType">
+            <setting key="id">otb_Word</setting>
+            <label key="label">
+                <resource>Word</resource>
+            </label>
+            <array key="mimeTypes">
+                <value>application/msword</value>
+                <value>application/vnd.openxmlformats-officedocument.wordprocessingml.document</value>
+                <value>application/vnd.openxmlformats-officedocument.wordprocessingml.template</value>
+            </array>
+        </object>
+
+        <object key="fileType">
+            <setting key="id">otb_Excel</setting>
+            <label key="label">
+                <resource>Excel</resource>
+            </label>
+            <array key="mimeTypes">
+                <value>application/vnd.ms-excel</value>
+                <value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</value>
+                <value>application/vnd.openxmlformats-officedocument.spreadsheetml.template</value>
+            </array>
+        </object>
+
+        <object key="fileType">
+            <setting key="id">otb_PowerPoint</setting>
+            <label key="label">
+                <resource>PowerPoint</resource>
+            </label>
+            <array key="mimeTypes">
+                <value>application/vnd.ms-powerpoint</value>
+                <value>application/vnd.openxmlformats-officedocument.presentationml.presentation</value>
+                <value>application/vnd.openxmlformats-officedocument.presentationml.slideshow</value>
+                <value>application/vnd.openxmlformats-officedocument.presentationml.template</value>
+            </array>
+        </object>
+
+        <object key="fileType">
+            <setting key="id">otb_Outlook</setting>
+            <label key="label">
+                <resource>Outlook</resource>
+            </label>
+            <array key="mimeTypes">
+                <value>application/x-filenet-filetype-msg</value>
+                <value>application/x-filenet-fileext-msg</value>
+            </array>
+        </object>
+
+        <object key="fileType">
+            <setting key="id">otb_PDF</setting>
+            <label key="label">
+                <resource>PDF</resource>
+            </label>
+            <array key="mimeTypes">
+                <value>application/pdf</value>
+            </array>
+        </object>
+    </list>
+
+    <!-- populated from ClassFilter.xml (this are defaults) -->
+    <setting key="XML_defaultFilteredClasses">WcmLayout,FormData,FormPolicy</setting>
+
+</object>

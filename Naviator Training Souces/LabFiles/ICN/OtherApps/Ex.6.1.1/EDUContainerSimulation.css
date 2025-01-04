@@ -1,0 +1,16 @@
+iframe.icnIntegrationFrame{
+	width: 900px;
+	height: 600px;
+	overflow: auto;
+}
+.externalAppContent{
+	background-color:#ddddff;
+	height: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+#icnIntegration{
+	background-color:#ddddff;
+	margin: 0 auto;
+	text-align: center;
+}

@@ -1,0 +1,203 @@
+
+################################################################################
+#
+# InstallShield Options File
+#
+# This file contains values that were specified during a recent execution of
+# Install. It can be used to configure Install with the options specified below
+# when the wizard is run with the "-options" command line option. Read each
+# setting's documentation for information on how to change its value.
+# 
+# A common use of an options file is to run the wizard in silent mode. This lets
+# the options file author specify wizard settings without having to run the
+# wizard in graphical or console mode. To use this options file for silent mode
+# execution, use the following command line arguments when running the wizard:
+# 
+#    -options "XT_silent_install.txt" -silent
+#
+################################################################################
+
+
+################################################################################
+#
+# License Agreement Panel
+#
+# To configure the panel to select "I accept the terms in the license agreement",
+# use:
+# 
+#    -V licenseAccepted="true"
+#
+
+-V licenseAccepted="true"
+
+
+################################################################################
+#
+# Web Client Install Location
+#
+# The install location of the product. Specify a valid directory into which the
+# product should be installed. If the directory contains spaces, enclose it in
+# double-quotes. For example, to install the product to C:\Program Files\My
+# Product, use
+# 
+#    -P installLocation="C:\Program Files\My Product"
+#    
+
+-P installLocation="C:\Program Files\IBM\FileNet\WebClient"
+
+
+################################################################################
+#
+# Select to install Daeja ViewONE PRO files
+#
+# The sViewONEPRO property of the product is set to install Daeja ViewONE PRO files.
+# 
+#    -V sViewONEPRO=true
+#    
+
+-V sViewONEPRO=false
+
+
+################################################################################
+#
+# Application Server
+#
+# The application server value can be 'WebSphere', 'WebLogic', or 'JBoss'
+#
+#    -V vAppServer=WebSphere
+#
+# The application server version must be set in tandem with the application server
+#
+#    -V vAppServerVersion=7
+#
+# The current valid values for combination are:  
+#
+#    WebSphere - versions (6, 7)
+#    Weblogic - versions (9, 10)
+#    JBoss - versions (4)
+#
+
+-V vAppServer=WebSphere
+-V vAppServerVersion=7
+
+
+################################################################################
+#
+# Transport Type
+#
+# Sets the transport type used to communicate with the Conent Engine. Leave set to 'EJB'.
+# 
+#
+
+-V ceTransportType=EJB
+
+################################################################################
+#
+# WcmApiConfig URLS
+#
+# Set up the 3 URLS for JavaAPI
+#
+# WebSphere Example: cemp:iiop://<CE_Name>:2809/FileNet/Engine
+# WebLogic Example:  cemp:t3://<CE_Name>:7001/FileNet/Engine
+# JBoss Example:     cemp:jnp://<CE_Name>:1099/FileNet/Engine
+#
+
+-V ceClientSoftwareURL=cemp:iiop://localhost:2809/FileNet/Engine
+-V ceDownloadURL=cemp:iiop://localhost:2809/FileNet/Engine
+-V ceUploadURL=cemp:iiop://localhost:2809/FileNet/Engine
+
+################################################################################
+#
+# User Token Key File
+#
+# This is the full Path Name of the User Token Crypto File  
+#
+
+-V UserTokenPath="C:\Program Files\IBM\FileNet\Authentication\UTCryptoKeyFile.properties"
+
+
+################################################################################
+#
+# User Token Number of Keys
+#
+# Number of Keys in User Token cryptokey file
+#
+
+-V NumKeys=3
+
+
+################################################################################
+#
+# User Token File Keys Length
+#
+# Number of Bytes for each User Token key
+#
+
+-V KeyLen=128
+
+################################################################################
+#
+# Configuration Directory
+#
+# This is the name of the Directory that Web Client configuration files will be placed
+#
+
+-V ConfigDirFull="C:\Program Files\IBM\FileNet\Config\WebClient"
+
+################################################################################
+#
+# Upload Directory
+#
+# This is the location to store temporary Web Client uploaded files
+#
+
+-V UploadDir="C:\Program Files\IBM\FileNet\WebClient\upload"
+
+################################################################################
+#
+# Download Directory
+#
+# This is the location to store temporary Web Client downloaded files
+#
+
+-V DownloadDir="C:\Program Files\IBM\FileNet\WebClient\download"
+
+################################################################################
+#
+# Logging Directory
+#
+# This is the location to store Workplace XT log files
+#
+
+-V LogDir="C:\Program Files\IBM\FileNet\WebClient\LogFiles"
+
+################################################################################
+#
+# Documentation Server
+#
+# This is the server for documentation files
+#
+
+-V DocServer="http://publib.boulder.ibm.com/infocenter/p8docs/v5r1m0/"
+
+################################################################################
+#
+# Application Name
+#
+# This is the name of the application for Ear File deployment
+#
+
+-V ApplicationName=WorkplaceXT
+-V EarDeploy=true
+-V WarDeploy=false
+-V SkipDeploymentFileGeneration=false
+
+################################################################################
+#
+# Daeja ViewONE Pro configuration
+#
+# This is the location to set Daeja ViewONE Pro paths only if sViewONEPRo is set to true
+# set to true, for PIEStreamer Location. Comment it if set to false.
+
+#-V PIEStreamerFolder ="C:\Program Files\IBM\FileNet\ImageViewerPro\streamer"
+

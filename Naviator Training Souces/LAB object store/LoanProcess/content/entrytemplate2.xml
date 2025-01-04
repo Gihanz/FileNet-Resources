@@ -1,0 +1,228 @@
+<entrytemplate xmlns="http://filenet.com/namespaces/wcm/apps/1.0"><templatetype>EntryTemplate</templatetype><type>document</type><instructions><instruction><name>selectfile</name><value>1</value></instruction><instruction><name>selectfolder</name><value>0</value></instruction><instruction><name>constrainfolder</name><value>0</value></instruction><instruction><name>useforcheckin</name><value>1</value></instruction><instruction><name>setproperties</name><value>1</value></instruction><instruction><name>setsecurity</name><value>0</value></instruction><instruction><name>autoclassify</name><value>0</value></instruction></instructions><objectstore><id>LoanProcess</id><name>LoanProcess</name></objectstore><folder><id>{C14A5F04-0991-46AF-A787-BE561D4BA9EC}</id></folder><version><value>0</value><isreadonly>1</isreadonly><ishidden>1</ishidden></version><classdesc><id>{D71BA646-79EB-47F6-BB67-18D4E2AF8BC6}</id><name>BankStatement</name></classdesc><propdescs><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>8</datatype>
+	<desctext>The MIME type of the document.</desctext>
+	<id>{8B03CD36-2336-403E-BE49-4AE99DC5F18E}</id>
+	<ishidden>0</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>0</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>0</isvalreq>
+	<issysowned>1</issysowned>
+	<requnielem>0</requnielem>
+	<setability>1</setability>
+	<maxlen>96</maxlen>
+	<useslongcolumn>0</useslongcolumn>
+	<name>Mime Type</name>
+	
+	<symname>MimeType</symname><propdef></propdef></propdesc><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>8</datatype>
+	<desctext>Document Title</desctext>
+	<id>{D32E5055-AFB2-11D2-8BD6-00E0290F729A}</id>
+	<ishidden>0</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>0</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>0</isvalreq>
+	<issysowned>0</issysowned>
+	<requnielem>0</requnielem>
+	<setability>0</setability>
+	<maxlen>255</maxlen>
+	<useslongcolumn>0</useslongcolumn>
+	<name>Document Title</name>
+	
+	<symname>DocumentTitle</symname><propdef></propdef></propdesc><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>7</datatype>
+	<objecttype>1</objecttype>
+	<desctext/>
+	<id>{3868ED67-E646-40BE-A115-6393C3738B2A}</id>
+	<ishidden>0</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>0</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>0</isvalreq>
+	<issysowned>0</issysowned>
+	<requnielem>0</requnielem>
+	<setability>1</setability>
+	<allowsforeignobject>0</allowsforeignobject>
+	<issecurityproxy>0</issecurityproxy>
+	<name>Publication Source</name>
+	
+	<symname>SourceDocument</symname>
+	<reqclass>
+	<symname>Document</symname>
+	<dispname>Document</dispname></reqclass><propdef><namevalue></namevalue><id></id></propdef></propdesc><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>8</datatype>
+	<desctext>CustomerName</desctext>
+	<id>{55747A69-2C3F-4965-91BB-6C8C1A93C885}</id>
+	<ishidden>0</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>0</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>0</isvalreq>
+	<issysowned>0</issysowned>
+	<requnielem>0</requnielem>
+	<setability>0</setability>
+	<maxlen>64</maxlen>
+	<useslongcolumn>0</useslongcolumn>
+	<name>CustomerName</name>
+	
+	<symname>CustomerName</symname><propdef></propdef></propdesc><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>8</datatype>
+	<desctext>GovernmentID</desctext>
+	<id>{BF899F98-9F54-400F-AACE-5F4402D83D05}</id>
+	<ishidden>0</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>0</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>1</isvalreq>
+	<issysowned>0</issysowned>
+	<requnielem>0</requnielem>
+	<setability>0</setability>
+	<maxlen>64</maxlen>
+	<useslongcolumn>0</useslongcolumn>
+	<name>GovernmentID</name>
+	
+	<symname>GovernmentID</symname><propdef></propdef></propdesc><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>6</datatype>
+	<desctext>StatementMonth</desctext>
+	<id>{B0D97F64-4A16-47A3-A599-4F89A40D41AF}</id>
+	<ishidden>0</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>0</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>0</isvalreq>
+	<issysowned>0</issysowned>
+	<requnielem>0</requnielem>
+	<setability>0</setability>
+	<propmax/>
+	<propmin/>
+	<name>StatementMonth</name>
+	
+	<symname>StatementMonth</symname>
+	<ishierarchical>0</ishierarchical>
+	<propdef></propdef></propdesc><propdesc>
+	<cardinality>0</cardinality>
+	<datatype>6</datatype>
+	<desctext>State of document, is it a standard document or a compound document.</desctext>
+	<id>{DFFC2614-80FB-4248-AB93-F02552F498EF}</id>
+	<ishidden>1</ishidden>
+	<isorderable>1</isorderable>
+	<isreadonly>1</isreadonly>
+	<issearchable>1</issearchable>
+	<isselectable>1</isselectable>
+	<issysgen>0</issysgen>
+	<isvalreq>0</isvalreq>
+	<issysowned>1</issysowned>
+	<requnielem>0</requnielem>
+	<setability>0</setability>
+	<propmax/>
+	<propmin/>
+	<name>Compound Document State</name>
+	<propdef>0</propdef>
+	<symname>CompoundDocumentState</symname></propdesc></propdescs><permissions><permission>
+	<accessmask>998871</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>#CREATOR-OWNER</granteename>
+	<granteetype>2000</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-3-0</granteeid>
+	<dispname/></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>#AUTHENTICATED-USERS</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-11</granteeid>
+	<dispname/></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Business Analysts@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1145</granteeid>
+	<dispname>Loan Business Analysts</dispname></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Business Users@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1146</granteeid>
+	<dispname>Loan Business Users</dispname></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Guests@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1147</granteeid>
+	<dispname>Loan Guests</dispname></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Managers@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1148</granteeid>
+	<dispname>Loan Managers</dispname></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Officers@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1149</granteeid>
+	<dispname>Loan Officers</dispname></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Processors@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1150</granteeid>
+	<dispname>Loan Processors</dispname></permission><permission>
+	<accessmask>131201</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan Underwriters@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1151</granteeid>
+	<dispname>Loan Underwriters</dispname></permission><permission>
+	<accessmask>998871</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Loan System Administrators@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2001</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-1168</granteeid>
+	<dispname>Loan System Administrators</dispname></permission><permission>
+	<accessmask>998871</accessmask>
+	<accesstype>1</accesstype>
+	<granteename>Administrator@hqdemo1dom.filenet.com</granteename>
+	<granteetype>2000</granteetype>
+	<inheritdepth>0</inheritdepth>
+	<permissionsource>0</permissionsource>
+	<granteeid>S-1-5-21-2500451524-2718885958-2185663729-500</granteeid>
+	<dispname>Administrator</dispname></permission></permissions><securitypolicy><id></id><name></name></securitypolicy></entrytemplate>

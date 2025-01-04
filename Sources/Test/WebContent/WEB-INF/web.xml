@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GetSign</display-name>
+    <servlet-name>GetSign</servlet-name>
+    <servlet-class>com.mit.signature.GetSign</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetSign</servlet-name>
+    <url-pattern>/GetSign</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Admin</display-name>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>com.mit.signature.Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AcntOpen</display-name>
+    <servlet-name>AcntOpen</servlet-name>
+    <servlet-class>com.ntb.acntopen.AcntOpen</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AcntOpen</servlet-name>
+    <url-pattern>/AcntOpen</url-pattern>
+  </servlet-mapping>
+</web-app>

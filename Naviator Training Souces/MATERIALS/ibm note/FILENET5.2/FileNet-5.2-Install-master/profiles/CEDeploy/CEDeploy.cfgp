@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    IBM Confidential
+    IBM FileNet Composite Platform Installation Tool, CZ5QQEN
+    © Copyright IBM Corp. 2009
+-->
+<profile name="CEDeploy" typeid="com.ibm.ecm.product.ce.profile.configurewebsphereapplicationserver">
+<tasks>
+        <task symbolicname="deployapplication" typeid="com.ibm.ecm.product.ce.task.deployapplication"/>
+    </tasks>
+</profile>

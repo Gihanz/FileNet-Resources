@@ -1,0 +1,91 @@
+.messagesDialog .dijitDialogPaneContent {
+	background-color: #efe;
+}
+
+.samplePropertyEditor,
+.sampleQueryInputArea {
+	display: table;
+}
+
+.samplePropertyEditor .dijitTextBox,
+.sampleQueryInputArea .dijitTextBox {
+	display: table-cell;
+}
+
+.samplePropertyEditor .dijitButton,
+.sampleQueryInputArea .dijitButton {
+	display: table-cell;
+	width: 1px;
+	white-space: nowrap;
+	padding-left: 10px;
+}
+
+.dijitRtl .samplePropertyEditor .dijitButton,
+.dijitRtl .sampleQueryInputArea .dijitButton {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.samplePropertyEditor .dijitTextBox .dijitInputField,
+.sampleQueryInputArea .dijitTextBox .dijitInputField {
+	width: 100%;
+}
+
+.ecmCenterPane .sampleSearchArea {
+	background-color: #ddd;
+	padding: 20px !important;
+}
+
+.ecmCenterPane .sampleQueryInputArea {
+	width: 100%;
+}
+
+.ecmCenterPane .sampleSearchArea .searchButton .dijitButtonNode {
+	color: #00649d;
+	border: none !important;
+}
+
+.ecmCenterPane .sampleSearchArea .searchButtonDisabled .dijitButtonNode {
+	color: #818181;
+	border: none !important;
+}
+
+.ecmCenterPane .sampleSearchArea .searchButtonDisabled .dijitButtonText {
+	color: inherit !important;
+}
+
+.ecmCenterPane .sampleSearchArea .searchButton .dijitButtonText {
+	color: #00649d;
+}
+
+.ecmCenterPane .sampleSearchArea .searchButton .dijitButtonText:hover {
+	color: #05386B;
+    cursor: inherit !important;
+    text-decoration: inherit !important;
+}
+
+.ecmCenterPane .sampleRepositorySelectorArea {
+	padding-bottom: 10px;
+}
+
+/* Feature bar icon */
+.sampleFeatureLaunchIcon {
+	width: 32px;
+	height: 32px;
+	background-image: url('images/samplePlugin.svg');
+	background-repeat: no-repeat;
+	background-position: -16px -16px; 
+}
+
+/* Checked State */
+.ecmLaunchBarContainer .launchBarButton.dijitToggleButtonHover .sampleFeatureLaunchIcon,
+.launchBarButton.dijitChecked .sampleFeatureLaunchIcon, 
+.launchBarButton.dijitFocused .sampleFeatureLaunchIcon { 
+	background-position: -16px -80px;
+}
+
+/* For sample text box editor control */
+.ecmSampleTextBoxEditor {
+    box-shadow: 5px 5px 5px #C0C0C0;
+    font-style: italic;
+}

@@ -1,0 +1,69 @@
+<div id="MainMenu" data-dojo-type="dojox.mobile.ScrollableView" data-dojo-props="controller:'MenuController'">
+        <div id="menuHeadID" data-dojo-type="dojox.mobile.Heading" data-dojo-props=" back:'Back', moveTo:'desktop'" style="margin-right: 0px; margin-left: 0px; top: 0px;">
+        <div id="MainMenuPIId" data-dojo-type="dojox.mobile.Pane"></div>
+        <!--div  id="logOffBtn" data-dojo-type="dojox.mobile.ToolBarButton" data-dojo-props="label: 'Log Out',onClick:function() {getControllersManager().getControllerInstance('MenuController').logOffDesktop()}"
+                     class="mblColorBlue" style="float:right;">
+        </div-->
+     </div>
+     <div data-dojo-type="dojox.mobile.Heading" id="menuOpenInTabBar" fixed="bottom" style="visibility:hidden;width:100%;">
+
+         <div style="float:left;padding-top:5px;padding-left:5px"><img id="menuFileTypeIcon" src=""></div>
+
+         <div data-dojo-type="dojox.mobile.ToolBarButton"
+	        		 data-dojo-props='label:"Discard"' onClick="hideOpenInTabBar();" style="float:right;margin-right: 7px">
+	        </div>
+        	
+	</div>     
+                    
+      <ul id="menuList" data-dojo-type="dojox.mobile.EdgeToEdgeList" data-dojo-props='editable:true' class="unselectable">
+   	  </ul>    
+</div>
+<!-- For using this repository login dialog efficiently one
+	should set the onClickCommand for the login click do the work
+	see example on browse  -->
+<div data-dojo-type="dojox.mobile.SimpleDialog" id="loginDialog">
+		<div class="mblSimpleDialogTitle">Repository Login</div>
+		<div id="loginDialogText" class="mblSimpleDialogText"></div>
+        <input id="lastLoginRepositoryId" type="hidden" value="">
+        <input id="loginDialogUsername" data-dojo-type="dojox.mobile.TextBox" placeHolder="Login" style="width:80%" autocapitalize="off" autocorrect="off"/>
+		<input type=password id="loginDialogPassword" data-dojo-type="dojox.mobile.TextBox" placeHolder="Password" style="width:80%" autocapitalize="off" autocorrect="off"/>
+		<input id="onClickCommand" type="hidden" name="command" value="">
+		<button data-dojo-type="dojox.mobile.Button" class="mblSimpleDialogButton2r"
+	       	onclick="hide('loginDialog');document.getElementById('loginDialogUsername').value = '';document.getElementById('loginDialogPassword').value = '';">Cancel</button>
+		<button id="loginOKButton" data-dojo-type="dojox.mobile.Button" class="mblSimpleDialogButton2l"
+	       	onclick="hide('loginDialog');eval(document.getElementById('onClickCommand').value)">Log In</button>
+</div>
+    <div data-dojo-type="dojox.mobile.ScrollableView" id="propertiesView">
+        <div data-dojo-type="dojox.mobile.Heading" id="propertiesHeading" style="margin-right: 0px; margin-left: 0px; top: 0px;" data-dojo-props="back:'Back', moveTo:'BrowseListView'">
+            <div  id="editPropertiesButton" data-dojo-type="dojox.mobile.ToolBarButton"
+                 data-dojo-props='label:"Edit",defaultColor:"mblColorBlue"' onClick="getBrowse().editProperties();" style="float:right;">
+            </div>
+        </div>
+        <h2 data-dojo-type="dojox.mobile.RoundRectCategory" style="text-align:left;">Properties</h2>
+        <ul id="PropertiesList" class="mblRoundRectList " data-dojo-type="dojox.mobile.RoundRectList" data-dojo-props="variableHeight:true">
+        </ul>
+        <h2 id="systemPropertiesTitle" data-dojo-type="dojox.mobile.RoundRectCategory" style="text-align:left">System Properties</h2>
+        <ul id="SystemPropertiesList" class="mblRoundRectList " data-dojo-type="dojox.mobile.RoundRectList" data-dojo-props="variableHeight:true">
+        </ul>
+    </div>
+	
+    <div data-dojo-type="dojox.mobile.ScrollableView" id="editPropertiesView" style="overflow: visible" >
+        <div data-dojo-type="dojox.mobile.Heading" id="editPropertiesHeading" style="margin-right: 0px; margin-left: 0px; top: 0px;" data-dojo-props="back:'Cancel', moveTo:'propertiesView'">
+            <div data-dojo-type="dojox.mobile.ToolBarButton" id="editPropertiesSaveButton"
+                 data-dojo-props='label:"Save",defaultColor:"mblColorBlue"' transitionDir=-1 onClick="getBrowse().saveEditedProperties();" style="float:right;">
+            </div>
+        </div>
+        <div data-dojo-type="dojox.mobile.Container" id="editPropertiesContainerDiv" style="text-align:left;">
+        </div>
+    </div>
+
+    <div data-dojo-type="dojox.mobile.SimpleDialog" id="addFavoriteDialog">
+        <div class="mblSimpleDialogTitle">Add to Favorites</div>
+        <div id="addFavoriteDialogText" class="mblSimpleDialogText">For this document, enter a name to display in the Favorites view</div>
+        <input id="aliasName" data-dojo-type="dojox.mobile.TextBox" style="width:80%"/>
+        <input id="itemToAddToFavorites" type="hidden" value=""/>
+        <button id="aliasOKButton" data-dojo-type="dojox.mobile.Button" class="mblSimpleDialogButton2l"
+                onclick="getCtrlInstance('MenuController').addFavoriteOnServer()">OK</button>
+        <button data-dojo-type="dojox.mobile.Button" class="mblSimpleDialogButton2r"
+                onclick="hide('addFavoriteDialog')">Cancel</button>
+    </div>

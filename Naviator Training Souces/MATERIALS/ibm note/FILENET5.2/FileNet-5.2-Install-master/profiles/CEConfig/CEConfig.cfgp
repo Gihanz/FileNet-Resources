@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><profile name="CEConfig" typeid="com.ibm.ecm.product.ce.profile.configurewebsphereapplicationserver">
+<tasks>
+        <task symbolicname="configurejdbcgcd" typeid="com.ibm.ecm.product.ce.task.configurejdbcgcd"/>
+        <task symbolicname="configurejdbcos" typeid="com.ibm.ecm.product.ce.task.configurejdbcos"/>
+        <task symbolicname="configureloginmodules" typeid="com.ibm.ecm.product.ce.task.configureloginmodules"/>
+        <task symbolicname="configureldap" typeid="com.ibm.ecm.product.ce.task.configureldap"/>
+        <task symbolicname="configurebootstrap" typeid="com.ibm.ecm.product.ce.task.configurebootstrap"/>
+   </tasks>
+</profile>

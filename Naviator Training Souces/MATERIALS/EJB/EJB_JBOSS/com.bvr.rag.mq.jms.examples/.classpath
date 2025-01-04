@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/rmm.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/CL3Export.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/CL3Nonexport.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/com.ibm.mq.fta.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/com.ibm.mq.jms.Nojndi.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/com.ibm.mq.soap.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/com.ibm.mqetclient.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/com.ibm.mqjms.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/commonservices.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/connector.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/dhbcore.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/fscontext.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/jms.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/jndi.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/jta.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/ldap.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/postcard.jar"/>
+	<classpathentry kind="lib" path="E:/IBM/WebSphere MQ/Java/lib/providerutil.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

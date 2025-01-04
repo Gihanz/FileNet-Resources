@@ -1,0 +1,1541 @@
+version: 1
+
+#/opt/ibm/ldap/V6.2/sbin/64/db2ldif -o ldap.ldif 
+
+dn: cn=crypto,cn=localhost
+cn: crypto
+objectclass: ibm-cryptoConfig
+objectclass: ibm-slapdConfigEntry
+objectclass: top
+ibm-slapdCryptoSync: bXzCmy0nAijIeOv6
+ibm-slapdCryptoSalt: {uC;J>:`8KAV
+ibm-entryuuid: e6d80c40-d03a-102f-8d85-ac5c0edba54e
+
+
+dn: o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjExNTkuMjEyMTM0Wj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTE1OS4yMTIxMzRa
+objectclass: top
+objectclass: domain
+dc: o=sample
+o: sample
+ibm-entryuuid: e770a2c0-d03a-102f-8d86-ac5c0edba54e
+
+dn: cn=P8Admin,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjExNTkuMjEyMTM0Wj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTE1OS4yMTIxMzRa
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+objectclass: person
+objectclass: top
+cn: P8Admin
+sn: P8Admin
+userpassword: {AES256}npm5vBzvl7Xq9YoW1gvx4Q==
+ibm-entryuuid: e770a2c0-d03a-102f-8d87-ac5c0edba54e
+
+dn: cn=tester,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjExNTkuMjEyMTM0Wj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTE1OS4yMTIxMzRa
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+objectclass: person
+objectclass: top
+cn: tester
+sn: tester
+userpassword: {AES256}npm5vBzvl7Xq9YoW1gvx4Q==
+ibm-entryuuid: e770a2c0-d03a-102f-8d88-ac5c0edba54e
+
+dn: cn=P8Admins,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjExNTkuMjEyMTM0Wj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIwMjE0NC4wMTgzMjda
+objectclass: groupOfNames
+objectclass: top
+cn: P8Admins
+ibm-entryuuid: e770a2c0-d03a-102f-8d89-ac5c0edba54e
+member: cn=P8Admin,o=sample
+member: cn=CEAdmins, cn=groups,o=sample
+member: cn=AEAdmins, cn=groups,o=sample
+member: cn=PEAdmins, cn=groups,o=sample
+member: cn=CaseAdmins, cn=groups,o=sample
+member: cn=sue, cn=users,o=sample
+
+dn: cn=GeneralUsers,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjExNTkuMjEyMTM0Wj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTE1OS4yMTIxMzRa
+objectclass: groupOfNames
+objectclass: top
+cn: GeneralUsers
+ibm-entryuuid: e770a2c0-d03a-102f-8d8a-ac5c0edba54e
+member: cn=P8Admin,o=sample
+member: cn=tester,o=sample
+
+dn: CN=IBMPOLICIES
+control: 1.3.18.0.2.10.19 false:: MIQAAADbMIQAAAApCgEAMIQAAAAgBAxjcmVhdG9yc05hbWUxhAAAAAwECkNOPUFOWUJPRFkwhA
+ AAADgKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjEyMDEuMDIwMT
+ A5WjCEAAAAKgoBADCEAAAAIQQNbW9kaWZpZXJzTmFtZTGEAAAADAQKQ049QU5ZQk9EWTCEAAAAOA
+ oBADCEAAAALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTIwMS4wMjAxMDla
+cn: IBMpolicies
+objectclass: container
+objectclass: top
+objectclass: ibm-replicationContext
+ibm-entryuuid: e8a1cfc0-d03a-102f-8a57-d5d20d460e03
+
+dn: IBM-REPLICAGROUP=DEFAULT,CN=IBMPOLICIES
+control: 1.3.18.0.2.10.19 false:: MIQAAADbMIQAAAApCgEAMIQAAAAgBAxjcmVhdG9yc05hbWUxhAAAAAwECkNOPUFOWUJPRFkwhA
+ AAADgKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjEyMDEuMDM5MT
+ E1WjCEAAAAKgoBADCEAAAAIQQNbW9kaWZpZXJzTmFtZTGEAAAADAQKQ049QU5ZQk9EWTCEAAAAOA
+ oBADCEAAAALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTIwMS4wMzkxMTVa
+objectclass: top
+objectclass: ibm-replicaGroup
+ibm-replicaGroup: default
+ibm-entryuuid: e8a1cfc0-d03a-102f-8a58-d5d20d460e03
+aclpropagate: TRUE
+ownerpropagate: TRUE
+entryowner: access-id:CN=ROOT
+aclentry: group:CN=ANYBODY
+
+dn: globalGroupName=GlobalAdminGroup,cn=ibmpolicies
+control: 1.3.18.0.2.10.19 false:: MIQAAADbMIQAAAApCgEAMIQAAAAgBAxjcmVhdG9yc05hbWUxhAAAAAwECkNOPUFOWUJPRFkwhA
+ AAADgKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjEyMDEuMDkyMj
+ A4WjCEAAAAKgoBADCEAAAAIQQNbW9kaWZpZXJzTmFtZTGEAAAADAQKQ049QU5ZQk9EWTCEAAAAOA
+ oBADCEAAAALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTIwMS4wOTIyMDha
+globalGroupName: GlobalAdminGroup
+objectclass: top
+objectclass: ibm-globalAdminGroup
+ibm-entryuuid: e8a1cfc0-d03a-102f-8a5a-d5d20d460e03
+
+dn: cn=pwdpolicy,cn=ibmpolicies
+control: 1.3.18.0.2.10.19 false:: MIQAAADbMIQAAAApCgEAMIQAAAAgBAxjcmVhdG9yc05hbWUxhAAAAAwECkNOPUFOWUJPRFkwhA
+ AAADgKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjEyMDEuMTExMj
+ M0WjCEAAAAKgoBADCEAAAAIQQNbW9kaWZpZXJzTmFtZTGEAAAADAQKQ049QU5ZQk9EWTCEAAAAOA
+ oBADCEAAAALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTIwMS4xMTEyMzRa
+objectclass: container
+objectclass: pwdPolicy
+objectclass: ibm-pwdPolicyExt
+objectclass: ibm-pwdGroupAndIndividualPolicies
+objectclass: top
+cn: pwdPolicy
+pwdAttribute: userPassword
+pwdInHistory: 0
+pwdCheckSyntax: 0
+pwdGraceLoginLimit: 0
+pwdLockoutDuration: 0
+pwdMaxFailure: 0
+pwdFailureCountInterval: 0
+passwordMaxRepeatedChars: 0
+passwordMaxConsecutiveRepeatedChars: 0
+pwdMaxAge: 0
+pwdMinAge: 0
+pwdExpireWarning: 0
+pwdMinLength: 0
+passwordMinAlphaChars: 0
+passwordMinOtherChars: 0
+passwordMinDiffChars: 0
+ibm-pwdPolicy: false
+pwdLockout: false
+pwdAllowUserChange: true
+pwdMustChange: true
+pwdSafeModify: false
+ibm-pwdGroupAndIndividualEnabled: false
+ibm-entryuuid: e8a1cfc0-d03a-102f-8a5b-d5d20d460e03
+
+dn: CN=REPLICATION,CN=IBMPOLICIES
+control: 1.3.18.0.2.10.19 false:: MIQAAADbMIQAAAApCgEAMIQAAAAgBAxjcmVhdG9yc05hbWUxhAAAAAwECkNOPUFOWUJPRFkwhA
+ AAADgKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMTkwNjEyMDEuMTQ0OD
+ g1WjCEAAAAKgoBADCEAAAAIQQNbW9kaWZpZXJzTmFtZTGEAAAADAQKQ049QU5ZQk9EWTCEAAAAOA
+ oBADCEAAAALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIxOTA2MTIwMS4xNDQ4ODVa
+cn: REPLICATION
+objectclass: container
+objectclass: top
+ibm-entryuuid: e8a1cfc0-d03a-102f-8a5d-d5d20d460e03
+
+dn: cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: container
+objectclass: top
+cn: groups
+ibm-entryuuid: 2eb7a5c0-d351-102f-917f-fc47b6fc2d4d
+
+dn: cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: container
+objectclass: top
+cn: users
+ibm-entryuuid: 2eb7a5c0-d351-102f-9180-fc47b6fc2d4d
+
+dn: CN=P8Users,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: P8Users
+ibm-entryuuid: 2f503c40-d351-102f-9182-fc47b6fc2d4d
+uniquemember: CN=CaseAdmins,cn=groups,o=sample
+uniquemember: CN=CaseWorkers,cn=groups,o=sample
+uniquemember: CN=CaseInitiators,cn=groups,o=sample
+uniquemember: CN=Accounting,cn=groups,o=sample
+uniquemember: CN=Agent,cn=groups,o=sample
+uniquemember: CN=Approver,cn=groups,o=sample
+uniquemember: CN=BPM Administrator,cn=groups,o=sample
+uniquemember: CN=BPM Designer,cn=groups,o=sample
+uniquemember: CN=BPM User,cn=groups,o=sample
+uniquemember: CN=Clerks,cn=groups,o=sample
+uniquemember: CN=Components,cn=groups,o=sample
+uniquemember: CN=Coordinators,cn=groups,o=sample
+uniquemember: CN=Customers,cn=groups,o=sample
+uniquemember: CN=Finance Admins,cn=groups,o=sample
+uniquemember: CN=Finance Clerks,cn=groups,o=sample
+uniquemember: CN=Finance Managers,cn=groups,o=sample
+uniquemember: CN=Finance Reviewers,cn=groups,o=sample
+uniquemember: CN=Legal,cn=groups,o=sample
+uniquemember: CN=Loan Business Analysts,cn=groups,o=filenet.ibm.com
+uniquemember: CN=Loan Business Users,cn=groups,o=sample
+uniquemember: CN=Loan Guests,cn=groups,o=sample
+uniquemember: CN=Loan Managers,cn=groups,o=sample
+uniquemember: CN=Loan Officers,cn=groups,o=sample
+uniquemember: CN=Loan Operations,cn=groups,o=sample
+uniquemember: CN=Loan Processors,cn=groups,o=sample
+uniquemember: CN=Loan System Administrators,cn=groups,o=filenet.ibm.com
+uniquemember: CN=Loan Underwriters,cn=groups,o=sample
+uniquemember: CN=Managers,cn=groups,o=sample
+uniquemember: CN=Operations,cn=groups,o=sample
+uniquemember: CN=ProductDev,cn=groups,o=sample
+uniquemember: CN=QualityAssurance,cn=groups,o=sample
+uniquemember: CN=Reviewer,cn=groups,o=sample
+uniquemember: CN=Supervisor,cn=groups,o=sample
+uniquemember: CN=SysAdmins,cn=groups,o=sample
+uniquemember: CN=joe,cn=users,o=sample
+uniquemember: CN=loanGuest,cn=users,o=sample
+uniquemember: CN=P8guest,cn=users,o=sample
+
+dn: CN=Accounting,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Accounting
+ibm-entryuuid: 2f503c40-d351-102f-9183-fc47b6fc2d4d
+uniquemember: CN=allison,cn=users,o=sample
+
+dn: CN=AEadmins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIwMjM1NC4wNjU3ODda
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: AEadmins
+ibm-entryuuid: 2f503c40-d351-102f-9184-fc47b6fc2d4d
+uniquemember: cn=P8Admin,o=sample
+uniquemember: CN=AEadmin,cn=users,o=sample
+
+dn: CN=CEadmins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIxMTMxNy42ODg2MDFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: CEadmins
+ibm-entryuuid: 2f503c40-d351-102f-9185-fc47b6fc2d4d
+uniquemember: cn=P8Admin,o=sample
+uniquemember: CN=CEadmin,cn=users,o=sample
+
+dn: CN=PEadmins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIxNDkyNS44Mjc1Nzda
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: PEadmins
+ibm-entryuuid: 2f503c40-d351-102f-9186-fc47b6fc2d4d
+uniquemember: cn=P8Admin,o=sample
+uniquemember: CN=PEadmin,cn=users,o=sample
+
+dn: CN=Agent,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Agent
+ibm-entryuuid: 2f503c40-d351-102f-9187-fc47b6fc2d4d
+uniquemember: CN=allen,cn=users,o=sample
+uniquemember: CN=amy,cn=users,o=sample
+
+dn: CN=Approver,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Approver
+ibm-entryuuid: 2f503c40-d351-102f-9188-fc47b6fc2d4d
+uniquemember: CN=ana,cn=users,o=sample
+
+dn: CN=BPM Administrator,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIxMTAxNS45ODA4Mzla
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: BPM Administrator
+ibm-entryuuid: 2f503c40-d351-102f-9189-fc47b6fc2d4d
+uniquemember: cn=P8Admin,o=sample
+
+dn: CN=BPM Designer,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: BPM Designer
+ibm-entryuuid: 2f503c40-d351-102f-918a-fc47b6fc2d4d
+uniquemember: CN=p8admin,cn=users,o=sample
+
+dn: CN=BPM User,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: BPM User
+ibm-entryuuid: 2f503c40-d351-102f-918b-fc47b6fc2d4d
+uniquemember: CN=p8admin,cn=users,o=sample
+
+dn: CN=Clerks,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Clerks
+ibm-entryuuid: 2f503c40-d351-102f-918c-fc47b6fc2d4d
+uniquemember: CN=clara,cn=users,o=sample
+uniquemember: CN=clark,cn=users,o=sample
+
+dn: CN=Components,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Components
+ibm-entryuuid: 2f503c40-d351-102f-918d-fc47b6fc2d4d
+uniquemember: CN=component,cn=users,o=sample
+
+dn: CN=Coordinators,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Coordinators
+ibm-entryuuid: 2f503c40-d351-102f-918e-fc47b6fc2d4d
+uniquemember: CN=connie,cn=users,o=sample
+uniquemember: CN=conrad,cn=users,o=sample
+
+dn: CN=Customers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Customers
+ibm-entryuuid: 2f503c40-d351-102f-918f-fc47b6fc2d4d
+uniquemember: CN=customer,cn=users,o=sample
+
+dn: CN=Finance Admins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Finance Admins
+ibm-entryuuid: 2f503c40-d351-102f-9190-fc47b6fc2d4d
+uniquemember: CN=adam,cn=users,o=sample
+uniquemember: CN=allison,cn=users,o=sample
+uniquemember: CN=steve,cn=users,o=sample
+
+dn: CN=Finance Clerks,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Finance Clerks
+ibm-entryuuid: 2f503c40-d351-102f-9191-fc47b6fc2d4d
+uniquemember: CN=carol,cn=users,o=sample
+uniquemember: CN=charles,cn=users,o=sample
+
+dn: CN=Finance Managers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Finance Managers
+ibm-entryuuid: 2f503c40-d351-102f-9192-fc47b6fc2d4d
+uniquemember: CN=mark,cn=users,o=sample
+uniquemember: CN=may,cn=users,o=sample
+
+dn: CN=Finance Reviewers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Finance Reviewers
+ibm-entryuuid: 2f503c40-d351-102f-9193-fc47b6fc2d4d
+uniquemember: CN=richard,cn=users,o=sample
+uniquemember: CN=roberta,cn=users,o=sample
+
+dn: CN=Legal,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Legal
+ibm-entryuuid: 2f503c40-d351-102f-9194-fc47b6fc2d4d
+uniquemember: CN=larry,cn=users,o=sample
+uniquemember: CN=linda,cn=users,o=sample
+
+dn: CN=Loan Business Analysts,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Business Analysts
+ibm-entryuuid: 2f503c40-d351-102f-9195-fc47b6fc2d4d
+uniquemember: CN=barb,cn=users,o=sample
+uniquemember: CN=barry,cn=users,o=sample
+
+dn: CN=Loan Business Users,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Business Users
+ibm-entryuuid: 2f503c40-d351-102f-9196-fc47b6fc2d4d
+uniquemember: CN=burke,cn=users,o=sample
+uniquemember: CN=burt,cn=users,o=sample
+
+dn: CN=Loan Guests,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Guests
+ibm-entryuuid: 2f503c40-d351-102f-9197-fc47b6fc2d4d
+uniquemember: CN=gabe,cn=users,o=sample
+uniquemember: CN=gail,cn=users,o=sample
+uniquemember: CN=loanGuest,cn=users,o=sample
+
+dn: CN=Loan Managers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Managers
+ibm-entryuuid: 2f503c40-d351-102f-9198-fc47b6fc2d4d
+uniquemember: CN=mabel,cn=users,o=sample
+uniquemember: CN=mac,cn=users,o=sample
+uniquemember: CN=mary,cn=users,o=sample
+uniquemember: CN=matt,cn=users,o=sample
+
+dn: CN=Loan Officers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Officers
+ibm-entryuuid: 2f503c40-d351-102f-9199-fc47b6fc2d4d
+uniquemember: CN=olivia,cn=users,o=sample
+uniquemember: CN=oscar,cn=users,o=sample
+
+dn: CN=Loan Operations,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Operations
+ibm-entryuuid: 2f503c40-d351-102f-919a-fc47b6fc2d4d
+uniquemember: CN=opal,cn=users,o=sample
+uniquemember: CN=ophelia,cn=users,o=sample
+
+dn: CN=Loan Processors,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Processors
+ibm-entryuuid: 2f503c40-d351-102f-919b-fc47b6fc2d4d
+uniquemember: CN=pat,cn=users,o=sample
+uniquemember: CN=peter,cn=users,o=sample
+
+dn: CN=Loan System Administrators,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan System Administrators
+ibm-entryuuid: 2f503c40-d351-102f-919c-fc47b6fc2d4d
+uniquemember: CN=sydney,cn=users,o=sample
+uniquemember: CN=sylvia,cn=users,o=sample
+
+dn: CN=Loan Underwriters,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Loan Underwriters
+ibm-entryuuid: 2f503c40-d351-102f-919d-fc47b6fc2d4d
+uniquemember: CN=uma,cn=users,o=sample
+uniquemember: CN=uri,cn=users,o=sample
+
+dn: CN=Managers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Managers
+ibm-entryuuid: 2f503c40-d351-102f-919e-fc47b6fc2d4d
+uniquemember: CN=manny,cn=users,o=sample
+uniquemember: CN=mary,cn=users,o=sample
+
+dn: CN=Operations,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Operations
+ibm-entryuuid: 2f503c40-d351-102f-919f-fc47b6fc2d4d
+uniquemember: CN=opal,cn=users,o=sample
+uniquemember: CN=oscar,cn=users,o=sample
+
+dn: CN=ProductDev,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: ProductDev
+ibm-entryuuid: 2f503c40-d351-102f-91a0-fc47b6fc2d4d
+uniquemember: CN=pamela,cn=users,o=sample
+uniquemember: CN=paul,cn=users,o=sample
+
+dn: CN=QualityAssurance,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: QualityAssurance
+ibm-entryuuid: 2f503c40-d351-102f-91a1-fc47b6fc2d4d
+uniquemember: CN=queenie,cn=users,o=sample
+uniquemember: CN=quincy,cn=users,o=sample
+
+dn: CN=Reviewer,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Reviewer
+ibm-entryuuid: 2f503c40-d351-102f-91a2-fc47b6fc2d4d
+uniquemember: CN=mark,cn=users,o=sample
+
+dn: CN=Supervisor,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Supervisor
+ibm-entryuuid: 2f503c40-d351-102f-91a3-fc47b6fc2d4d
+uniquemember: CN=sue,cn=users,o=sample
+
+dn: CN=SysAdmins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIxNTIxMi41MDY4NzBa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: SysAdmins
+ibm-entryuuid: 2f503c40-d351-102f-91a4-fc47b6fc2d4d
+uniquemember: cn=P8Admin,o=sample
+uniquemember: CN=CEadmin,cn=users,o=sample
+uniquemember: CN=scott,cn=users,o=sample
+uniquemember: CN=steve,cn=users,o=sample
+uniquemember: CN=AEadmin,cn=users,o=sample
+uniquemember: CN=PEadmin,cn=users,o=sample
+
+dn: CN=Admins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: Admins
+ibm-entryuuid: 2f503c40-d351-102f-91a5-fc47b6fc2d4d
+uniquemember: CN=Finance Admins,cn=groups,o=sample
+uniquemember: CN=Legal,cn=groups,o=sample
+
+dn: CN=adam,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: adam
+cn: adam
+uid: adam
+ibm-entryuuid: 2f503c40-d351-102f-91a6-fc47b6fc2d4d
+
+dn: CN=allen,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: allen
+cn: allen
+uid: allen
+ibm-entryuuid: 2f503c40-d351-102f-91a7-fc47b6fc2d4d
+
+dn: CN=allison,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: allison
+cn: allison
+uid: allison
+ibm-entryuuid: 2f503c40-d351-102f-91a8-fc47b6fc2d4d
+
+dn: CN=amy,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: amy
+cn: amy
+uid: amy
+ibm-entryuuid: 2f503c40-d351-102f-91a9-fc47b6fc2d4d
+
+dn: CN=ana,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: ana
+cn: ana
+uid: ana
+ibm-entryuuid: 2f503c40-d351-102f-91aa-fc47b6fc2d4d
+
+dn: CN=barb,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: barb
+cn: barb
+uid: barb
+ibm-entryuuid: 2f503c40-d351-102f-91ab-fc47b6fc2d4d
+
+dn: CN=barry,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: barry
+cn: barry
+uid: barry
+ibm-entryuuid: 2f503c40-d351-102f-91ac-fc47b6fc2d4d
+
+dn: CN=burke,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: burke
+cn: burke
+uid: burke
+ibm-entryuuid: 2f503c40-d351-102f-91ad-fc47b6fc2d4d
+
+dn: CN=burt,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: burt
+cn: burt
+uid: burt
+ibm-entryuuid: 2f503c40-d351-102f-91ae-fc47b6fc2d4d
+
+dn: CN=carol,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: carol
+cn: carol
+uid: carol
+ibm-entryuuid: 2f503c40-d351-102f-91af-fc47b6fc2d4d
+
+dn: CN=charles,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: charles
+cn: charles
+uid: charles
+ibm-entryuuid: 2f503c40-d351-102f-91b0-fc47b6fc2d4d
+
+dn: CN=clara,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: clara
+cn: clara
+uid: clara
+ibm-entryuuid: 2f503c40-d351-102f-91b1-fc47b6fc2d4d
+
+dn: CN=clark,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: clark
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: clark
+cn: clark
+ibm-entryuuid: 2f503c40-d351-102f-91b2-fc47b6fc2d4d
+
+dn: CN=component,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: component
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: component
+cn: component
+ibm-entryuuid: 2f503c40-d351-102f-91b3-fc47b6fc2d4d
+
+dn: CN=connie,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: connie
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: connie
+cn: connie
+ibm-entryuuid: 2f503c40-d351-102f-91b4-fc47b6fc2d4d
+
+dn: CN=conrad,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: conrad
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: conrad
+cn: conrad
+ibm-entryuuid: 2f503c40-d351-102f-91b5-fc47b6fc2d4d
+
+dn: CN=customer,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: customer
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: customer
+cn: customer
+ibm-entryuuid: 2f503c40-d351-102f-91b6-fc47b6fc2d4d
+
+dn: CN=gabe,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: gabe
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: gabe
+cn: gabe
+ibm-entryuuid: 2f503c40-d351-102f-91b7-fc47b6fc2d4d
+
+dn: CN=gail,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: gail
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: gail
+cn: gail
+ibm-entryuuid: 2f503c40-d351-102f-91b8-fc47b6fc2d4d
+
+dn: CN=joe,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: joe
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: joe
+cn: joe
+ibm-entryuuid: 2f503c40-d351-102f-91b9-fc47b6fc2d4d
+
+dn: CN=larry,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: larry
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: larry
+cn: larry
+ibm-entryuuid: 2f503c40-d351-102f-91ba-fc47b6fc2d4d
+
+dn: CN=linda,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: linda
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: linda
+cn: linda
+ibm-entryuuid: 2f503c40-d351-102f-91bb-fc47b6fc2d4d
+
+dn: CN=loanGuest,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: loanGuest
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: loanGuest
+cn: loanGuest
+ibm-entryuuid: 2f503c40-d351-102f-91bc-fc47b6fc2d4d
+
+dn: CN=mabel,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: mabel
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: mabel
+cn: mabel
+ibm-entryuuid: 2f503c40-d351-102f-91bd-fc47b6fc2d4d
+
+dn: CN=mac,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: mac
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: mac
+cn: mac
+ibm-entryuuid: 2f503c40-d351-102f-91be-fc47b6fc2d4d
+
+dn: CN=manny,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: manny
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: manny
+cn: manny
+cn: Managers
+ibm-entryuuid: 2f503c40-d351-102f-91bf-fc47b6fc2d4d
+
+dn: CN=mark,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: mark
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: mark
+cn: mark
+ibm-entryuuid: 2f503c40-d351-102f-91c0-fc47b6fc2d4d
+
+dn: CN=mary,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: mary
+cn: mary
+uid: mary
+ibm-entryuuid: 2f503c40-d351-102f-91c1-fc47b6fc2d4d
+
+dn: CN=matt,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: matt
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: matt
+cn: matt
+ibm-entryuuid: 2f503c40-d351-102f-91c2-fc47b6fc2d4d
+
+dn: CN=may,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: may
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: may
+cn: may
+ibm-entryuuid: 2f503c40-d351-102f-91c3-fc47b6fc2d4d
+
+dn: CN=olivia,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: olivia
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: olivia
+cn: olivia
+ibm-entryuuid: 2f503c40-d351-102f-91c4-fc47b6fc2d4d
+
+dn: CN=opal,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: opal
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: opal
+cn: opal
+ibm-entryuuid: 2f503c40-d351-102f-91c5-fc47b6fc2d4d
+
+dn: CN=ophelia,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: ophelia
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: ophelia
+cn: ophelia
+ibm-entryuuid: 2f503c40-d351-102f-91c6-fc47b6fc2d4d
+
+dn: CN=oscar,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: oscar
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: oscar
+cn: oscar
+ibm-entryuuid: 2f503c40-d351-102f-91c7-fc47b6fc2d4d
+
+dn: CN=P8guest,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: P8guest
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: P8guest
+cn: P8guest
+ibm-entryuuid: 2f503c40-d351-102f-91c8-fc47b6fc2d4d
+
+dn: CN=pamela,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: pamela
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: pamela
+cn: pamela
+ibm-entryuuid: 2f503c40-d351-102f-91c9-fc47b6fc2d4d
+
+dn: CN=pat,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: pat
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: pat
+cn: pat
+ibm-entryuuid: 2f503c40-d351-102f-91ca-fc47b6fc2d4d
+
+dn: CN=paul,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: paul
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: paul
+cn: paul
+ibm-entryuuid: 2f503c40-d351-102f-91cb-fc47b6fc2d4d
+
+dn: CN=peter,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: peter
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: peter
+cn: peter
+ibm-entryuuid: 2f503c40-d351-102f-91cc-fc47b6fc2d4d
+
+dn: CN=queenie,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: queenie
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: queenie
+cn: queenie
+ibm-entryuuid: 2f503c40-d351-102f-91cd-fc47b6fc2d4d
+
+dn: CN=quincy,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: quincy
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: quincy
+cn: quincy
+ibm-entryuuid: 2f503c40-d351-102f-91ce-fc47b6fc2d4d
+
+dn: CN=richard,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: richard
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: richard
+cn: richard
+ibm-entryuuid: 2f503c40-d351-102f-91cf-fc47b6fc2d4d
+
+dn: CN=roberta,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: roberta
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: roberta
+cn: roberta
+ibm-entryuuid: 2f503c40-d351-102f-91d0-fc47b6fc2d4d
+
+dn: CN=scott,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: scott
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: scott
+cn: scott
+ibm-entryuuid: 2f503c40-d351-102f-91d1-fc47b6fc2d4d
+
+dn: CN=steve,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: steve
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: steve
+cn: steve
+ibm-entryuuid: 2f503c40-d351-102f-91d2-fc47b6fc2d4d
+
+dn: CN=sue,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: sue
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: sue
+cn: sue
+ibm-entryuuid: 2f503c40-d351-102f-91d3-fc47b6fc2d4d
+
+dn: CN=sydney,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: sydney
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: sydney
+cn: sydney
+ibm-entryuuid: 2f503c40-d351-102f-91d4-fc47b6fc2d4d
+
+dn: CN=sylvia,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: sylvia
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: sylvia
+cn: sylvia
+ibm-entryuuid: 2f503c40-d351-102f-91d5-fc47b6fc2d4d
+
+dn: CN=uma,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: uma
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: uma
+cn: uma
+ibm-entryuuid: 2f503c40-d351-102f-91d6-fc47b6fc2d4d
+
+dn: CN=uri,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: uri
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: uri
+cn: uri
+ibm-entryuuid: 2f503c40-d351-102f-91d7-fc47b6fc2d4d
+
+dn: CN=AEadmin,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: AEadmin
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: AEadmin
+cn: AEadmin
+ibm-entryuuid: 2f503c40-d351-102f-91d8-fc47b6fc2d4d
+
+dn: CN=PEadmin,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: PEadmin
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: PEadmin
+cn: PEadmin
+ibm-entryuuid: 2f503c40-d351-102f-91d9-fc47b6fc2d4d
+
+dn: CN=CEadmin,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: CEadmin
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: CEadmin
+cn: CEadmin
+ibm-entryuuid: 2f503c40-d351-102f-91da-fc47b6fc2d4d
+
+dn: CN=cody,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+uid: cody
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: cody
+cn: cody
+ibm-entryuuid: 2f503c40-d351-102f-91db-fc47b6fc2d4d
+
+dn: CN=CaseAdmins,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzIxMTE0MS4yNTI2NTJa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: CaseAdmins
+ibm-entryuuid: 2f503c40-d351-102f-91dc-fc47b6fc2d4d
+uniquemember: cn=P8Admin,o=sample
+uniquemember: CN=sue,cn=users,o=sample
+
+dn: CN=CaseWorkers,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: CaseWorkers
+ibm-entryuuid: 2f503c40-d351-102f-91dd-fc47b6fc2d4d
+uniquemember: CN=sue,cn=users,o=sample
+uniquemember: CN=cody,cn=users,o=sample
+uniquemember: CN=fred,cn=users,o=sample
+uniquemember: CN=addington,cn=users,o=sample
+
+dn: CN=CaseInitiators,cn=groups,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: CaseInitiators
+ibm-entryuuid: 2f503c40-d351-102f-91de-fc47b6fc2d4d
+uniquemember: CN=sue,cn=users,o=sample
+uniquemember: CN=p8admin,cn=users,o=sample
+uniquemember: CN=cody,cn=users,o=sample
+
+dn: cn=addington,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: addington
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: addington
+cn: addington
+ibm-entryuuid: 2f503c40-d351-102f-91df-fc47b6fc2d4d
+
+dn: CN=carman,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: carman
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: carman
+cn: carman
+ibm-entryuuid: 2f503c40-d351-102f-91e0-fc47b6fc2d4d
+
+dn: CN=fred,cn=users,o=sample
+control: 1.3.18.0.2.10.19 false:: MIQAAADVMIQAAAAmCgEAMIQAAAAdBAxjcmVhdG9yc05hbWUxhAAAAAkEB0NOPVJPT1QwhAAAAD
+ gKAQAwhAAAAC8ED2NyZWF0ZVRpbWVzdGFtcDGEAAAAGAQWMjAxMTAyMjMwNDI5MDEuOTM3OTkxWj
+ CEAAAAJwoBADCEAAAAHgQNbW9kaWZpZXJzTmFtZTGEAAAACQQHQ049Uk9PVDCEAAAAOAoBADCEAA
+ AALwQPbW9kaWZ5VGltZXN0YW1wMYQAAAAYBBYyMDExMDIyMzA0MjkwMS45Mzc5OTFa
+userpassword: {AES256}QLkLbg6CdF6F9KoFmGMYKA==
+uid: fred
+objectclass: inetOrgPerson
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+sn: fred
+cn: fred
+ibm-entryuuid: 2f503c40-d351-102f-91e1-fc47b6fc2d4d

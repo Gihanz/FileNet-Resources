@@ -1,0 +1,85 @@
+#
+# Licensed Materials - Property of IBM
+# 5725A15, 5724R81
+# (c) Copyright IBM Corp. 2010, 2011  All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+#-------------------------------------------------------------------------------
+# Sample Silent Install Response File for Process Engine Setup on Windows
+#
+# To trigger a silent installation from the command line with this file, edit
+# this file as described below then run the installer with the following option:
+#     -f PE_silent_install.txt
+#-------------------------------------------------------------------------------
+
+
+#-------------------------------------------------------------------------------
+# Do not change the value of INSTALLER_UI
+#-------------------------------------------------------------------------------
+INSTALLER_UI=silent
+
+
+#-------------------------------------------------------------------------------
+# License Agreement
+#
+# To accept the terms in the license agreement, set "LICENSE_ACCEPTED=true".
+#-------------------------------------------------------------------------------
+LICENSE_ACCEPTED=true
+
+
+#-------------------------------------------------------------------------------
+# Specify the install location for Process Engine program files
+#-------------------------------------------------------------------------------
+USER_INSTALL_DIR=C:\\Program Files\\IBM\\FileNet\\ProcessEngine
+
+
+#-------------------------------------------------------------------------------
+# Specify the install location for Process Engine data files
+#-------------------------------------------------------------------------------
+USER_MAGIC_FOLDER_2=C:\\Program Files\\IBM\\FileNet\\ProcessEngine\\data
+
+
+#-------------------------------------------------------------------------------
+# Documentation Server URL
+#
+# Enter the Documentation Server URL, which is where the FileNet P8 Platform
+# Documentation was installed. Your entry must be in the following format:
+#
+# http://<docserver:port#>/<ecm_help>
+#
+# where:
+# docserver is the name of the Java web server.
+# port# is the port number.
+# ecm_help is the root folder of the documentation website. You can use multi-part
+# Root folders (e.g., /docs/ecm_help) if your application server supports them.
+#-------------------------------------------------------------------------------
+FN_DocumentationURL=http://publib.boulder.ibm.com/infocenter/p8docs/v5r1m0/
+
+#-------------------------------------------------------------------------------
+# Common Files Location
+# A common set of the configuration files can be shared with other P8 products.
+# Enter the location where these common files will be installed.
+#-------------------------------------------------------------------------------
+FN_P8TASKMAN_HOME=C:\\Program Files\\IBM\\FileNet\\Common Files
+
+
+#-------------------------------------------------------------------------------
+# Start BPM Software
+# All BPM software installed on the server will be stopped prior to installing
+# Process Engine.  This property specifies whether Process Engine and other BPM
+# software should be started after the installation is completed.  Set the
+# parameter to "true" to start the software or set it to "false" to not start
+# the software.
+#-------------------------------------------------------------------------------
+START_SOFTWARE=true
+
+
+
+
+#-------------------------------------------------------------------------------
+# Specify Reboot option
+# If the installer or uninstaller needs to reboot the system to complete the
+# install or uninstall, specify whether to reboot automatically 
+# (USER_REQUESTED_RESTART=YES) or later (USER_REQUESTED_RESTART=NO).
+#-------------------------------------------------------------------------------
+USER_REQUESTED_RESTART=YES

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="If you want to use IBM FileNet P8 workflows in IBM Content Navigator, you must format an existing isolated region on your Process Engine server for IBM Content Navigator. This task registers the application and creates the IBM Content Navigator step processor in the isolated region." displayName="Configure Process Engine for IBM Content Navigator" enabled="true" implementorid="one">
+<property name="CEHost">
+        <value>localhost</value>
+        <description>Enter the short name, long name, or IP address of the Content Engine server. You can point to a node in your deployment or to the web services load balancer. You cannot point to the deployment manager. The server can be local or remote. For a local server, enter the short name of the server. For a remote server, enter the long name or the IP address of the server.</description>
+        <displayName>Content Engine server host name</displayName>
+    </property>
+    <property name="CEPortNumber">
+        <value>9080</value>
+        <description>Specify the HTTP or HTTPS port number of your Content Engine deployment. You can get this information from your Content Engine administrator or from the web application server where Content Engine is deployed.</description>
+        <displayName>Port number</displayName>
+    </property>
+    <property name="CEPEUser">
+        <value>P8Admin</value>
+        <description>Enter the user name of an administrative user who is a Content Engine administrator and a Process Engine administrator. If the user does not have both privileges, this task will fail.</description>
+        <displayName>Administrator user name</displayName>
+    </property>
+    <property name="CEPEUserPassword">
+        <value>IBMFileNetP8</value>
+        <description>Enter the password for the specified administrator user name.</description>
+        <displayName>Password</displayName>
+    </property>
+    <property name="PEConnPoint">
+        <value>P8ConnPt1</value>
+        <description>Select a Process Engine connection point. The connection point that you select determines which workflows are available to the users who access this repository.
+
+When you run this task, the IBM Content Navigator step processors are added to this connection point. 
+
+Important: If no connection points are listed in the drop-down menu, you are not connected to the Content Engine server. Ensure that the Content Engine server is running and that the previous values that you specified are correct.</description>
+        <displayName>Process Engine connection point</displayName>
+    </property>
+</configuration>

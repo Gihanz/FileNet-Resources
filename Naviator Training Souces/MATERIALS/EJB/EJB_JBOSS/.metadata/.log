@@ -1,0 +1,549 @@
+!SESSION 2008-07-09 20:04:44.894 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.wst.server.core 4 0 2008-07-09 20:05:42.217
+!MESSAGE Error calling delegate setDefaults() ServerWorkingCopy 7_9_08_8_05_PM0
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.server.generic.core.internal.GenericServer.getServerDefinition(GenericServer.java:239)
+	at org.eclipse.jst.server.generic.core.internal.GenericServer.setDefaults(GenericServer.java:324)
+	at org.eclipse.wst.server.core.internal.ServerWorkingCopy.setDefaults(ServerWorkingCopy.java:608)
+	at org.eclipse.wst.server.core.internal.ServerType.createServer(ServerType.java:195)
+	at org.eclipse.wst.server.ui.internal.wizard.page.ServerCreationCache.getServer(ServerCreationCache.java:61)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite.loadServerImpl(NewManualServerComposite.java:233)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite.handleTypeSelection(NewManualServerComposite.java:402)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite$1.serverTypeSelected(NewManualServerComposite.java:142)
+	at org.eclipse.wst.server.ui.internal.viewers.ServerTypeComposite$2.selectionChanged(ServerTypeComposite.java:85)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:46)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:199)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:160)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2047)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1641)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1095)
+	at org.eclipse.wst.server.ui.internal.viewers.ServerTypeComposite.setVisible(ServerTypeComposite.java:97)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite.setVisible(NewManualServerComposite.java:439)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewServerComposite.createControl(NewServerComposite.java:234)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewServerComposite.<init>(NewServerComposite.java:122)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.NewServerWizardFragment.createComposite(NewServerWizardFragment.java:74)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.createControl(TaskWizardPage.java:43)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.createPageControls(TaskWizard.java:396)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:543)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1083)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.wst.server.ui.internal.actions.LaunchWizardAction.run(LaunchWizardAction.java:57)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2008-07-09 20:05:51.320
+!MESSAGE Error calling delegate setDefaults() ServerWorkingCopy 7_9_08_8_05_PM4
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.server.generic.core.internal.GenericServer.getServerDefinition(GenericServer.java:239)
+	at org.eclipse.jst.server.generic.core.internal.GenericServer.setDefaults(GenericServer.java:324)
+	at org.eclipse.wst.server.core.internal.ServerWorkingCopy.setDefaults(ServerWorkingCopy.java:608)
+	at org.eclipse.wst.server.core.internal.ServerType.createServer(ServerType.java:195)
+	at org.eclipse.wst.server.ui.internal.wizard.page.ServerCreationCache.getServer(ServerCreationCache.java:61)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite.loadServerImpl(NewManualServerComposite.java:233)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite.handleTypeSelection(NewManualServerComposite.java:402)
+	at org.eclipse.wst.server.ui.internal.wizard.page.NewManualServerComposite$1.serverTypeSelected(NewManualServerComposite.java:142)
+	at org.eclipse.wst.server.ui.internal.viewers.ServerTypeComposite$2.selectionChanged(ServerTypeComposite.java:85)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:46)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:199)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:160)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2047)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1138)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1168)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:227)
+	at org.eclipse.jface.util.OpenStrategy.access$3(OpenStrategy.java:221)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:388)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.wst.server.ui.internal.actions.LaunchWizardAction.run(LaunchWizardAction.java:57)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2008-07-09 20:07:16.793
+!MESSAGE Timeout waiting for JBOSS 5.0 to start. Server did not start after 50s. 
+
+!ENTRY org.eclipse.wst.server.core 4 0 2008-07-09 20:08:16.839
+!MESSAGE Timeout waiting for JBOSS 5.0 to start. Server did not start after 50s. 
+!SESSION 2008-07-09 20:15:29.501 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.wst.server.core 4 0 2008-07-09 20:18:50.250
+!MESSAGE Timeout waiting for JBOSS 5.0 to start. Server did not start after 50s. 
+!SESSION 2008-09-10 11:41:14.813 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_07
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\000V\00ECLIPSE_WORKSPACE\EJB_JBOSS
+
+!ENTRY org.eclipse.core.resources 2 10035 2008-09-10 11:41:16.876
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2008-12-09 09:34:41.766 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_07
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.jobs 4 2 2008-12-09 19:00:58.709
+!MESSAGE An internal error occurred during: "Open Notification Job".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:631)
+	at org.eclipse.mylyn.internal.tasks.ui.TaskListNotificationManager$1.run(TaskListNotificationManager.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2008-12-31 11:46:06.451 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_10
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 11:46:43.645
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SESSION 2008-12-31 13:51:32.423 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_10
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\000V\00ECLIPSE_WORKSPACE\EJB_JBOSS
+
+!ENTRY org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2008-12-31 13:51:34.997
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.tm.terminal', id='org.eclipse.tm.terminal.command1'
+!SESSION 2010-02-11 11:52:47.640 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product -data D:\000V\00ECLIPSE_WORKSPACE\EJB_JBOSS -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_critical in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_warning in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_started in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_running in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_succeeded in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_failed in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.734
+!MESSAGE NLS unused message: OperationCommand_status_terminated in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_status_unknown in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_unknown_action in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_execute in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_create in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_debug in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_deploy in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_drop in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_edit in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_export in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_extract in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_import in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_load in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_before_run in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_after_run in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_run in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_validate in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: OperationCommand_action_browse in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_operation_success in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_action_type in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_profile_name in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_database in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_time in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_update_count_complex in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: StatusTextProvider_update_count_single in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.750
+!MESSAGE NLS unused message: Parameter_constructor_error in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.osgi 2 1 2010-02-11 12:13:02.765
+!MESSAGE NLS unused message: StatusLogger_no_bundle in: org.eclipse.datatools.sqltools.result.ui.PluginResources
+
+!ENTRY org.eclipse.ui 4 0 2010-02-11 12:22:09.015
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3855)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3476)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.core.DBHelper.getDefaultSchemaName(DBHelper.java:284)
+	at org.eclipse.datatools.sqltools.sqleditor.internal.sql.SQLParserCompletionEngine.getProposals(SQLParserCompletionEngine.java:218)
+	at org.eclipse.datatools.sqltools.sqleditor.internal.sql.SQLParserCompletionEngine.computeProposals(SQLParserCompletionEngine.java:198)
+	at org.eclipse.datatools.sqltools.sqleditor.internal.sql.SQLCompletionProcessor.computeCompletionProposals(SQLCompletionProcessor.java:95)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1832)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:556)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:553)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:488)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:482)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 22 more
+!SESSION 2010-02-12 09:49:58.859 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.ui.workbench 2 0 2010-02-12 11:18:04.781
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2010-02-12 11:18:04.781
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@26344d),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2cd5a3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@7af988)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@9ad840)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@26344d),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2cd5a3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@7af988)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@9ad840)),sourcePriority=1064961)
+!SESSION 2010-03-17 15:22:58.296 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.jface 2 0 2010-03-17 15:24:40.859
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2010-03-17 15:24:40.859
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@1cae761)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2010-03-18 11:52:43.453 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product -data D:\000V\00ECLIPSE_WORKSPACE\EJB_JBOSS -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.jface 2 0 2010-03-18 11:52:53.109
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2010-03-18 11:52:53.109
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@139f0bb)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2010-03-18 16:44:35.875 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.jface 2 0 2010-03-18 16:45:31.343
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2010-03-18 16:45:31.343
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@ee9368)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2010-03-19 10:30:28.312 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.jface 2 0 2010-03-19 10:31:09.328
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2010-03-19 10:31:09.328
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@d8e0dc)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2010-03-19 12:39:28.171 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.reporting.product -product org.eclipse.epp.package.reporting.product -product org.eclipse.epp.package.reporting.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.reporting.product -product org.eclipse.epp.package.reporting.product -data D:\000V\00ECLIPSE_WORKSPACE\EJB_JBOSS -product org.eclipse.epp.package.reporting.product
+
+!ENTRY org.eclipse.jface 2 0 2010-03-19 12:39:37.437
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2010-03-19 12:39:37.437
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@70cf21)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2010-03-19 13:42:17.843
+!MESSAGE Missing or failed server extension: RuntimeClasspathProviderWrapper[org.eclipse.jst.server.generic.runtimeTarget]. Enable tracing for more information
+!SESSION 2010-04-30 09:35:03.687 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.core 4 0 2010-04-30 09:35:58.281
+!MESSAGE Missing or failed server extension: RuntimeClasspathProviderWrapper[org.eclipse.jst.server.generic.runtimeTarget]. Enable tracing for more information

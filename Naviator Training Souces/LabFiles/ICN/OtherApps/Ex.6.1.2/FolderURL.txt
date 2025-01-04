@@ -1,0 +1,2 @@
+http://ecmedu01:9080/navigator/bookmark.jsp?desktop=SampleDesktop&feature=browsePane&docid= 	
+DCF5DD43-3ECC-4435-8A58-28C21A9F4428

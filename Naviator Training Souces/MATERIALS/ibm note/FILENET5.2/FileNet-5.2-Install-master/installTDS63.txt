@@ -1,0 +1,40 @@
+#
+# Licensed Materials - Property of IBM
+# 5725A15, 5724R81
+# (c) Copyright IBM Corp. 2010, 2011  All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+#Sample response file for the Server/Client package
+#(Lines beginning with # are comments)
+# Be sure there are no blank lines in this file! 
+# All lines that are not comments must be present; they cannot be commented out.
+# Where indicated, values can be changed.
+#
+# The following 3 lines MUST be present, and NOT modified
+-silent
+-G createDirectoryResponse="yes"
+-G replaceExistingResponse="yesToAll"
+#
+# install destination - this can be modified to install location 
+-P product.installLocation="C:\Program Files\IBM\ldap\V6.3"
+#
+# Select the features to install. Note: if the server is selected, the 
+# Client, JavaClient, and BaseServer will automatically be installed.  If the
+# ProxyServer is selected, the JavaClient, Client and BaseServer will automoatically be installed.
+# The coreqs will also be installed. For the server to be installed make
+# sure that DB2 is already installed or that the active property is set to true here in the file.
+# To deselect a feature, set the field to false.
+-P DB2Feature.active=true
+-P BaseServerFeature.active=true
+-P ServerFeature.active=true
+-P ProxyServerFeature.active=false
+-P JavaClientFeature.active=true
+-P ClientFeature.active=true
+-P WebadminFeature.active=true
+-P GSKITFeature.active=false
+-P AppSrvFeature.active=false
+# Replace the following with a valid Userid for the Db2 administrator. Used only if DB2 is being installed.
+-W LdapInit.silentDB2Admin="P8Admin"
+# Replace the following with a valid password for the Db2 administrator. Used only if DB2 is being installed.
+-W LdapInit.silentDB2AdminPW="IBMFileNetP8"
+# This must be last line. Be sure no blank lines or carriage controls follow!

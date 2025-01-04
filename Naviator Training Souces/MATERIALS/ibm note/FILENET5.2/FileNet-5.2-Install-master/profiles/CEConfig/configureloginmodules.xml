@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="Enter the login modules authentication settings for Content Platform Engine." displayName="Configure Login Modules" enabled="true" implementorid="">
+<property name="Script">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\tools\configure\scripts\configureWSloginmodules.tcl</value>
+        <description>Enter the script to use to accomplish a particular configuration task.</description>
+        <displayName>Script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp</value>
+        <description>The absolute  path to a temporary directory to be used by the configuration task, for example, c:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>

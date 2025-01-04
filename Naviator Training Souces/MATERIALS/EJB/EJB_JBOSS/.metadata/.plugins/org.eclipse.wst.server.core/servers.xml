@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" hostname="localhost" id="JBoss v4.2 at localhost" name="Jboss Portel Server" runtime-id="JBoss v4.2" server-type="org.eclipse.jst.server.generic.jboss42" server-type-id="org.eclipse.jst.server.generic.jboss42" start-timeout="400" stop-timeout="30" timestamp="1">
+    <map jndiPort="1099" key="generic_server_instance_properties" port="8080" serverAddress="127.0.0.1" serverConfig="default"/>
+  </server>
+</servers>

@@ -1,0 +1,35 @@
+[{
+	"symbolicName": "product_id",
+	"initialValue": "P8294"
+},
+{
+	"symbolicName": "product_type",
+	"choiceList": {
+		"displayName": "product_type",
+		"choices": [{
+			"displayName": "Hardware",
+			"value": "Hardware"
+		},
+		{
+			"displayName": "Software",
+			"value": "Software"
+		},
+		{
+			"displayName": "Services",
+			"value": "Services"
+		},
+		{
+			"displayName": "Accessories",
+			"value": "Accessories"
+		},
+		{
+			"displayName": "Solution Bundles",
+			"value": "Solution Bundles"
+		 }]
+	},
+
+	"hasDependentProperties": false
+	
+}
+]
+

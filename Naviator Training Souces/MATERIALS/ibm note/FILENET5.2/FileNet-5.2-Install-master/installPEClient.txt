@@ -1,0 +1,175 @@
+#
+# Licensed Materials - Property of IBM
+# 5725A15, 5724R81
+# (c) Copyright IBM Corp. 2010, 2011  All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+#-------------------------------------------------------------------------------
+# Silent Install Response File for Process Engine Client Installer on Windows
+#
+# To trigger a silent installation from the command line with this file, edit
+# this file as described below then run the installer with the following option:
+#     -f peclient_silent_install.txt
+# Note that special characters must be escaped, so \\ represents a backslash,
+# \" represents a double quote, and \' represents a single quote.
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Do not change the value of INSTALLER_UI
+#-------------------------------------------------------------------------------
+INSTALLER_UI=silent
+
+#-------------------------------------------------------------------------------
+# License Agreement
+#
+# To accept the terms in the license agreement, set "LICENSE_ACCEPTED=true".
+#-------------------------------------------------------------------------------
+LICENSE_ACCEPTED=true
+
+#-------------------------------------------------------------------------------
+# Enter the location where the PE Client Installer will create its log files.
+#-------------------------------------------------------------------------------
+USER_INSTALL_DIR=C:\\Program Files\\IBM\\FileNet\\BPMClient
+
+#-------------------------------------------------------------------------------
+# Select Products To Be Updated
+#
+# The options below specify whether the Process Engine client modules should
+# be updated for IBM FileNet P8 products.  Each option corresponds to a product:
+#
+#     Option Name     Product
+#     ------------    --------------------
+#     UPDATE_AE       Application Engine
+#     UPDATE_CA       Case Analyzer
+#     UPDATE_CE       Content Engine
+#     UPDATE_CM       Case Manager
+#     UPDATE_PS       Process Simulator
+#     UPDATE_RM       Records Manager
+#     UPDATE_XT       Workplace XT
+#     UPDATE_IDMWS    IM Web Workflow
+#     UPDATE_IDMOC    IM Open Client
+#     UPDATE_IDMSA    IM Standalone
+#     UPDATE_CM8      DB2 Content Manager
+#     UPDATE_RCF      Rules Connectivity Framework
+#     UPDATE_OTHER    Other
+#
+# Set the option to "1" to update the modules for a product or to "0" to not
+# update the modules.  Note that the installer will update the PE client modules
+# for these products only if that product is already installed on the machine
+# and the corresponding option below is set to "1".
+#-------------------------------------------------------------------------------
+UPDATE_AE=0
+UPDATE_CA=0
+UPDATE_CE=1
+UPDATE_CM=0
+UPDATE_PS=0
+UPDATE_RM=0
+UPDATE_XT=1
+UPDATE_CM8=0
+UPDATE_IDMWS=0
+UPDATE_IDMOC=0
+UPDATE_IDMSA=0
+UPDATE_RCF=0
+UPDATE_OTHER=0
+
+#-------------------------------------------------------------------------------
+# IM Standalone Destination
+# If UPDATE_IDMSA is set to "1" above, you must specify the directory where the
+# PE client modules for IM Standalone will be installed.
+#-------------------------------------------------------------------------------
+IDMSA_LOCATION=C:\\Program Files\\IBM\\FileNet\\BPMClient\\IM-Standalone
+
+#-------------------------------------------------------------------------------
+# Other Destination
+# If UPDATE_OTHER is set to "1" above, you must specify the directory where the
+# PE client modules will be installed.
+#-------------------------------------------------------------------------------
+OTHER_LOCATION=C:\\Program Files\\IBM\\FileNet\\BPMClient\\files
+
+#-------------------------------------------------------------------------------
+# Product Installation Locations
+# Normally you should not need to modify this section, because the PE Client 
+# Installer automatically determines where your selected products are installed.
+# In rare situations, the PE Client Installer cannot detect that a product is
+# installed.  If you cannot correct this situation, you may specify the product
+# installation location below.  You will need to remove the comment characters
+# (##) in front of the parameter.
+#-------------------------------------------------------------------------------
+## AE_LOCATION=C:\\Program Files\\IBM\\FileNet\\AE
+## CA_LOCATION=C:\\Program Files\\IBM\\CaseAnalyzer
+## CE_LOCATION=C:\\Program Files\\IBM\\FileNet\\ContentEngine
+## CM_LOCATION=C:\\Program Files\\IBM\\CaseManagement
+## PS_LOCATION=C:\\Program Files\\IBM\\FileNet\\ProcessSimulator
+## RM_LOCATION=C:\\Program Files\\IBM\\FileNet\\RM
+## XT_LOCATION=C:\\Program Files\\IBM\\FileNet\\WebClient
+## CM8_LOCATION=C:\\Program Files\\IBM\\db2cmv8
+## IDMWS_LOCATION=C:\\Program Files\\IBM\\FileNet\\IDMWebService
+## IDMOC_LOCATION=C:\\Program Files\\IBM\\FileNet\\OpenClient
+## RCF_LOCATION=C:\\Program Files\\IBM\\FileNet\\RulesConnectivityFramework
+
+#-------------------------------------------------------------------------------
+# Component Manager Content Engine URL
+# For installs on AE and Workplace XT machines (when UPDATE_AE or UPDATE_XT is
+# set to "1" above), specify the URL that the Component Manager must use to 
+# connect to the Content Engine using Web Services transport.
+#-------------------------------------------------------------------------------
+ComponentManagerCEURL=http://localhost:9080/wsi/FNCEWS40MTOM/
+
+#-------------------------------------------------------------------------------
+# Base Documentation URL
+# For installs on AE, RCF, or Workplace XT machines (when UPDATE_AE, UPDATE_RCF,
+# or UPDATE_XT) is set to "1" above), use the default base URL to access help on
+# ibm.com, or specify the base URL for an installed information center, as follows:
+#
+#      http://server-name[:port]/application-name/
+#
+# For example: http://server:8062/p8docs/
+#-------------------------------------------------------------------------------
+FN_DocumentationURL=http://publib.boulder.ibm.com/infocenter/p8docs/v5r1m0/
+
+#-------------------------------------------------------------------------------
+# Common Files Location
+# A common set of the configuration files can be shared with other P8 products.
+# For installs on AE, RCF, or Workplace XT machines (when UPDATE_AE, UPDATE_RCF,
+# or UPDATE_XT is set to "1" above), enter the location where these common files
+# will be installed.
+#-------------------------------------------------------------------------------
+FN_P8TASKMAN_HOME=C:\\Program Files\\IBM\\FileNet\\CommonFiles
+
+#-------------------------------------------------------------------------------
+# Add REST Service
+# For installs on Workplace XT machines (when UPDATE_XT is set to "1" above),
+# specify whether the installer should add the REST service.  Valid values are 
+# "1" for true or "0" for false.  You should specify "1" (true) if you intend
+# to run the ECM Widgets component or if you want to use the Process Engine REST
+# services directly.
+#-------------------------------------------------------------------------------
+AddRESTService=0
+
+#-------------------------------------------------------------------------------
+# AE Proxy Base URL
+# If UPDATE_IDMWS, UPDATE_IDMOC, or UPDATE_IDMSA is set to "1" above, you must 
+# specify the URL for the AE proxy base. The AE proxy server will serve as a
+# gateway for use by the BPM applets.
+#-------------------------------------------------------------------------------
+AEProxyBaseURL=http://host:port/Workplace
+
+#-------------------------------------------------------------------------------
+# Create Deployment File
+# The Process Engine Client Installer can automatically create the deployment 
+# file for Application Engine, Case Manager, Records Manager, and Workplace XT.
+# If you have additional configuration to perform on these products, you can
+# skip this step and create the deployment file later.  Set the parameter below
+# to "1" (true) to create the deployment file during the install, or set it to
+# "0" (false) to skip this step.
+#-------------------------------------------------------------------------------
+CREATE_DEPLOY_FILE=1
+
+#-------------------------------------------------------------------------------
+# Start BPM Software
+# All BPM software installed on the server will be stopped prior to installing
+# the BPM Client product.  This property specifies whether other BPM software
+# should be started after the installation is completed.  Set the parameter to
+# "true" to start the software or set it to "false" to not start the software.
+#-------------------------------------------------------------------------------
+START_SOFTWARE=true

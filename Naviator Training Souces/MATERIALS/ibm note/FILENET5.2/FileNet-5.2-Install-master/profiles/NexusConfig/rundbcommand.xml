@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="IBM Content Navigator stores configuration information and user preferences in a database. This task updates the script that you use to configure and populate the database for IBM Content Navigator. You can also configure this task to run the script for you. &#10;&#10;Important: if you do not run the script from the IBM Content Navigator Configuration and Deployment Tool, you must manually run the updated script on your database after you deploy the web application. &#10;&#10;You must have an existing database and a user with appropriate credentials to run the script an your database before you run this task." displayName="Update and Run the Database Script for Your Environment" enabled="true" implementorid="db2">
+<property name="DatabaseServerName">
+        <value>localhost</value>
+        <description>Enter the short name, long name, or the IP address of the server where the database software is installed. </description>
+        <displayName>Database host name</displayName>
+    </property>
+    <property name="DatabasePortNumber">
+        <value>50000</value>
+        <description>Enter the port number that is used by the database instance where you will create the IBM Content Navigator configuration table. The default DB2 port is 50000.</description>
+        <displayName>Database port</displayName>
+    </property>
+    <property name="DatabaseName">
+        <value>NEXUSDB</value>
+        <description>Specify the name of the database instance where you want to create the IBM Content Navigator configuration table database. You must specify an existing database.</description>
+        <displayName>Database name</displayName>
+    </property>
+    <property name="DatabaseUsername">
+        <value>nexusdbuser</value>
+        <description>Enter the name of the database user that the IBM Content Navigator data source will use to connect to the database. 
+
+The user must have INSERT, UPDATE, DELETE, and SELECT authority on the IBM Content Navigator configuration table.</description>
+        <displayName>Database user name</displayName>
+    </property>
+    <property name="DatabasePassword">
+        <value>IBMFileNetP8</value>
+        <description>Enter the password of the specified database user. </description>
+        <displayName>Database user password</displayName>
+    </property>
+    <property name="ECMClientAdminName">
+        <value>P8Admin</value>
+        <description>Specify the name of that you want to use as the IBM Content Navigator administrator.
+
+Important: This user must be an existing web application server user name or LDAP user name.</description>
+        <displayName>IBM Content Navigator administrator</displayName>
+    </property>
+    <property name="DatabaseAdministrator">
+        <value>P8Admin</value>
+        <description>Specify the name of the database administrator.</description>
+        <displayName>Database administrator</displayName>
+    </property>
+    <property name="DatabaseSchema">
+        <value>NEXUS</value>
+        <description>Specify the name that you want to use for the schema when you create the IBM Content Navigator configuration table. See your database documentation for naming restrictions. </description>
+        <displayName>Schema name</displayName>
+    </property>
+    <property name="TableSpaceName">
+        <value>NEXUSTS</value>
+        <description>Specify the name of the table space that you want to create for the IBM Content Navigator configuration data.</description>
+        <displayName>Table space name</displayName>
+    </property>
+    <property name="jdbcDir">
+        <value>C:\Program Files\IBM\tdsV6.3db2\java</value>
+        <description>Specify the directory where you installed the JDBC driver files on your IBM Content Navigator server. 
+
+If you plan to deploy IBM Content Navigator in a highly available cluster, you must copy the driver to the same directory on each node in your cluster.</description>
+        <displayName>JDBC directory</displayName>
+    </property>
+    <property name="RunDBFill">
+        <value>false</value>
+        <description>Select this option to run the db script to fill the admin database</description>
+        <displayName>Run the script to build and populate your database</displayName>
+    </property>
+</configuration>

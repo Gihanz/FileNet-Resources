@@ -1,0 +1,1 @@
+http://ecmedu01:9080/navigator/?desktop=ExternalApp&feature=workPane&sideChrome=0

@@ -1,0 +1,26 @@
+{
+    "Name":"",
+    "Description":"",
+    "Locale":"",
+    "Version":"5.2",
+    "Categories":[
+        {
+            "id":"",
+            "title":""
+        }
+    ],
+    "Widgets":[
+		{
+	       "id":"",
+	       "title":"",
+	       "category":"",
+	       "description":"",
+	       "definition":"",
+           "preview": "",
+           "icon": "",
+	       "runtimeClassName":"",
+	       "help": "acmwrh126.htm",
+	       "previewThumbnail":""
+		}
+	]
+}

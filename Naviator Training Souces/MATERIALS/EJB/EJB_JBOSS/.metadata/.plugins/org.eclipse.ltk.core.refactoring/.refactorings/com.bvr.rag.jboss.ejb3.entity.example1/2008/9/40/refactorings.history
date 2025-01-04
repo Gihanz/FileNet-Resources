@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;com.bvr.rag.jboss.ejb3.composite.pk&apos;&#x0D;&#x0A;- Original project: &apos;com.bvr.rag.jboss.ejb3.entity.example1&apos;&#x0D;&#x0A;- Destination element: &apos;com.bvr.rag.jboss.ejb3.composite.pk&apos;&#x0D;&#x0A;- Original element: &apos;META-INF&apos;" description="Copy folder" destination="=com.bvr.rag.jboss.ejb3.composite.pk" element1="src/META-INF" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" log="src/META-INF&#x09;true&#x09;false" policy="org.eclipse.jdt.ui.copyResources" stamp="1222773096650" units="0" version="1.0"/>
+</session>

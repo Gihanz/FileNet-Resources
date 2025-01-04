@@ -1,0 +1,30 @@
+3/5/2014 12:59:45 AM,Export Admin,Information,BeginTrans,0,Begin exporting objects.
+3/5/2014 1:00:05 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Marketing\Set1_CEExport_Group1_1.xml
+
+3/5/2014 1:00:05 AM,Export Admin,Information,Exported ,2,CVLs
+3/5/2014 1:00:05 AM,Export Admin,Information,Exported ,70,Prop templates
+3/5/2014 1:00:05 AM,Export Admin,Information,Exported ,28,Class defs
+3/5/2014 1:00:05 AM,Export Admin,Information,Exported ,0,LF policies
+3/5/2014 1:00:05 AM,Export Admin,Information,Exported ,0,LF actions
+3/5/2014 1:00:06 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Marketing\Set1_CEExport_Group2_1.xml
+
+3/5/2014 1:00:06 AM,Export Admin,Information,Exported ,6,Folders
+3/5/2014 1:00:06 AM,Export Admin,Information,Queued ,0,Documents
+3/5/2014 1:00:09 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Marketing\Set1_CEExport_Group3_1.xml
+
+3/5/2014 1:00:09 AM,Export Admin,Information,Exported ,5,Documents
+3/5/2014 1:00:09 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Marketing\Set1_CEExport_Group4_1.xml
+
+3/5/2014 1:00:09 AM,Export Admin,Information,Exported ,5,RCRs
+3/5/2014 1:00:11 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Marketing\Set1_CEExport_Group1_2.xml
+
+3/5/2014 1:00:11 AM,Export Admin,Information,Exported ,0,LifecycleActions
+3/5/2014 1:00:11 AM,Export Admin,Information,Exported ,0,LifecyclePolicies
+3/5/2014 1:00:11 AM,Export Admin,Information,Exported ,0,CVLs
+3/5/2014 1:00:11 AM,Export Admin,Information,Exported ,0,Global Prop Defs
+3/5/2014 1:00:11 AM,Export Admin,Information,Exported ,28,Class Defs
+3/5/2014 1:00:12 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Marketing\Set1_CEExport_Group7_1.xml
+
+3/5/2014 1:00:12 AM,Export Admin,Information,Exported ,3,Events/Others
+3/5/2014 1:00:12 AM,Export Admin,Information,EndTrans,0,148 object(s) exported 0 failed.
+

@@ -1,0 +1,52 @@
+The following user credentials are configured automatically by the IBM FileNet Composite Platform Installation Tool. 
+All credentials are case sensitive.
+
+Operating system administrator
+	User name: administrator
+	password: passw0rd
+
+Tivoli Directory Server Administration Console - http://localhost:9080/IDSWebApp
+	User name: superadmin
+	Password: secret
+After a Directory Server has been added, you can use the following credential to log in
+and manage users and groups. - http://localhost:9080/IDSWebApp
+	User DN: cn=root
+	Password: IBMFileNetP8
+	
+
+Content Platform Engine administrator - http://localhost:9080/FileNet/Engine 
+                               http://localhost:9080/P8CE/Health
+	User name: P8Admin
+	Password: IBMFileNetP8
+
+Process Engine administrator - http://localhost:9080/peengine/IOR/ping
+	User name: P8Admin
+	Password: IBMFileNetP8
+
+WebSphere Application Server administrator - https://localhost:9043/ibm/console/
+	User name: P8Admin
+	Password: IBMFileNetP8
+
+Workplace XT administrator - http://localhost:9080/WorkplaceXT
+	User name: P8Admin
+	Password: IBMFileNetP8
+
+DB2 administrator  
+	User name (Unix): dsrdbm01
+	User name (Windows):  P8Admin
+	Password: IBMFileNetP8
+	
+GCD administrator
+	User name (Unix): gcddbusr
+	User name (Windows): gcddbuser
+	Password: IBMFileNetP8
+
+Object store administrator
+	User name: osdbuser
+	Password: IBMFileNetP8
+
+
+IBM Content Navigator administrator - http://localhost:9080/navigator
+	User name (Unix): P8Admin
+	User name (Windows): P8Admin
+	Password: IBMFileNetP8

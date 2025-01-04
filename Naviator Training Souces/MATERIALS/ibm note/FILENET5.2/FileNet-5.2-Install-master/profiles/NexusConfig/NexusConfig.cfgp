@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><profile name="NexusConfig" typeid="com.ibm.ecm.product.nexus.profile.configurewebsphereapplicationserver">
+<tasks>
+        <task symbolicname="downloadcejarstask" typeid="com.ibm.ecm.product.nexus.task.downloadcejarstask"/>
+        <task symbolicname="configurepe" typeid="com.ibm.ecm.product.nexus.task.configurepe"/>
+        <task symbolicname="configureldap" typeid="com.ibm.ecm.product.nexus.task.configureldap"/>
+        <task symbolicname="importltpakey" typeid="com.ibm.ecm.product.nexus.task.importltpakey"/>
+        <task symbolicname="configurejdbcjarsecm" typeid="com.ibm.ecm.product.nexus.task.configurejdbcjarsecm"/>
+        <task symbolicname="configurejdbcecm" typeid="com.ibm.ecm.product.nexus.task.configurejdbcecm"/>
+        <task symbolicname="rundbcommand" typeid="com.ibm.ecm.product.nexus.task.rundbcommand"/>
+        <task symbolicname="configureloginmodules" typeid="com.ibm.ecm.product.nexus.task.configureloginmodules"/>
+        <task symbolicname="rebuildear" typeid="com.ibm.ecm.product.nexus.task.rebuildear"/>
+        <task symbolicname="deployapplication" typeid="com.ibm.ecm.product.nexus.task.deployapplication"/>
+    </tasks>
+</profile>

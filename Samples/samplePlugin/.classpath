@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/od/ODApi.jar"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/taskManager/j2ee.jar"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/p8/Jace.jar"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/cm/cmbicmsdk81.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://publib.boulder.ibm.com/infocenter/cmgmt/v8r4m0/topic/com.ibm.java.doc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/chemistry-opencmis-client-api-0.11.0.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/chemistry-opencmis-client-bindings-0.11.0.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/chemistry-opencmis-client-impl-0.11.0.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/chemistry-opencmis-commons-api-0.11.0.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/chemistry-opencmis-commons-impl-0.11.0.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/navigator/navigatorAPI.jar" sourcepath="/navigator/src/common"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/taskManager/taskManagerAPI.jar" sourcepath="/taskManagerAPI"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/taskManager/taskServiceClient.jar" sourcepath="/taskServiceClient"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/wink-1.2.1-incubating.jar"/>
+	<classpathentry kind="lib" path="/navigator/build/lib/taskManager/com.ibm.ws.prereq.commonj-twm.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="/navigator/WebContent/WEB-INF/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

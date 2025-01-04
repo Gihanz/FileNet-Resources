@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="Enter the settings for deploying the Content Engine application to the application server." displayName="Deploy Application" enabled="true" implementorid="standard">
+<property name="BootstrappedContentEngineEar">
+        <value>C:\Program Files\IBM\ldap\V6.3\idstools\IDSWebApp.war</value>
+        <description>Enter the absolute path to the directory where you want to place the modified Content Engine EAR file after the bootstrap properties have been added to the EAR file. The default path is C:\CPITinstaller\install-scripts\profiles\XTDeployNew\ear\Engine-ws.ear.</description>
+        <displayName>Bootstrapped EAR file</displayName>
+    </property>
+    <property name="ApplicationName">
+        <value>IDSWebApp</value>
+        <description>Enter the Content Engine application name as it will appear in the application server, for example in an administration console. The application name is subject to application server naming constraints. For WebSphere Application Server, each application in a cell must have a unique name. The default name is FileNetEngine.</description>
+        <displayName>Content Engine application name</displayName>
+    </property>
+    <property name="ApplicationServerNode">
+        <value>P8Node01</value>
+        <description>Enter the name of the WebSphere Application Server node where Content Engine is deployed. The name is case-sensitive.</description>
+        <displayName>Application server node</displayName>
+    </property>
+    <property name="ApplicationServerName">
+        <value>server1</value>
+        <description>Enter the name of the WebSphere Application Server server where Content Engine is deployed. The name is case-sensitive.</description>
+        <displayName>Application server name</displayName>
+    </property>
+    <property name="ApplicationServerVirtualHost">
+        <value>default_host</value>
+        <description>Enter the name of the WebSphere Application Server virtual host where Content Engine is deployed. The name is case-sensitive.</description>
+        <displayName>Application server virtual host</displayName>
+    </property>
+    <property name="Script">
+        <value>$INSTALLER_SCRIPTS_FOLDER$\profiles\TDSDeploy\deployWSApplication.tcl</value>
+        <description>Enter the script to use to accomplish a particular configuration task.</description>
+        <displayName>Script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp</value>
+        <description>Enter the absolute path to a temporary directory to be used by the configuration task, for example, c:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>

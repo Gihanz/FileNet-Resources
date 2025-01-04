@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><profile name="XTDeployNew" typeid="com.ibm.ecm.product.ce.profile.configurewebsphereapplicationserver">
+<tasks>
+        <task symbolicname="deployapplication" typeid="com.ibm.ecm.product.ce.task.deployapplication"/>
+    </tasks>
+</profile>

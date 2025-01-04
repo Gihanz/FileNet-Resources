@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration displayName="WebSphere Application Server" enabled="true" implementorid="websphere">
+<property name="ApplicationServerVersion">
+        <value>7.0</value>
+        <description>Enter the WebSphere application server version number. The supported versions are 6.1 and 7.</description>
+        <displayName>Application server version</displayName>
+    </property>
+    <property name="ApplicationServerInstallationFolder">
+        <value>c:\Program Files\IBM\WebSphere\AppServer</value>
+        <description>Enter the absolute path to the directory where the WebSphere Application Server is installed. </description>
+        <displayName>Application server installation directory</displayName>
+    </property>
+    <property name="ApplicationServerProfileFolder">
+        <value>c:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01</value>
+        <description>Enter the absolute path to the directory where the WebSphere Application Server profile for Content Engine is stored.  If you are installing Content Engine on a node in a cluster or on a managed server node and the deployment manager is remote from Configuration Manager, use the directory for the WebSphere profile that is located on the node. </description>
+        <displayName>Application server profile directory</displayName>
+    </property>
+    <property name="ApplicationServerAdminUsername">
+        <value>P8Admin</value>
+        <description>Enter the directory service user account that was assigned the application server administrative role for your application server. This account is used to manage the application server domain or profile, to configure the data sources and connection pools for the Global Configuration Database (GCD) and object store databases, and to deploy the Content Engine application. If WebSphere administrative security is already enabled, use an existing administrative user account. This value must match the entry that was specified in the ce_appserver_admin user defined in the topic "Creating Content Engine application server accounts" in "Plan and Prepare Your Environment for IBM FileNet P8."</description>
+        <displayName>Application server administrator user name</displayName>
+    </property>
+    <property name="ApplicationServerAdminPassword">
+       <value>IBMFileNetP8</value>
+         <description>Enter the password for the application server administrator user name.</description>
+        <displayName>Application server administrator password</displayName>
+    </property>
+    <property name="ApplicationServerSoapPort">
+        <value>8880</value>
+        <description>Enter the application server SOAP port number. Examples are 8880 for a standard deployment on WebSphere Application Server, 8080 for JBoss Application Server, and 7001 for WebLogic Application Server. If you are deploying to a cluster or managed server, enter the cluster server port number or the administrative server port number. An example is 8879 for a cluster or network deployment on WebSphere Application Server.</description>
+        <displayName>Application server SOAP port</displayName>
+    </property>
+    <property name="ApplicationServerHostName">
+        <value>localhost</value>
+        <description>Enter the machine name or the IP address of the web application server host. The host can be local or remote. For a cluster or a managed server, use the machine name or the IP address of the deployment manager server or the administrative server.</description>
+        <displayName>Application server host</displayName>
+    </property>
+    <property name="ApplicationServerCell">
+        <value>P8Node01Cell</value>
+        <description>Enter the name of the cell where Content Engine will be deployed. The name is case-sensitive.</description>
+        <displayName>Application server cell</displayName>
+    </property>
+    <property name="ApplicationServerTransactionTimeout">
+        <value>180</value>
+        <description>Enter the amount of time in seconds for the application server transaction timeout. The default is 180.</description>
+        <displayName>Application server transaction timeout</displayName>
+    </property>
+    <property name="TurnOffSSLCerticates">
+        <value>false</value>
+        <description>Use this setting to specify whether SSL certificates are used for server communication. If you have already configured WebSphere Application Server to use SSL certificates, set this value to true. Using the default value of false will change your existing WebSphere settings for communicating with other servers, such as Application Engine. </description>
+        <displayName>Use SSL certificates for server communication</displayName>
+    </property>
+</configuration>

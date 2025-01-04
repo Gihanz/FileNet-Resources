@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="When you run this task, the configuration and deployment tool updates the Java Authentication and Authorization Service (JAAS) authentication settings on your web application server to enable the web client to to authenticate users' login credentials. " displayName="Configure JAAS Authentication on Your Web Application Server" enabled="true" implementorid="">
+<property name="LoginModulesScript">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\scripts\configureWSloginmodules.tcl</value>
+        <description>Enter the fully qualified path of the login configuration script, configureWSloginmodules.tcl. The default path is C:\Program Files (x86)\IBM\ECMClient\configure\scripts\configureWSloginmodules.tcl</description>
+        <displayName>Login configuration script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\tmp</value>
+        <description>Enter the fully qualified path of a temporary directory that the configuration and deployment tool can use when running this task.
+
+You must have read and write access for the directory.
+
+The default directory is: C:\Program Files (x86)\IBM\ECMClient\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>

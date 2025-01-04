@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Package Id="1" Name="New Workflow Collection"
+	xmlns="http://www.wfmc.org/2004/XPDL2.0alpha"
+	xmlns:deprecated="http://www.wfmc.org/2002/XPDL1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:fn="http://www.filenet.com/ns/fnpe/2010/11/pe/schema/XPDLExtensions"
+	xsi:schemaLocation="http://www.wfmc.org/2004/XPDL2.0alpha http://www.wfmc.org/standards/docs/TC-1025_bpmnxpdl_24.xsd">
+	<PackageHeader fn:AuthorTool="Process Designer" fn:ApplicationSpaceName="DefaultApplication">
+		<XPDLVersion>2.0</XPDLVersion>
+		<Vendor>FileNet Corporation; Process Engine API; Version 4.0</Vendor>
+		<Created>Feb 18, 2011 4:56:29 AM</Created>
+		<VendorExtensions>
+			<VendorExtension ToolId="FileNetPE" schemaLocation="http://www.filenet.com/ns/fnpe/2010/11/pe/schema/XPDLExtensions"/>
+		</VendorExtensions>
+	</PackageHeader>
+	<TypeDeclarations>
+		<TypeDeclaration Id="attachment" Name="attachment">
+			<BasicType Type="STRING"/>
+		</TypeDeclaration>
+		<TypeDeclaration Id="participant" Name="participant">
+			<BasicType Type="STRING"/>
+		</TypeDeclaration>
+		<TypeDeclaration Id="xml" Name="xml">
+			<BasicType Type="STRING"/>
+		</TypeDeclaration>
+	</TypeDeclarations>
+	<WorkflowProcesses>
+		<WorkflowProcess Id="0" Name="Xtest 2-step collection">
+			<ProcessHeader>
+				<fn:WorkflowDefinition ApiVersion="4.0" Origin="JavaAPI"
+					Subject="&quot;Xtest 2-step collection&quot;"
+					DisableEmailNotification="false"
+					AuthorTool="Process Designer"
+					OtherAuthorTools=""
+					versionAgnostic="false"
+					validateUsingSchema="true"
+					validateFlag="true"
+					transferFlag="true">
+				</fn:WorkflowDefinition>
+			</ProcessHeader>
+			<Activities>
+				<Activity Id="Workflow0.Map0.mapnode0" Name="LaunchStep" StartActivity="true">
+					<NodeGraphicsInfos>
+						<NodeGraphicsInfo ToolId="FileNetPE">
+							<Coordinates XCoordinate="50" YCoordinate="50"/>
+						</NodeGraphicsInfo>
+					</NodeGraphicsInfos>
+					<Extensions/>
+					<fn:Step
+						RequestedInterface="Approval Launch HTML (FileNet)"
+						CanReassign="true"
+						CanViewStatus="true"
+						CanViewHistory="false"
+						IgnoreInvalidUsers="false">
+						<ModelAttributes>
+							<ModelAttribute
+								Name="UI_StepType"
+								Type="int"
+								IsArray="false">
+									<Value Val="1"/>
+							</ModelAttribute>
+						</ModelAttributes>
+					</fn:Step>
+				</Activity>
+				<Activity Id="Workflow0.Map0.mapnode3" Name="Step 1">
+					<Performers>
+						<Performer>F_Originator</Performer>
+					</Performers>
+					<TransitionRestrictions>
+						<TransitionRestriction>
+							<Join Type="XOR"/>
+							<Split Type="XOR"/>
+						</TransitionRestriction>
+					</TransitionRestrictions>
+					<NodeGraphicsInfos>
+						<NodeGraphicsInfo ToolId="FileNetPE">
+							<Coordinates XCoordinate="169" YCoordinate="49"/>
+						</NodeGraphicsInfo>
+					</NodeGraphicsInfos>
+					<Extensions/>
+					<fn:Step
+						RequestedInterface="Approval HTML (FileNet)"
+						QueueName="Inbox"
+						CanReassign="true"
+						CanViewStatus="true"
+						CanViewHistory="false"
+						IgnoreInvalidUsers="false">
+						<ModelAttributes>
+							<ModelAttribute
+								Name="UI_StepType"
+								Type="int"
+								IsArray="false">
+									<Value Val="2"/>
+							</ModelAttribute>
+						</ModelAttributes>
+					</fn:Step>
+				</Activity>
+				<Activity Id="Workflow0.Map0.mapnode8" Name="Create" fn:CompoundStep="true">
+					<Implementation>
+						<SubFlow Id="1">
+						</SubFlow>
+					</Implementation>
+					<TransitionRestrictions>
+						<TransitionRestriction>
+							<Join Type="XOR"/>
+							<Split Type="XOR"/>
+						</TransitionRestriction>
+					</TransitionRestrictions>
+					<NodeGraphicsInfos>
+						<NodeGraphicsInfo ToolId="FileNetPE">
+							<Coordinates XCoordinate="265" YCoordinate="48"/>
+						</NodeGraphicsInfo>
+					</NodeGraphicsInfos>
+					<Extensions/>
+					<fn:CompoundStep>
+						<ModelAttributes>
+							<ModelAttribute
+								Name="UI_IconName"
+								Type="string"
+								IsArray="false">
+									<Value Val="filenet/vw/toolkit/utils/images/create_wflo_step"/>
+							</ModelAttribute>
+							<ModelAttribute
+								Name="UI_StepType"
+								Type="int"
+								IsArray="false">
+									<Value Val="6"/>
+							</ModelAttribute>
+							<ModelAttribute
+								Name="UI_StartIconName"
+								Type="string"
+								IsArray="false">
+									<Value Val="filenet/vw/toolkit/utils/images/start_create_wflo_step"/>
+							</ModelAttribute>
+							<ModelAttribute
+								Name="UI_StepPropertiesPanelClass"
+								Type="string"
+								IsArray="false">
+									<Value Val="filenet.vw.toolkit.design.property.steps.systeminstructions.VWCreateWfloPropertiesPanel"/>
+							</ModelAttribute>
+						</ModelAttributes>
+					</fn:CompoundStep>
+				</Activity>
+			</Activities>
+			<Transitions>
+				<Transition Id="Workflow0.Map0.route0" From="Workflow0.Map0.mapnode0" To="Workflow0.Map0.mapnode3">
+					<fn:Route>
+					</fn:Route>
+				</Transition>
+				<Transition Id="Workflow0.Map0.route1" From="Workflow0.Map0.mapnode3" To="Workflow0.Map0.mapnode8">
+					<fn:Route>
+					</fn:Route>
+				</Transition>
+			</Transitions>
+			<ExtendedAttributes>
+				<ExtendedAttribute Name="fn:WorkflowName" Value="Workflow"/>
+				<ExtendedAttribute Name="fn:MaxStepId" Value="8"/>
+			</ExtendedAttributes>
+		</WorkflowProcess>
+		<WorkflowProcess Id="1" Name="Created workflow">
+			<ProcessHeader>
+				<fn:WorkflowDefinition ApiVersion="4.0" Origin="JavaAPI"
+					Subject="&quot;Created workflow&quot;"
+					DisableEmailNotification="false"
+					AuthorTool="Process Designer"
+					OtherAuthorTools=""
+					versionAgnostic="false"
+					validateUsingSchema="true"
+					validateFlag="true"
+					transferFlag="true">
+				</fn:WorkflowDefinition>
+			</ProcessHeader>
+			<Activities>
+				<Activity Id="Workflow1.Map0.mapnode0" Name="LaunchStep" StartActivity="true">
+					<NodeGraphicsInfos>
+						<NodeGraphicsInfo ToolId="FileNetPE">
+							<Coordinates XCoordinate="50" YCoordinate="50"/>
+						</NodeGraphicsInfo>
+					</NodeGraphicsInfos>
+					<Extensions/>
+					<fn:Step
+						RequestedInterface="Approval Launch HTML (FileNet)"
+						CanReassign="true"
+						CanViewStatus="true"
+						CanViewHistory="false"
+						IgnoreInvalidUsers="false">
+						<ModelAttributes>
+							<ModelAttribute
+								Name="UI_StepType"
+								Type="int"
+								IsArray="false">
+									<Value Val="1"/>
+							</ModelAttribute>
+						</ModelAttributes>
+					</fn:Step>
+				</Activity>
+				<Activity Id="Workflow1.Map0.mapnode3" Name="Step 2">
+					<Performers>
+						<Performer>&quot;P8Admin&quot;</Performer>
+					</Performers>
+					<TransitionRestrictions>
+						<TransitionRestriction>
+							<Join Type="XOR"/>
+							<Split Type="XOR"/>
+						</TransitionRestriction>
+					</TransitionRestrictions>
+					<NodeGraphicsInfos>
+						<NodeGraphicsInfo ToolId="FileNetPE">
+							<Coordinates XCoordinate="156" YCoordinate="49"/>
+						</NodeGraphicsInfo>
+					</NodeGraphicsInfos>
+					<Extensions/>
+					<fn:Step
+						RequestedInterface="Approval HTML (FileNet)"
+						QueueName="Inbox"
+						CanReassign="true"
+						CanViewStatus="true"
+						CanViewHistory="false"
+						IgnoreInvalidUsers="false">
+						<ModelAttributes>
+							<ModelAttribute
+								Name="UI_StepType"
+								Type="int"
+								IsArray="false">
+									<Value Val="2"/>
+							</ModelAttribute>
+						</ModelAttributes>
+					</fn:Step>
+				</Activity>
+			</Activities>
+			<Transitions>
+				<Transition Id="Workflow1.Map0.route0" From="Workflow1.Map0.mapnode0" To="Workflow1.Map0.mapnode3">
+					<fn:Route>
+					</fn:Route>
+				</Transition>
+			</Transitions>
+			<ExtendedAttributes>
+				<ExtendedAttribute Name="fn:WorkflowName" Value="Workflow"/>
+				<ExtendedAttribute Name="fn:MaxStepId" Value="3"/>
+			</ExtendedAttributes>
+		</WorkflowProcess>
+	</WorkflowProcesses>
+</Package>

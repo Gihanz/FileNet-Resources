@@ -1,0 +1,76 @@
+#-------------------------------------------------------------------------------
+# Sample Silent Install Response File for Process Engine Installation on Windows
+#
+# To trigger a silent installation from the command line with this file, edit
+# this file as described below then run the installer with the following option:
+#     -f pe_silent_install.txt
+#-------------------------------------------------------------------------------
+
+
+#-------------------------------------------------------------------------------
+# Do not change the value of INSTALLER_UI
+#-------------------------------------------------------------------------------
+INSTALLER_UI=silent
+
+
+#-------------------------------------------------------------------------------
+# License Agreement
+#
+# To accept the terms in the license agreement, set "LICENSE_ACCEPTED=true".
+#-------------------------------------------------------------------------------
+LICENSE_ACCEPTED=true
+
+
+#-------------------------------------------------------------------------------
+# Specify the install location for Process Engine program files
+# This parameter is ignored on upgrades or reinstalls.
+#-------------------------------------------------------------------------------
+USER_INSTALL_DIR=C:\\Program Files\\IBM\\FileNet\\ProcessEngine
+
+
+#-------------------------------------------------------------------------------
+# Specify the install location for Process Engine data files
+# This parameter is ignored on upgrades or reinstalls.
+#-------------------------------------------------------------------------------
+USER_MAGIC_FOLDER_2=C:\\Program Files\\IBM\\FileNet\\ProcessEngine\\data
+
+
+#-------------------------------------------------------------------------------
+# Base Documentation URL
+#
+# Use the default base URL to access help on ibm.com, or specify the base URL
+# for an installed information center, as follows:
+#
+#      http://server-name[:port]/application-name/.
+#
+# For example: http://server:8062/p8docs/
+#-------------------------------------------------------------------------------
+FN_DocumentationURL=http://publib.boulder.ibm.com/infocenter/p8docs/v5r0m0/
+
+
+#-------------------------------------------------------------------------------
+# Common Files Location
+# A common set of the configuration files can be shared with other P8 products.
+# Enter the location where these common files will be installed.
+#-------------------------------------------------------------------------------
+FN_P8TASKMAN_HOME=C:\\Program Files\\IBM\\FileNet\\Common Files
+
+
+#-------------------------------------------------------------------------------
+# Start BPM Software
+# All BPM software installed on the server will be stopped prior to installing
+# Process Engine.  This property specifies whether Process Engine and other BPM
+# software should be started after the installation is completed.  Set the
+# parameter to "true" to start the software or set it to "false" to not start
+# the software.
+#-------------------------------------------------------------------------------
+START_SOFTWARE=true
+
+
+#-------------------------------------------------------------------------------
+# Specify Reboot option
+# If the installer or uninstaller needs to reboot the system to complete the
+# install or uninstall, specify whether to reboot automatically 
+# (USER_REQUESTED_RESTART=YES) or later (USER_REQUESTED_RESTART=NO).
+#-------------------------------------------------------------------------------
+USER_REQUESTED_RESTART=YES

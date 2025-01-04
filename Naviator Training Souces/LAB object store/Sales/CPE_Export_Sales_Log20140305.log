@@ -1,0 +1,36 @@
+3/5/2014 1:02:14 AM,Export Admin,Information,BeginTrans,0,Begin exporting objects.
+3/5/2014 1:02:38 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group1_1.xml
+
+3/5/2014 1:02:38 AM,Export Admin,Information,Exported ,3,CVLs
+3/5/2014 1:02:38 AM,Export Admin,Information,Exported ,92,Prop templates
+3/5/2014 1:02:38 AM,Export Admin,Information,Exported ,35,Class defs
+3/5/2014 1:02:38 AM,Export Admin,Information,Exported ,0,LF policies
+3/5/2014 1:02:38 AM,Export Admin,Information,Exported ,0,LF actions
+3/5/2014 1:02:41 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group2_1.xml
+
+3/5/2014 1:02:41 AM,Export Admin,Information,Exported ,28,Folders
+3/5/2014 1:02:41 AM,Export Admin,Information,Queued ,0,Documents
+3/5/2014 1:03:00 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group3_1.xml
+
+3/5/2014 1:03:00 AM,Export Admin,Information,Exported ,71,Documents
+3/5/2014 1:03:01 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group6_1.xml
+
+3/5/2014 1:03:01 AM,Export Admin,Information,Exported ,2,Custom Objects
+3/5/2014 1:03:01 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group5_1.xml
+
+3/5/2014 1:03:01 AM,Export Admin,Information,Exported ,7,Annotations
+3/5/2014 1:03:02 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group4_1.xml
+
+3/5/2014 1:03:02 AM,Export Admin,Information,Exported ,109,RCRs
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group1_2.xml
+
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported ,0,LifecycleActions
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported ,0,LifecyclePolicies
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported ,0,CVLs
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported ,0,Global Prop Defs
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported ,35,Class Defs
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\Sales\Set1_CEExport_Group7_1.xml
+
+3/5/2014 1:03:03 AM,Export Admin,Information,Exported ,2,Events/Others
+3/5/2014 1:03:03 AM,Export Admin,Information,EndTrans,0,385 object(s) exported 0 failed.
+

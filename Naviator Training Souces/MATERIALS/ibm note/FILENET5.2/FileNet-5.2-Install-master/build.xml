@@ -1,0 +1,37 @@
+<!--
+
+rem Licensed Materials - Property of IBM
+rem 5725A15, 5724R81
+rem (c) Copyright IBM Corp. 2010, 2011  All Rights Reserved.
+rem US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+rem
+
+-->
+
+<project name="PlatformInstallationTool">
+	
+<target name="uninstallWASDefaultApplication" >
+	<property name="was_home" value="C:\Program Files\IBM\WebSphere\AppServer" />
+	<path id="was.runtime">
+		<fileset dir="${was_home}/lib">
+			<include name="**/*.jar" />
+    	</fileset>
+    	<fileset dir="${was_home}/plugins">
+        	<include name="**/*.jar" />
+    	</fileset>
+	</path>
+	<property name="was_cp" value="${toString:was.runtime}" />
+	<property name="was_appname" value="DefaultApplication" />
+	<property name="was_user" value="P8Admin" />
+	<property name="was_password" value="IBMFileNetP8" />
+
+	<taskdef name="wasUninstallApp" classname="com.ibm.websphere.ant.tasks.UninstallApplication" classpath="${was_cp}" />
+	<wasUninstallApp
+        application="${was_appname}"
+        user="${was_user}"
+        password="${was_password}"
+        failonerror="${was_failonerror}"
+        washome="${was_home}" />
+</target>
+
+</project>

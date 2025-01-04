@@ -1,0 +1,39 @@
+<div>
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="stepSummary" region="top" class="ecmStepTabContainer">
+        <label for="${id}_subjectText" style="display: none;">${_messages.process_info_subject}:</label>
+	    <div id="${id}_subjectText" data-dojo-attach-point="subjectText" class="ecmProcessSubjectLabel">&nbsp;
+	    </div>
+	    <div data-dojo-attach-point="systemInfo" class="ecmProcessSystemInformation">
+	        <div class="ecmProcessSystemLabel">${_messages.process_deadline}</div>
+	        <div data-dojo-attach-point="deadline" class="ecmProcessSystemField"></div>
+	        <div class="ecmProcessSystemLabel">${_messages.process_launchedby}</div>
+	        <div data-dojo-attach-point="launchedby" class="ecmProcessSystemField"></div>
+	        <div class="ecmProcessSystemLabel">${_messages.process_receivedon}</div>
+	        <div data-dojo-attach-point="receivedOn" class="ecmProcessSystemField"></div>
+	        <div class="ecmProcessSystemLabel">${_messages.process_step}</div>
+	        <div data-dojo-attach-point="stepName" class="ecmProcessSystemFieldEnd"></div>
+	    </div>
+	    <div data-dojo-attach-point="instructions" class="ecmProcessInstructions">
+	        <textarea data-dojo-type="dijit.form.SimpleTextarea" readonly rows=3 cols=100 wrap="soft" class="ecmProcessInstructionsText" data-dojo-attach-point="instructionsText" aria-labelledby="${id}_instructionsText"></textarea>
+	    	<span id="${id}_instructionsText" data-dojo-type="dijit.form.Button" class="ecmProcessInstructionsLink" data-dojo-attach-event="onClick:_showInstructions" data-dojo-attach-point="showInstructions" baseClass="buttonLinks">${_messages.process_hide_instructions}</span>
+	    </div>
+	</div>
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="stepContentPane" region="center" >
+	    <div data-dojo-attach-point="viewTabContainer" data-dojo-type="dijit.layout.TabContainer" region="center" class="ecmStepTabContainer ecmStepTabContainerBorder">
+            <div data-dojo-attach-point="propertiesContainer" 
+	             data-dojo-type="dijit.layout.ContentPane" 
+	             region="center"
+	             title="${_messages.process_properties}">
+                <div data-dojo-attach-point="workItemPropertiesPane"
+                    data-dojo-type="ecm.widget.process.WorkItemPropertiesPane"
+                    region="center"
+                    class="centerPane">
+                </div>
+	        </div>
+	    </div>
+	</div>
+	<div data-dojo-type="dijit.layout.ContentPane" region="bottom">
+	   <div class="dijitDialogPaneActionBar" data-dojo-attach-point="processorButtonBar"  data-dojo-type="ecm.widget.process.ProcessorButtonBar" data-dojo-attach-event="onSave: onSave, onCancel: onCancel">  
+	</div>
+</div>
+    

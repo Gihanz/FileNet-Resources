@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="Enter the bootstrap and text extraction settings for a new, modified, or upgraded installation of Content Platform Engine.&#10;&#10;The bootstrap settings are used to create the global configuration database and to start Content Platform Engine. The text extraction setting is used to install the Content Search Services text extraction and API modules into the Content Platform Engine EAR file." displayName="Configure Bootstrap and Text Extraction" enabled="true" implementorid="configurenew">
+<property name="InstalledEarFolder">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\lib</value>
+        <description>Enter the  absolute path to the directory that contains the Content Platform Engine EAR file that was installed by the Content Platform Engine installation program. The default path is c:\Program Files\IBM\FileNet\ContentEngine\lib.</description>
+        <displayName>Installed Content Platform Engine EAR file location</displayName>
+    </property>
+    <property name="BootstrappedEarFolder">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\lib\bootstrap</value>
+        <description>Enter the absolute path to the directory where you want to place the modified Content Platform Engine EAR file after the bootstrap properties have been added to the EAR file. The default path is C:\Program Files (x86)\IBM\FileNet\ContentEngine\tools\configure\profiles\was8\ear.</description>
+        <displayName>Destination directory for bootstrapped EAR file</displayName>
+    </property>
+    <property name="JDBCDataSourceName">
+        <value>FNGCDDS</value>
+        <description>Enter the JNDI name of the non-XA JDBC data source associated with the Global Configuration Data (GCD) or object store table space or database. The name must be unique, for example, FNGCDDS or FNOS1DS. The default name is {0}. If the data source already exists, you must manually remove the existing data source by using your application server administration tools, and then create the data source here.</description>
+        <displayName>JDBC data source name</displayName>
+    </property>
+    <property name="JDBCDataSourceXAName">
+        <value>FNGCDDSXA</value>
+        <description>Enter the JNDI name of the XA JDBC data source associated with the Global Configuration Data (GCD) or object store table space or database.  The name must be unique, for example, FNGCDDSXA, or FNOS1DSXA. The default name  is {0}. If the data source already exists, you must manually remove the existing data source by using your application server administration tools, and then create the data source here.</description>
+        <displayName>JDBC XA data source name</displayName>
+    </property>
+    <property name="BootstrapUsername">
+        <value>P8Admin</value>
+        <description>Enter the short name of the bind user defined by the LDAP user attribute. The bootstrap user is a directory service and application server account that Content Engine uses to connect to  the application server, access the application server's JNDI tree, and look up the data sources for accessing the Global Configuration Database (GCD). The bootstrap user name will be stored in the CEMPBoot.properties file that is archived in the Content Engine EAR file. This value must match the entry specified in the "Creating Content Engine directory server accounts" topic in the ce_bootstrap_admin entry in "Plan and Prepare Your Environment for IBM FileNet P8". </description>
+        <displayName>Bootstrap user name</displayName>
+    </property>
+    <property name="BootstrapPassword">
+        <value>IBMFileNetP8</value>
+        <description>Enter the password for the bootstrap user name. The name will be stored as plain text.</description>
+        <displayName>Bootstrap user password</displayName>
+    </property>
+    <property name="TextExtractionPlatform">
+        <value>win64</value>
+        <description>Enter the text extraction platform. The valid platforms are aix, hpux-ia, hpux-risc, linux, solaris, win32, win64, zlinux. By default the platform matches the platform on which Configuration Manager runs. If you choose a different platform, you cannot use Configuration Manager to deploy the EAR file on the application server. Instead, you must use the console program or tools of the application server.</description>
+        <displayName>Text extraction platform</displayName>
+    </property>
+</configuration>

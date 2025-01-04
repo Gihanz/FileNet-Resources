@@ -1,0 +1,105 @@
+{
+	"id":"",
+	"title":"",
+	"category":"",
+	"description":"",
+	"definition":"",
+    "preview": "",
+    "icon": "",
+	"runtimeClassName":"",
+	"help": "acmwrh126.htm",
+	"previewThumbnail":"",
+	"properties":[
+		{
+            "propertyType":"property",
+            "type":"string",
+            "id":"",
+            "defaultValue":"100%",
+            "disabled": ,
+            "required":,
+            "visibility":,
+            "title":""
+        },
+		{
+			"propertyType":"property",
+			"type":"string",
+			"id":"",
+			"remapNeeded":,
+			"defaultValue":"",
+			"required":,
+			"visibility":,
+			"style": "width:95%;",
+			"title":""
+		},
+		{
+            "propertyType":"property",
+            "type":"integer",
+            "id":"",
+            "remapNeeded":,
+            "defaultValue":,
+            "required":,
+            "visibility":,
+            "title":"",
+            "description":"Integer property"
+        },
+        {
+            "propertyType": "property",
+            "type": "boolean",
+            "id": "customProperty3",
+            "remapNeeded":true,
+            "defaultValue": false,
+            "required": false,
+            "visibility": true,
+            "title": "Boolean property"
+        },  
+        {
+            "propertyType":"group",
+            "type":"tab",
+            "id":"",
+            "title":"",
+            "propertyMembers":[
+                {
+                    "propertyType":"property",
+                    "type":"contextualMenu",
+                    "id":"customContextualMenu",
+                    "context": ["CustomContext"], 
+                    "defaultValue":{
+
+                    },
+                    "required":false,
+                    "visibility":true,
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "propertyType":"group",
+            "type":"tab",
+            "id":"",
+            "title":"",
+            "propertyMembers":[
+                {
+                    "propertyType":"property",
+                    "type":"toolbar",
+                    "id":"customToolbar",
+                    "context": ["CustomContext"], 
+                    "defaultValue":{
+
+                    },
+                    "required":false,
+                    "visibility":true,
+                    "title": ""
+                }
+            ]
+        }
+    ],
+	"events":[
+		{
+			"id":"",
+			"title":"",
+			"functionName":"",
+			"direction":"",
+			"description":""
+		}
+	]
+}

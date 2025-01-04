@@ -1,0 +1,26 @@
+{
+    "Name":"IBM Case Manager simple custom widget package",
+    "Description":"IBM Case Manager simple custom widget package",
+    "Locale":"",
+    "Version":"5.2",
+    "Categories":[
+        {
+            "id":"SimpleCustomWidget",
+            "title":"Simple Custom Widget"
+        }
+    ],
+    "Widgets":[
+		{
+	       "id":"CustomPageWidget",
+	       "title":"Simple Custom Page Widget",
+	       "category":"SimpleCustomWidget",
+	       "description":"This widget show payload from Search widget",
+	       "definition":"CustomPageWidget.json",
+           "preview": "images/caseinfo_preview.png",
+           "icon": "images/caseinfo_icon.png",
+	       "runtimeClassName":"icm.custom.pgwidget.customWidget.CustomPageWidget",
+	       "help": "acmwrh126.htm",
+	       "previewThumbnail":"images/caseinfo_thumb.gif"
+		}
+	]
+}

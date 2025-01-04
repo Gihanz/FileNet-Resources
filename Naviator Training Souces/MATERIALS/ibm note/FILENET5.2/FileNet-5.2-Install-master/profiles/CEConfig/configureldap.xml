@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="Enter the directory service authentication settings for Content Platform Engine." displayName="Configure LDAP" enabled="true" implementorid="standalone.tivolids">
+<property name="LDAPServerHost">
+        <value>localhost</value>
+        <description>The short name, full name, or IP address of the directory server host in a format that can be resolved from your application server.</description>
+        <displayName>Directory service server host name</displayName>
+    </property>
+    <property name="LDAPServerPort">
+        <value>389</value>
+        <description>The port  number configured on the directory server host for communicating with the directory service. The default port is 389. If you are using SSL to communicate with the directory service, the default port is 636.</description>
+        <displayName>Directory service port number</displayName>
+    </property>
+    <property name="LDAPBindDN">
+        <value>cn=P8Admin,o=sample</value>
+        <description>The fully qualified distinguished name of the LDAP bind user. The application server uses this account to bind to the directory service to authenticate user credentials. The name must be a unique user across all realms.</description>
+        <displayName>Directory service bind user name</displayName>
+    </property>
+    <property name="LDAPBindPassword">
+        <value>IBMFileNetP8</value>
+        <description>The password by which the LDAP bind user is authenticated to the directory server. You can enter an encrypted password or a plain-text password. To generate an encrypted password, see the FileNet P8 Information Center  topic "storepasswords" command.</description>
+        <displayName>Directory service bind user password</displayName>
+    </property>
+    <property name="LDAPBaseDN">
+        <value>o=sample</value>
+        <description>A fully qualified distinguished name that is the starting point to search the directory for users who can log in to FileNet P8. The base distinguished name and the user filter together define the search criteria that determine the set of eligible users. To limit the set size, specify a directory subtree as the base distinguished name, for example ou=FileNetUsers,DC=FNCE,DC=Region01,DC=filenet,DC=com.</description>
+        <displayName>Base distinguished name</displayName>
+    </property>
+    <property name="LDAPUserFilter">
+        <value>(&amp;(cn=%v)(objectclass=person))</value>
+        <description>The filter by which the bind user searches for users in the directory service. The user base distinguished name and the user filter together define the search criteria that determine the set of eligible users. This example searches on the attribute cn (common name) and the object class person for Tivoli Directory Server, ADAM or AD LDS, or eDirectory: (cn={0}). This example searches on the attribute sAMAccountName and the object class user for Active Directory: (sAMAccountName={0}). This example searches on the attribute uid for CA Directory or Oracle Internet Directory: (uid={0}). This example searches on the attribute uid and the object class person for Oracle Directory Server Enterprise Edition: (&amp;(objectClass=person)(uid={0})).</description>
+        <displayName>User filter</displayName>
+    </property>
+    <property name="LDAPGroupFilter">
+        <value>(&amp;(cn=%v)(|(objectclass=groupOfNames)(objectclass=groupOfUniqueNames)))</value>
+        <description>The filter by which the bind user searches for groups in the directory service. The group filter and the group base distinguished name together define the search criteria that determine the set of eligible groups.  The attribute here must match the attribute that you entered for the group name attribute property. This example searches on the attribute member for CA Directory, Tivoli Directory Server, eDirectory, or Oracle Internet Directory Server: (member={1}). This example searches on the attribute sAMAccountName for Active Directory:(sAMAccountName={0}). This example searches on the attribute cn (common name) for ADAM or AD LDS:(cn={0}). This example searches on the attribute cn and the object type groupofnames for Oracle Directory Server Enterprise Edition: (&amp;(cn=%v)(|(objectclass=groupOfNames)(objectclass=groupOfUniqueNames))).</description>
+        <displayName>Group filter</displayName>
+    </property>
+    <property name="LDAPUserIDMap">
+        <value>cn</value>
+        <description>An attribute that determines the type of information that a user enters to log on to the directory server. The attribute can be any property on the LDAP user account, such as serial ID, e-mail address, or user name. This example is for Oracle Directory Server Enterprise Edition: uid.</description>
+        <displayName>User ID map</displayName>
+    </property>
+    <property name="LDAPGroupIDMap">
+        <value>*:cn</value>
+        <description>An attribute in a directory server entry that identifies the group. This example is for CA Directory Server, Tivoli Directory Server, Oracle Internet Directory Server and Oracle Directory Server Enterprise Edition: cn.  This example is for ADAM or AD LDS: memberOf.  This example is for eDirectory: groupMembership.</description>
+        <displayName>Group ID map</displayName>
+    </property>
+    <property name="AdminConsoleUser">
+        <value>P8Admin</value>
+        <description>The appserver_console_user account is an LDAP account to which you have granted the WebSphere Application Server administrative role so that it can log in to the WebSphere admin console.
+
+If your WebSphere repository is a stand-alone LDAP registry, enter the LDAP account you defined as appserver_console_user, to which you granted the WebSphere administrative role, so that it can log in to the WebSphere admin console. Alternatively, you can enter an LDAP account that you have already configured as a console administrator.
+
+If your WebSphere repository is federated, you can enter the user account that you defined as appserver_admin. If you specify a different account, it must be unique across all the federated realms, including the WebSphere local file-based repository.</description>
+        <displayName>Administrative console user name</displayName>
+    </property>
+    <property name="OverwriteExistingUserReg">
+        <value>true</value>
+        <description>Set the value to true to overwrite any existing stand-alone LDAP repository entries. The default value is false (do not overwrite).</description>
+        <displayName>Overwrite existing stand-alone LDAP repository</displayName>
+    </property>
+    <property name="SetAsActiveUserReg">
+        <value>true</value>
+        <description>Select the check box to use the LDAP information you provide to configure the active user registry. The check box is cleared by default.</description>
+        <displayName>Set as current active user registry</displayName>
+    </property>
+    <property name="Script">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\tools\configure\scripts\configureWSLDAP.tcl</value>
+        <description>Enter the script to use to accomplish a particular configuration task.</description>
+        <displayName>Script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp</value>
+        <description>The absolute path to a temporary directory to be used by the configuration task, for example, c:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+    <property name="SSLEnabled">
+        <value>false</value>
+        <description>When the check box is selected, Secure Sockets Layer is enabled. The default setting is disabled.</description>
+        <displayName>SSL enabled</displayName>
+    </property>
+</configuration>

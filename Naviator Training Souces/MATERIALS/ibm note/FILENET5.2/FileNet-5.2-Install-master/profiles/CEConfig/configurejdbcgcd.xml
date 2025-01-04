@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="Enter the information for the global configuration database (GCD) JDBC data source settings. Content Platform Engine uses these settings to connect to the GCD." displayName="Configure GCD JDBC Data Sources" enabled="true" implementorid="db2">
+<property name="JDBCDataSourceName">
+        <value>FNGCDDS</value>
+        <description>The  JNDI  name of the JDBC data source for the global configuration database or object store database or table space. The name must be unique, for example, FNGCDDS or FNOS1DS. The default name is {0}. If the data source already exists, you must manually remove it by using your application server administration tools, and then create the data source here.</description>
+        <displayName>JDBC data source name</displayName>
+    </property>
+    <property name="JDBCDataSourceXAName">
+        <value>FNGCDDSXA</value>
+        <description>The JNDI name of the XA data source for the global configuration database or object store database or table space. The name must be unique, for example, FNGCDDSXA or FNOS1DSXA. The default name is {0}. If the data source already exists, you must manually remove it by using your application server administration tools, and then create the data source here.</description>
+        <displayName>JDBC XA data source name</displayName>
+    </property>
+    <property name="DatabaseServerName">
+        <value>localhost</value>
+        <description>The host name of the server where the database software is installed.</description>
+        <displayName>Database server name</displayName>
+    </property>
+    <property name="DatabasePortNumber">
+        <value>50000</value>
+        <description>The port number that is used by the DB2 database instance in which you create table spaces for the global configuration database and object stores. The default DB2 port is 50000.</description>
+        <displayName>Database port number</displayName>
+    </property>
+    <property name="DatabaseName">
+        <value>GCD_DB</value>
+        <description>The name of the global configuration database or object store database. See your database documentation for naming restrictions.</description>
+        <displayName>Database name</displayName>
+    </property>
+    <property name="DatabaseUsername">
+        <value>gcddbuser</value>
+        <description>The database user name that you defined as the cpe_db_user in the FileNet P8 Information Center topic "Creating the Content Platform Engine user account for DB2 for Linux, UNIX and Windows" to access the global configuration database or object store table space.</description>
+        <displayName>Database user name</displayName>
+    </property>
+    <property name="DatabasePassword">
+        <value>IBMFileNetP8</value>
+        <description/>
+        <displayName>Database password</displayName>
+    </property>
+    <property name="JDBCDriverVersion">
+        <value>3.0</value>
+        <description>Enter the JDBC driver version for your database type. Valid values are: 3.0 / 4.0</description>
+        <displayName>JDBC driver version</displayName>
+    </property>
+    <property name="Script">
+        <value>$INSTALLER_SCRIPTS_FOLDER$\profiles\CEConfig\configureWSJDBC.tcl</value>
+        <description>Enter the script to use to accomplish a particular configuration task.</description>
+        <displayName>Script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp</value>
+        <description>The absolute path to a temporary directory to be used by the configuration task, for example, c:\Program Files\IBM\FileNet\ContentEngine\tools\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+    <property name="DBFailoverEnabled">
+        <value>false</value>
+        <description>This setting specifies whether database failover support is enabled or disabled. When set to true, database failover support is enabled. When set to false, database failover support is disabled.</description>
+        <displayName>Database failover support enabled</displayName>
+    </property>
+</configuration>

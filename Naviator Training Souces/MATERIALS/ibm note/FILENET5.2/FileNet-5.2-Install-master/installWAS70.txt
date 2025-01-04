@@ -1,0 +1,690 @@
+#
+# Licensed Materials - Property of IBM
+# 5725A15, 5724R81
+# (c) Copyright IBM Corp. 2010. 2011  All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+################################################################################
+#
+# V6.1 InstallShield Options File
+#
+# Wizard name: Install
+# Wizard source: setup.jar
+#
+# This file can be used to configure Install with the options specified below
+# when the wizard is run with the "-options" command line option. Read each
+# setting's documentation for information on how to change its value.
+# Enclose all values within a single pair of double quotes.
+# 
+# A common use of an options file is to run the wizard in silent mode. This lets
+# the options file author specify wizard settings without having to run the
+# wizard in graphical or console mode. To use this options file for silent mode
+# execution, use the following command line arguments when running the wizard:
+# 
+#    -options "D:\installImage\WAS\responsefile.base.txt" -silent
+#
+################################################################################
+
+#################################################################################
+#
+# License Acceptance
+#
+# Valid Values:
+#	true - Accepts the license. Will install the product.
+#	false - Declines the license. Install will not occur.  
+#
+# If no install occurs, this will be logged to a temporary log file in the 
+# user's temporary directory.
+#
+# By changing the silentInstallLicenseAcceptance property in this response file 
+# to "true", you agree that you have reviewed and agree to the terms of the 
+# IBM International Program License Agreement accompanying this program, which
+# is located at CD_ROOT\was.primary.pak\repository\legal\lafiles.  If you do not
+# agree to these terms, do not change the value or otherwise download, install,
+# copy, access, or use the program and promptly return the program and proof of
+# entitlement to the party from whom you acquired it to obtain a refund of the
+# amount you paid.
+# 
+
+-OPT silentInstallLicenseAcceptance="true"
+
+
+################################################################################
+#
+# NonRoot Install Settings
+#
+# The option indicates whether you accept the limitations associated with installing 
+# as a non-root user, as follows:
+#
+#	- Creation of a Windows or Linux service for WebSphere Application Server
+#	- Native registration with the operating system
+#
+# Port conflicts may occur with other installations of WebSphere Application Server that are not registered with the operating system.
+#
+# See the information center, (http://publib.boulder.ibm.com/infocenter/wasinfo/v6r1/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/rins_nonroot.html) 
+# for more information on performing these installation actions after installation and avoiding port conflicts.
+#
+# Valid Values:
+#	true - Accepts the limitations. Will install the product.
+#	false - Do not accept the limitations. Install will not occur.	
+#
+# Uncomment the following only if you are installing as a non-root user. Specify
+# one of the valid options listed above before proceeding to install:
+#
+#-OPT allowNonRootSilentInstall="true"
+
+################################################################################
+#
+# Operating System Prerequisite Checking
+#
+# If you want to disable operating system prerequisite checking, uncomment
+# the following line. This will notify the installer to continue with
+# the installation and log the warnings even though the prerequisite checking
+# has failed.
+#
+-OPT disableOSPrereqChecking="true"
+
+################################################################################
+#
+# Non-blocking Prerequisite Checking
+#
+# If you want to disable non-blocking prerequisite checking, uncomment
+# the following line. This will notify the installer to continue with
+# the installation and log the warnings even though the prerequisite checking
+# has failed.
+#
+#-OPT disableNonBlockingPrereqChecking="true"
+
+################################################################################
+#
+# Install Type Settings 
+#
+# The installType option designates the type of installation that will be
+# performed. 
+#
+# The default installType option is to install a new copy of WebSphere
+# Application Server.
+#
+# Valid Values: 
+#	installNew - default value, installs a new copy.
+#	addFeature - add features to an existing installation.
+#	upgrade - upgrade a trial edition to a licensed version, or
+#		  upgrade Express edition to Base edition.
+
+
+
+################################################################################
+#
+# Install a New Copy
+#
+# To install a new copy, be sure that the installLocation option is set to a 
+# new install location.
+#
+
+-OPT installType="installNew"
+
+################################################################################
+#
+# Incremental Install
+#
+# If you are installing additional features on top of an existing installation,
+# (e.g. incremental install), uncomment the following line.  This will notify
+# the installer that you are doing an incremental install.
+#
+#-OPT installType="addFeature"
+#
+# Define the new features you want to install on top of an existing WebSphere 
+# Application Server.  The only additional feature available in WebSphere 
+# Application Server is Application Server Samples.
+#
+# Ensure the feature option below is set to "samplesSelected" (-OPT feature="samplesSelected") 
+# and the installLocation option is set to an "existing" WebSphere Application 
+# Server install location.
+#
+
+################################################################################
+#
+# Upgrade from Express Trial or Base Trial edition to Licensed version, or
+# Upgrade from Express edition to Base edition
+#
+# NOTE: DO NOT set this option unless you have an Express, Express trial, or Base trial 
+#	edition installed. You cannot do an upgrade unless you have at least 
+#	one of the editions installed.
+#
+# To setup an upgrade install, UNcomment the following entry
+#
+# -OPT installType="upgrade"
+#
+# Be sure the installLocation option is set to your existing Express, Express trial,
+# or Base trial install location.
+#
+
+################################################################################
+#
+# Create Profile for an Existing V6.1 Installation
+#
+# Valid values: 
+#    true - creates a profile for an existing installation
+#    false - does not create a profile
+# 
+# To create a profile for an existing installation, uncomment the following
+# entry. Comment out the "installType" option above since "installType"
+# and "createProfile" options cannot be specified at the same time.
+#
+# Be sure the installLocation option is set to your existing install location.
+#
+#-OPT createProfile="true"
+
+################################################################################
+#
+# "Application Server samples" feature
+#
+# The selection state of the "Application Server samples" feature.
+# 
+# Valid options:
+# 
+#    samplesSelected  - Indicates that the feature is selected for installation.
+#    noFeature - Indicates that the feature is not selected for installation,
+#		 this is the default option.
+# 
+# For example, to select "Application Server samples" for installation, use
+# 
+#    -OPT feature="samplesSelected"
+#
+# Note if feature="samplesSelected" and PROF_enableAdminSecurity="true", 
+# you must provide a password by uncommenting and specifying a value for 
+# PROF_samplesPassword in Administrative Security section below
+#
+
+-OPT feature="noFeature"
+
+################################################################################
+#
+# Install Location
+#
+# The install location of the product. Specify a valid directory into which the
+# product should be installed. If the directory contains spaces, enclose it in
+# double-quotes as shown in the Windows example below. Note that spaces in the
+# install location is only supported on Windows operating systems. Maximum path 
+# length is 60 characters for Windows 2000 and Windows XP.
+# 
+# Below is the list of default install locations for each supported operating
+# system when you're installing as a root user.  By default, in this response
+# file, the Windows install location is used.  If you want to use the default
+# install location for another operating system, uncomment the appropriate
+# default install location entry and then comment out the 
+# Windows operating system entry below.
+#
+# AIX Default Install Location:
+#
+#-OPT installLocation="/usr/IBM/WebSphere/AppServer"
+#
+# HP-UX, Solaris or Linux Default Install Location:
+#
+#-OPT installLocation="/opt/IBM/WebSphere/AppServer"	
+#
+# i5OS Default Install Location:
+#
+#-OPT installLocation="/QIBM/IBM/WebSphere/AppServer/V61/<productOffering>"
+#
+# Windows Default Install Location:
+#
+
+-OPT installLocation="C:\Program Files\IBM\WebSphere\AppServer"
+#
+# If you are installing as non-root user on Unix or non-administrator on
+# Windows, the following default install locations are suggested. Be sure you
+# have write permission for the install location chosen.
+#
+# AIX Default Install Location:
+#
+#-OPT installLocation="<user's home>/IBM/WebSphere/AppServer"
+#
+# HP-UX, Solaris or Linux Default Install Location:
+#
+#-OPT installLocation="<user's home>/IBM/WebSphere/AppServer"
+#
+# Windows Default Install Location: 
+#
+#-OPT installLocation="C:\IBM\WebSphere\AppServer"
+
+################################################################################
+#
+# Profile Creation Selection 
+#
+# A default WebSphere Application Server profile will be created automatically 
+# during Base install. Use this option to instruct the installer not to
+# create a default profile.
+#
+# Valid options:
+#	none - a profile will not be created during installation.
+# 
+# For example, to choose no profile creation for installation, uncomment the following line
+# 
+#-OPT profileType="none"
+
+################################################################################
+#
+# Administrative Security 
+#
+# Choose whether to enable Administrative security during the installation
+# process.
+#
+# If profileType="custom", Administrative security should be disabled, use
+#-OPT PROF_enableAdminSecurity="false"
+#
+# Valid Values:
+#	true - Administrative security is enabled, user name and 
+#	     password required.
+#	false - Administrative security is not enabled.
+#
+-OPT PROF_enableAdminSecurity="true"
+
+################################################################################
+# 
+# Security Options
+#
+# The following two options should only be uncommented when
+# PROF_enableAdminSecurity="true".
+#
+# If PROF_enableAdminSecurity="false", the following entries will be
+# disregarded.
+#
+# If PROF_enableAdminSecurity="true", the following entries are required and must
+# be filled out before proceeding with silent installation.
+#
+# Specify the user name for administrative security
+#
+# Valid Values: 
+#	a character string - do not use the following characters:
+#	/, \, *, , , :, ;, =, +, ?, |, <, >, &, %, ', ", ]]>, #, $, ^, {, }
+# Note: a period (.) is not valid if it is the first character
+#
+-OPT PROF_adminUserName=P8Admin
+#
+# Specify the password for the user specified in PROF_adminUserName
+#
+# Valid Values: 
+#	a character string
+#
+-OPT PROF_adminPassword=IBMFileNetP8
+#
+# The following option should only be uncommented when feature="samplesSelected" and
+# PROF_enableAdminSecurity="true"
+# Specify the password for samples user
+#
+# Valid Values: 
+#	a character string
+#
+#-OPT PROF_samplesPassword=
+
+#####################################################################################
+# if createProfile="true", you may use the following profile creation options:
+#####################################################################################
+################################################################################
+#
+# Stand-Alone Profile
+#
+################################################################################	
+# 
+# Profile name
+#
+# Specify the name of the profile for the Application Server. The profile 
+# name must be unique for this WebSphere Application Server installation.
+#
+# Valid Values: 
+#	a character string - do not use the following characters:
+#	/, \, *, , , :, ;, =, +, ?, |, <, >, &, %, ', ", ]]>, #, $, ^, {, }
+# Note: a period (.) is not valid if it is the first character.
+#
+#-OPT PROF_profileName=
+
+################################################################################
+# 
+# Profile path
+#
+# Specify a valid directory to contain the files that define the run-time environment, 
+# such as commands,configuration files, and log files. 
+#
+# Valid Values: An empty directory, the user must have proper permissions to the directory,
+# there must be adequate disk space, total path cannot be greater than 80 (windows)
+#
+#-OPT PROF_profilePath=
+
+################################################################################
+#
+# Default Profile
+#
+# Uncomment the following line to make this profile the default target of commands 
+# that do not use their profile parameter.
+# Note that the first profile created for an installation is always marked as
+# the default profile.
+#
+# Valid Value:
+#     true - make this the default profile.
+#
+#-OPT PROF_isDefault="true"
+
+################################################################################
+#
+# Host name
+#
+# Specify the host name for the Application Server. The host name is the domain 
+# name system (DNS) name (short or long) or the IP address of this computer.
+# Valid Values: a valid hostname or IP address
+# 
+#-OPT PROF_hostName=
+
+################################################################################
+# 
+# Application Server Node name
+#
+# Specify the node name for the Application Server. Node name under one cell 
+# has to be unique. 
+#
+# Valid Values: 
+#	a character string - do not use the following characters:
+#	/, \, *, , , :, ;, =, +, ?, |, <, >, &, %, ', ", ]]>, #, $, ^, {, }
+# Note: a period (.) is not valid if it is the first character.
+#
+-OPT PROF_nodeName=P8Node01
+
+################################################################################
+#
+# Cell name
+#
+# Specify the cell name for the profile to be created.
+#
+# Valid Values: 
+#	a character string - do not use the following characters:
+#	/, \, *, , , :, ;, =, +, ?, |, <, >, &, %, ', ", ]]>, #, $, ^, {, }
+# Note: a period (.) is not valid if it is the first character.
+#
+-OPT PROF_cellName=P8Node01Cell
+
+################################################################################
+#
+# Starting Port
+#
+# Specify the starting port number for generating all ports for the profile. 
+# Do not use this parameter with the PROF_portsFile or PROF_defaultPorts parameters.
+#
+# Valid values: a positive integer port value, within the valid port range
+#
+#-OPT PROF_startingPort=
+
+################################################################################
+#
+# Port File
+#
+# Specify the path to a property file containing the desired port values for 
+# the new profile. Do not use this parameter with the PROF_startingPort or 
+# PROF_defaultPorts parameters.
+# Valid values: A fully qualified path to a valid ports property file
+#
+#-OPT PROF_portsFile= 
+
+################################################################################
+#
+# Default Ports
+#
+# Uncomment the following line to assign the default port values.
+# Otherwise unique port values will be assigned.
+# Do not use this parameter with the PROF_portsFile or PROF_startingPort parameters.
+#
+# Valid value: 
+#     true - use WAS default ports.
+#
+#-OPT PROF_defaultPorts="true"
+
+################################################################################
+#
+# Validate Ports
+#
+# Uncomment the following line to validate the port values to ensure they are 
+# not reserved or in use. Otherwise, no port validation checking will occur.
+#
+# Valid values: 
+#     true - enables port validation.
+#
+#-OPT PROF_validatePorts="true"
+
+################################################################################
+#
+# WinService Check
+#
+# Specify whether you want to run this server as a windows service
+#
+# Valid values:
+#     true - run as Windows service.
+#     false - do not run as Windows service.
+#
+-OPT PROF_winserviceCheck="true"
+
+################################################################################
+#
+# WinService Account Type
+#
+# Specify the type of the owner account of the Windows service to create.
+# Uncomment the following ONLY if PROF_winserviceCheck="true"
+#
+# Valid values: specifieduser or localsystem
+#
+-OPT PROF_winserviceAccountType=localsystem
+
+################################################################################
+#
+# WinService User Name
+#
+# Specify the user name for the windows service. Uncomment the 
+# following ONLY if PROF_winserviceCheck="true"
+#
+# Valid values: a valid user name for the current system
+#
+#-OPT PROF_winserviceUserName=
+
+################################################################################
+# 
+# WinService Password
+#
+# Specify the password for the user specified by the winserviceUserName parameter
+# Uncomment the following ONLY if PROF_winserviceCheck="true"
+#
+# Valid Values: 
+#	a character string - do not use the following characters:
+#	/, \, *, , , :, ;, =, +, ?, |, <, >, &, %, ', ", ]]>, #, $, ^, {, }
+# Note: a period (.) is not valid if it is the first character.
+#
+#-OPT PROF_winservicePassword=
+
+################################################################################
+#
+# WinService Startup Type
+#
+# Specify the start up method for the windows service
+# Uncomment the following ONLY if PROF_winserviceCheck="true"
+# 
+# Valid values:
+#     manual - windows service must be started manually.
+#     automatic - windows service will start automatically after reboot.
+#     disabled - service is disabled.
+#
+-OPT PROF_winserviceStartupType="automatic"
+
+################################################################################
+#
+# LinuxService Check
+#
+# Specify whether you want to run this server as a Linux service. 
+#
+# Note that the root permission is required to enable Linux service.
+#
+# Valid values: 
+#     true - run as a Linux service.
+#     false - do not run as a Linux service.
+#
+#-OPT PROF_enableService="true" 					
+
+################################################################################
+#
+# LinuxService User Name
+#
+# Specify the name of the user you wish this service to be run as. Uncomment the
+# following ONLY if PROF_enableService="true". Linux services can only be created 
+# from profile creation if the current user is the root user.
+#
+# Valid values: a valid Linux user name
+#
+#-OPT PROF_serviceUserName=
+
+################################################################################
+#
+# WebServer Check
+#
+# Specify whether you wish to set the web server definition.
+#
+# Valid values: 
+#     true - enable the creation of a webserver definition.
+#     false - do not enable the creation of a webserver definition.
+#
+#-OPT PROF_webServerCheck="true"
+
+
+################################################################################
+#
+# WebServer Type
+#
+# Specify the type of web server you are creating. 
+# Uncomment the following if and ONLY if PROF_webServerCheck="true".
+#
+# Valid values (case sensitive): IHS | IIS | SUNJAVASYSTEM | DOMINO | APACHE | HTTPSERVER_ZOS
+#
+#-OPT PROF_webServerType=
+			
+################################################################################
+#
+# WebServer OS
+#
+# Specify the operating system of the system where the web server is
+# installed. Uncomment the following if and ONLY if PROF_webServerCheck="true".
+#
+# Valid values: linux | windows | aix | hpux | solaris | os390 | os400
+#
+#-OPT PROF_webServerOS=
+
+################################################################################
+#
+# WebServer Name
+#
+# Specify the name of the web server. Uncomment the following if and ONLY if 
+# PROF_webServerCheck="true".
+#
+# Valid Values: 
+#	a character string - do not use the following characters:
+#	/, \, *, , , :, ;, =, +, ?, |, <, >, &, %, ', ", ]]>, #, $, ^, {, }
+# Note: a period (.) is not valid if it is the first character.
+#
+#-OPT PROF_webServerName=
+
+################################################################################
+#
+# WebServer Hostname
+#
+# Specify the hostname of the system with the web server. Uncomment the following
+# if and ONLY if PROF_webServerCheck="true".
+#
+# Valid values: a valid hostname or IP address
+#
+#-OPT PROF_webServerHostname=
+
+################################################################################
+#
+# WebServer Port
+#
+# Specify the port from which the web server can be accessed. Uncomment the 
+# following if and ONLY if PROF_webServerCheck="true".
+#
+# Valid values: a valid port number
+#
+#-OPT PROF_webServerPort=
+
+################################################################################
+#
+# WebServer Install Path
+#
+# Specify the installation path of the web server (local or remote).
+# Uncomment the following if and ONLY if PROF_webServerCheck="true".
+#
+# Valid values: a valid directory path
+#
+#-OPT PROF_webServerInstallPath=
+
+################################################################################
+#
+# WebServer Plugin Path
+#
+# Specify the path to the plugins that will be used by this web server.
+# Uncomment the following if and ONLY if PROF_webServerCheck="true".
+#
+# Valid values: a valid directory path
+#
+#-OPT PROF_webServerPluginPath=
+
+################################################################################
+#
+# Omit Action
+#
+# Use this option to omit the config action specified
+#
+# Valid values: one of the following optional config actions	
+#		deployAdminConsole
+#		defaultAppDeployAndConfig
+#		samplesInstallAndConfig
+#
+#-OPT PROF_omitAction=
+
+################################################################################
+#
+# Developer Server
+#
+# Uncomment the following line to configure the default application server with 
+# development environment settings.
+# The developer server has a smaller footprint and quicker startup time.
+# Otherwise the default configuration values for an application server will be assigned.
+#
+# Valid value: 
+#    true - mark this default server for development purposes only.
+#
+#-OPT PROF_isDeveloperServer="true"
+
+################################################################################
+#
+# Tracing Control
+#
+# The trace output format can be controlled via the option 
+# -OPT traceFormat=ALL
+#
+# The choices for the format are 'text' and 'XML'. By default, both formats will be produced, in two different trace files. 
+#
+# If only one format is required, use the traceFormat option to specify which one, as follows:
+#
+# Valid Options:
+#	text -	Lines in the trace file will be in a plain text format for easy readability. 
+#	XML -	Lines in the trace file will be in the standard Java logging XML format which can be viewed using any text or XML editor or using the Chainsaw tool from Apache (http://logging.apache.org/log4j/docs/chainsaw.html).
+#
+#
+#
+# The amount of trace info captured can be controlled using the option:
+# -OPT traceLevel=INFO
+#
+# Valid Options:
+# 
+#	Level	   Numerical Level	Description
+#	OFF		0		No trace file is produced
+#	SEVERE		1		Only severe errors are output to trace file
+#	WARNING 	2		Messages regarding non-fatal exceptions and warnings are added to trace file
+#	INFO		3		Informational messages are added to the trace file (this is the default trace level)
+#	CONFIG		4		Configuration related messages are added to the trace file
+#	FINE		5		Tracing method calls for public methods
+#	FINER		6		Tracing method calls for non public methods except getters and setters
+#	FINEST		7		Trace all method calls, trace entry/exit will include parameters and return value

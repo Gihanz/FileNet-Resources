@@ -1,0 +1,10 @@
+[{"symbolicName": "CFProcess.Workflow.Justification"},
+{"symbolicName": "IndividualDetails"},
+{"symbolicName": "AddressInformation"},
+{"symbolicName": "AssetDetails"},
+{"symbolicName": "BankStatements"},
+{"symbolicName": "ClubsScoities"},
+{"symbolicName": "LimitedLiabilityCompany"},
+{"symbolicName": "Partnership"},
+{"symbolicName": "SoleProprietors"},
+{"symbolicName": "CFProcess.Workflow.PaymentMemo"}]

@@ -1,0 +1,2 @@
+This is a sample text document. 
+It used to show a custom text icon.

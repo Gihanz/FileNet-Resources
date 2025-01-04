@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="You can use the configuration and deployment tool to deploy IBM Content Navigator to your web application server.&#10;&#10;Tip: You can also close the wizard and manually deploy the EAR file to your web application server." displayName="Deploy the Web Application" enabled="true" implementorid="nd">
+<property name="DeployableEar">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\deploy\navigatorEAR.ear</value>
+        <description>Enter the fully qualified path of the web application EAR file. The default path is C:\Program Files (x86)\IBM\ECMClient\configure\deploy\navigatorEAR.ear.
+
+Important: You must run the task to build the web application to generate this EAR file.</description>
+        <displayName>Deployable EAR file</displayName>
+    </property>
+    <property name="ApplicationName">
+        <value>navigator</value>
+        <description>Enter the name to display for the IBM Content Navigator application on the web application server (for example, in the administrative console). The default name is ECMClient. See your web application server documentation for naming restrictions. On WebSphere Application Server, each application in a cell must have a unique name.</description>
+        <displayName>IBM Content Navigator application name</displayName>
+    </property>
+    <property name="ApplicationServerNode">
+        <value>P8Node01</value>
+        <description>Specify the node where IBM Content Navigator will be deployed. 
+
+If no nodes are listed in the drop-down menu, you are not connected to the web application server. Ensure that the web application server where you want to deploy IBM Content Navigator is running and that the values that you specified when you connected to your WebSphere Application Server environment are correct.</description>
+        <displayName>Application server node</displayName>
+    </property>
+    <property name="ApplicationServerName">
+        <value>server1</value>
+        <description>Specify the server where IBM Content Navigator will be deployed.
+
+If no servers are listed in the drop-down menu, you are not connected to the web application server. Ensure that the web application server where you want to deploy IBM Content Navigator is running and that the values that you specified when you connected to your WebSphere Application Server environment are correct.</description>
+        <displayName>Application server name</displayName>
+    </property>
+    <property name="ApplicationServerVirtualHost">
+        <value>default_host</value>
+        <description>Specify the virtual host where IBM Content Navigator will be deployed.
+
+If no virtual hosts are listed in the drop-down menu, you are not connected to the web application server. Ensure that the web application server where you want to deploy IBM Content Navigator is running and that the values that you specified when you connected to your WebSphere Application Server environment are correct.</description>
+        <displayName>Application server virtual host</displayName>
+    </property>
+    <property name="DeploymentScript">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\scripts\deployWSApplication.tcl</value>
+        <description>Enter the fully qualified path of the deployment script, deployWSApplication.tcl. The default path is C:\Program Files (x86)\IBM\ECMClient\configure\scripts\deployWSApplication.tcl.</description>
+        <displayName>Deployment script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\tmp</value>
+        <description>Enter the fully qualified path of a temporary directory that the configuration and deployment tool can use when running this task.
+
+You must have read and write access for the directory.
+
+The default directory is: C:\Program Files (x86)\IBM\ECMClient\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>

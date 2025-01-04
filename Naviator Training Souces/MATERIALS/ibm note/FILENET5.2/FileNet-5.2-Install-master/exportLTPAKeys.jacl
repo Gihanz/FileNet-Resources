@@ -1,0 +1,5 @@
+puts "Exporting ltpa keys to C:\ltpakeys.txt using IBMFileNetP8 as password" 
+
+$AdminTask exportLTPAKeys {-ltpaKeyFile C:\ltpakeys.txt -password keypassword }
+
+puts "Done exporting ltpa keys to C:\ltpakeys.txt"

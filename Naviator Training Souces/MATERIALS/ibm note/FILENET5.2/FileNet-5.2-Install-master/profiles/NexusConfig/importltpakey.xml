@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="You must import the Lightweight Third Party Authentication(LTPA) key from your Content Engine web application server to the IBM Content Navigator web application server.&#10;&#10;Important: You must export the LTPA key file from the Content Engine server and save it on this machine before you run this task." displayName="Import Your Content Engine LTPA Keys" enabled="true" implementorid="">
+<property name="LTPAKeyPath">
+        <value>C:\ltpakeys.txt</value>
+        <description>Enter the fully qualified path of the LTPA key file to import to the IBM Content Navigator web application server.
+
+Remember: You must export the LTPA key file from the Content Engine server and save it on this machine before you run this task.</description>
+        <displayName>LTPA key file</displayName>
+    </property>
+    <property name="LTPAKeyPassword">
+        <value>keypassword</value>
+        <description>Enter the LTPA key password. You can get this password from your Content Engine administrator.</description>
+        <displayName>LTPA key password</displayName>
+    </property>
+    <property name="ImportScript">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\scripts\importLTPAKey.tcl</value>
+        <description>Enter the fully qualified path of the import script, importLTPAKey.tcl. The default path is importLTPAKey.tcl.</description>
+        <displayName>Import script</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\tmp</value>
+        <description>Enter the fully qualified path of a temporary directory that the configuration and deployment tool can use when running this task.
+
+You must have read and write access for the directory.
+
+The default directory is: C:\Program Files (x86)\IBM\ECMClient\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>

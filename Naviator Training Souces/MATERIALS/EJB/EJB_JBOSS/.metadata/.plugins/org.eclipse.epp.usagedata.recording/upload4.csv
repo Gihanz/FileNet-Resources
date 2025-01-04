@@ -1,0 +1,12 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.4.1.M20080827-0800a,,1230705593122
+activated,workbench,org.eclipse.ui.workbench,3.4.1.M20080827-0800a,,1230705602726
+started,bundle,org.eclipse.mylyn.resources.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.resources.ui,1230705602866
+started,bundle,org.eclipse.mylyn.java.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.java.ui,1230705602897
+started,bundle,org.eclipse.mylyn.pde.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.pde.ui,1230705602967
+started,bundle,org.eclipse.mylyn.ide.ant,3.0.0.v20080619-1900,org.eclipse.mylyn.ide.ant,1230705603027
+closed,workbench,org.eclipse.ui.workbench,3.4.1.M20080827-0800a,,1230705603427
+stopped,bundle,org.eclipse.mylyn.pde.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.pde.ui,1230705606422
+stopped,bundle,org.eclipse.pde.api.tools.ui,1.0.0.v20080730_r341,org.eclipse.pde.api.tools.ui,1230705606512
+stopped,bundle,org.eclipse.pde.p2.ui,1.0.0.v20080604-2000,org.eclipse.pde.p2.ui,1230705606582
+stopped,bundle,org.eclipse.pde.runtime,3.4.0.v20080723-1000,org.eclipse.pde.runtime,1230705606612

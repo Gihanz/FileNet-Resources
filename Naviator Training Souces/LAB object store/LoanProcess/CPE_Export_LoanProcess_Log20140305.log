@@ -1,0 +1,33 @@
+3/5/2014 1:04:29 AM,Export Admin,Information,BeginTrans,0,Begin exporting objects.
+3/5/2014 1:05:10 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group1_1.xml
+
+3/5/2014 1:05:10 AM,Export Admin,Information,Exported ,7,CVLs
+3/5/2014 1:05:10 AM,Export Admin,Information,Exported ,110,Prop templates
+3/5/2014 1:05:10 AM,Export Admin,Information,Exported ,40,Class defs
+3/5/2014 1:05:10 AM,Export Admin,Information,Exported ,0,LF policies
+3/5/2014 1:05:10 AM,Export Admin,Information,Exported ,0,LF actions
+3/5/2014 1:05:11 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group2_1.xml
+
+3/5/2014 1:05:11 AM,Export Admin,Information,Exported ,18,Folders
+3/5/2014 1:05:12 AM,Export Admin,Information,Queued ,2,Documents
+3/5/2014 1:05:32 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group3_1.xml
+
+3/5/2014 1:05:32 AM,Export Admin,Information,Exported ,45,Documents
+3/5/2014 1:05:36 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group6_1.xml
+
+3/5/2014 1:05:36 AM,Export Admin,Information,Exported ,44,Custom Objects
+3/5/2014 1:05:36 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group4_1.xml
+
+3/5/2014 1:05:36 AM,Export Admin,Information,Exported ,81,RCRs
+3/5/2014 1:05:41 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group1_2.xml
+
+3/5/2014 1:05:41 AM,Export Admin,Information,Exported ,0,LifecycleActions
+3/5/2014 1:05:41 AM,Export Admin,Information,Exported ,0,LifecyclePolicies
+3/5/2014 1:05:41 AM,Export Admin,Information,Exported ,0,CVLs
+3/5/2014 1:05:41 AM,Export Admin,Information,Exported ,0,Global Prop Defs
+3/5/2014 1:05:41 AM,Export Admin,Information,Exported ,40,Class Defs
+3/5/2014 1:05:43 AM,Export Admin,Information,Exported file,0,Objects exported to file: C:\VMWareImageCreation\LoanProcess\Set1_CEExport_Group7_1.xml
+
+3/5/2014 1:05:43 AM,Export Admin,Information,Exported ,3,Events/Others
+3/5/2014 1:05:43 AM,Export Admin,Information,EndTrans,0,391 object(s) exported 0 failed.
+

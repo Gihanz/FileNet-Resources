@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.birt.core,2.5.1.v20090903,"org.eclipse.birt.core",1265870713375
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265870831609
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265870886156
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.selectAll",1265870937609
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871084843
+started,bundle,org.eclipse.datatools.connectivity.oda.profile,3.2.0.v200906020553,"org.eclipse.datatools.connectivity.oda.profile",1265871084953
+started,bundle,org.eclipse.datatools.connectivity.oda.consumer,3.2.1.v200908281118,"org.eclipse.datatools.connectivity.oda.consumer",1265871095250
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871096093
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871096156
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871096187
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871096281
+started,bundle,org.eclipse.datatools.sqltools.sqlscrapbook,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.sqlscrapbook",1265871109296
+started,bundle,org.eclipse.datatools.sqltools.sql,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.sql",1265871109515
+started,bundle,org.eclipse.datatools.sqltools.editor.core.ui,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.editor.core.ui",1265871109578
+started,bundle,org.eclipse.datatools.sqltools.db.generic.ui,1.0.0.v200906020900,"org.eclipse.datatools.sqltools.db.generic.ui",1265871109625
+started,bundle,org.eclipse.datatools.sqltools.db.derby.ui,1.0.0.v200906020900,"org.eclipse.datatools.sqltools.db.derby.ui",1265871109640
+started,bundle,org.eclipse.datatools.sqltools.debugger.core,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.debugger.core",1265871109828
+started,bundle,org.eclipse.datatools.sqltools.debugger.core.ui,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.debugger.core.ui",1265871109843
+opened,editor,org.eclipse.datatools.sqltools.sqlscrapbook,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor",1265871110078
+started,bundle,org.eclipse.datatools.sqltools.common.ui,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.common.ui",1265871110250
+activated,editor,org.eclipse.datatools.sqltools.sqlscrapbook,1.0.0.v200906022302,"org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor",1265871110421
+error,log,,,"Unhandled event loop exception",1265871129015
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871140921
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265871143359
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1265871143718

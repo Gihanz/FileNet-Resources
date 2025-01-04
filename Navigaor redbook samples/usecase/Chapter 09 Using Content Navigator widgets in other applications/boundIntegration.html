@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>Container for IBM Content Navigator Integration</title>
+	<link rel="stylesheet" href="ContainerSimulation.css" media="screen">
+	<link rel="stylesheet" href="http://192.168.112.226:9080/navigator/ecm/widget/resources/dojo.css.jgz" media="screen">
+	<link rel="stylesheet" href="http://192.168.112.226:9080/navigator/ecm/widget/resources/ecm.css.jgz" media="screen">
+	<link rel="stylesheet" href="http://192.168.112.226:9080/navigator/ecm/themes/oneui/dojo.css.jgz" 	media="screen">
+	<link rel="stylesheet" href="http://192.168.112.226:9080/navigator/ecm/themes/oneui/oneui.css.jgz" 	media="screen">
+	<script>
+		dojoConfig = {
+			packages: 
+			[
+				{name: "dojo",location: "http://192.168.112.226:9080/navigator/dojo"},
+				{name: "ecm",location: "http://192.168.112.226:9080/navigator/ecm"}
+			],
+			isDebug: true,
+		};
+	</script>
+	<!-- load dojo -->
+	<script src="http://192.168.112.226:9080/navigator/dojo/dojo.js.jgz"></script>
+	<script src="http://192.168.112.226:9080/navigator/ecm/ecm.js.jgz"></script>
+</head>
+
+<body class="ecm oneui">
+<div class="externalAppContent">
+	<input id="folderToShow" type="text" value="/">
+	<input id="showFolderButton" type="button" disabled="disabled" value="show Folder">
+</div>
+<div id="icnIntegration">
+	<div id="contentList" data-dojo-type="ecm.widget.listView.ContentList" data-dojo-props="plugins:'{dnd:true}',isExternalDND:'true',isResultSetSorted:'true',copyOnly:'true'" role="contentinfo" aria-label="Content List" style="width: 100%; height: 100%;">
+	</div>
+</div>
+<div class="externalAppContent">
+	Here is some information from the Container
+</div>
+
+<script>
+	require([ "dojo/parser", "ecm/widget/listView/ContentList",
+		"ecm/widget/listView/modules/ViewDetail",
+		"ecm/widget/listView/modules/ViewMagazine",
+		"ecm/widget/listView/modules/ViewFilmStrip",
+		"ecm/widget/listView/modules/DocInfo",
+		"ecm/widget/listView/modules/Bar",
+		"ecm/widget/listView/modules/Toolbar",
+		"ecm/widget/listView/modules/Breadcrumb",
+		"ecm/widget/listView/gridModules/DndRowMoveCopy",
+		"ecm/widget/listView/gridModules/DndFromDesktopAddDoc",
+		"ecm/widget/listView/gridModules/RowContextMenu",
+		"ecm/widget/dialog/LoginDialog",
+		"dijit/registry","dojo/io-query",
+		"ecm/widget/viewer/FilenetViewer",
+		"ecm/widget/viewer/BrowserViewer",
+		"ecm/widget/dialog/ContentViewerWindow", 		
+		"ecm/widget/dialog/ErrorDialog","dojo/on",
+		"dojo/dom","dojo/dom-attr", "dojo/domReady!"],
+	function(parser, ContentList,ViewDetail,ViewMagazine,
+ViewFilmStrip,DocInfo,Bar,Toolbar,Breadcrumb,DndRowMoveCopy,
+DndFromDesktopAddDoc,RowContextMenu,LoginDialog,registry,ioQuery,
+FilenetViewer,BrowserViewer,ContentViewerWindow, ErrorDialog, on,dom,domAttr) {
+		parser.parse();	
+		var repository = ecm.model.desktop.getDefaultRepository();
+		if (repository)	{
+			alert("already rep");
+		}
+		var errorDialog = new ErrorDialog();
+		dojo.connect(ecm.model.desktop, "onMessageAdded", errorDialog, "messageAddedHandler");
+		function getContentListModules() {
+			var viewModules = [];
+			viewModules.push(ViewDetail);
+			viewModules.push(ViewMagazine);
+			if (ecm.model.desktop.showViewFilmstrip) {
+				viewModules.push(ViewFilmStrip);
+			}
+
+			var array = [];
+			array.push(DocInfo);
+			array.push({
+				moduleClass: Bar,
+				top: [
+						[
+							[
+								{ moduleClass: Toolbar},
+								{
+									moduleClasses: viewModules, 
+									"className": "BarViewModules"
+								}
+							]
+						],
+						[
+							[
+								{
+									moduleClass: Breadcrumb
+								}
+							]
+						]
+					]
+			});
+			return array;
+		};
+		function getContentListGridModules() {
+			var array = [];
+			array.push(DndRowMoveCopy);
+			array.push(DndFromDesktopAddDoc);
+			array.push(RowContextMenu);
+			return array;
+		};			
+		
+		var contentList = registry.byId("contentList");					
+		contentList.setContentListModules(getContentListModules());
+		contentList.setGridExtensionModules(getContentListGridModules());
+		
+		ecm.model.desktop.loadDesktop(null, function(desktop) {
+		
+			var repository = desktop.getDefaultRepository();
+			
+			var retrieveFolder = function (path) {
+				if (!path) {
+					path="/";
+				}
+				repository.retrieveItem(path, function(rootFolder) {
+					console.log("folder retrieved: " + rootFolder);
+					rootFolder.retrieveFolderContents(false, function(resultSet){
+						contentList.setResultSet(resultSet,rootFolder);
+					});
+				});
+			}
+			var initialLoginDialog = LoginDialog.getLoginDialog();
+			var doConnections = function() {
+				myButton = dom.byId("showFolderButton");
+				on(myButton, "click", function(evt){
+					textInput = dom.byId("folderToShow");
+					if (textInput.value) {
+						retrieveFolder(textInput.value );
+					}
+				});
+				domAttr.remove(myButton, "disabled");
+				dojo.connect(ecm.model.desktop, "onSessionExpired",initialLoginDialog, "sessionExpiredHandler");
+			};
+				
+			if (!repository.connected) {			
+				initialLoginDialog.connectToRepository(repository);
+				dojo.connect(initialLoginDialog,"onConnected", function() {			
+					doConnections();
+				});
+			} else {
+				alert("Desktop reloaded!");
+				doConnections();
+			}
+		}, false);
+	});		
+</script>
+
+</body>
+</html>

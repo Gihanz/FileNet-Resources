@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration displayName="WebSphere Application Server" enabled="true" implementorid="websphere">
+<property name="ApplicationServerVersion">
+        <value>8.0</value>
+        <description>Enter  one of the following WebSphere Application Server version values: 6.1, 7.0, 8.0, 8.5</description>
+        <displayName>Application server version</displayName>
+    </property>
+    <property name="ApplicationServerInstallationFolder">
+        <value>c:\Program Files\IBM\WebSphere\AppServer</value>
+        <description>The absolute path to the directory where the WebSphere Application Server is installed. </description>
+        <displayName>Application server installation directory</displayName>
+    </property>
+    <property name="ApplicationServerProfileFolder">
+        <value>c:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01</value>
+        <description>The absolute path to the directory where the WebSphere Application Server profile for Content Platform Engine is stored.  If you are installing Content Platform Engine on a node in a cluster or on a managed server node and the deployment manager is remote from Configuration Manager, use the directory for the WebSphere profile that is located on the node. </description>
+        <displayName>Application server profile directory</displayName>
+    </property>
+    <property name="ApplicationServerAdminUsername">
+        <value>P8Admin</value>
+        <description>WebSphere administrative security is enabled:
+============================
+You have two options for creating the appserver_admin user account. You can use the local file-based account usually defined while creating the WebSphere profile. Or, you can use WebSphere tools to grant administrative rights to an LDAP account and optionally remove the file-based account created earlier. The appserver_admin user account must have WebSphere administrator permissions throughout the Content Platform Engine installation process. Afterwards, you can reduce the account to a lesser role, such as Configurator.
+
+WebSphere administrative security is not enabled:
+==============================
+If you decide not to enable WebSphere administrative security during profile creation, then no special credentials are required to log in to the WebSphere admin console. You can enter any string into the Configuration Manager field labeled Application server administrator user name. However, remember that to run Content Platform Engine, WebSphere administrative security must be enabled. When you do enable it and the WebSphere admin console requests an account to use as the admin user, enter the appserver_admin.</description>
+        <displayName>Application server administrator user name</displayName>
+    </property>
+    <property name="ApplicationServerAdminPassword">
+        <value>IBMFileNetP8</value>
+        <description>The password for the application server administrator user name.</description>
+        <displayName>Application server administrator password</displayName>
+    </property>
+    <property name="ApplicationServerSoapPort">
+        <value>8880</value>
+        <description>The application server SOAP port number. Examples are 8880 for a standard deployment on WebSphere Application Server, 8080 for JBoss Application Server, and 7001 for WebLogic Application Server. If you are deploying to a cluster or managed server, enter the cluster server port number or the administrative server port number. An example is 8879 for a cluster or network deployment on WebSphere Application Server.</description>
+        <displayName>Application server SOAP port</displayName>
+    </property>
+    <property name="ApplicationServerHostName">
+        <value>localhost</value>
+        <description>The machine name or the IP address of the web application server host. The host can be local or remote. For a cluster or a managed server, use the machine name or the IP address of the deployment manager server or the administrative server.</description>
+        <displayName>Application server host</displayName>
+    </property>
+    <property name="ApplicationServerCell">
+        <value>P8Node01Cell</value>
+        <description>The case-sensitive name of the cell where Content Platform Engine will be deployed.</description>
+        <displayName>Application server cell</displayName>
+    </property>
+    <property name="ApplicationServerTransactionTimeout">
+        <value>180</value>
+        <description>The application server transaction timeout in seconds. The default is 180.</description>
+        <displayName>Application server transaction timeout</displayName>
+    </property>
+    <property name="TurnOffSSLCerticates">
+        <value>false</value>
+        <description>Use this setting to specify whether SSL certificates are used for server communication. If you have already configured WebSphere Application Server to use SSL certificates, set this value to true. Using the default value of false will change your existing WebSphere settings for communicating with other servers, such as Application Engine. </description>
+        <displayName>Use SSL certificates for server communication</displayName>
+    </property>
+</configuration>

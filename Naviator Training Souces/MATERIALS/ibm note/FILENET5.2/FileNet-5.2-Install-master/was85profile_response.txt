@@ -1,0 +1,8 @@
+create
+profileName=AppSrv01
+enableAdminSecurity=true
+profilePath=
+adminUserName=P8Admin
+adminPassword=IBMFileNetP8
+nodeName=P8Node01
+cellName=P8Node01Cell

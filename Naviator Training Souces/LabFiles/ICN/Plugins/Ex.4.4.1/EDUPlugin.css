@@ -1,0 +1,58 @@
+.eduPropertyEditor {
+	display: table;
+}
+
+.eduPropertyEditor .dijitTextBox {
+	display: table-cell;
+}
+
+.eduPropertyEditor .dijitButton {
+	display: table-cell;
+	width: 1px;
+	white-space: nowrap;
+	padding-left: 10px;
+}
+
+.dijitRtl .eduPropertyEditor .dijitButton {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.eduPropertyEditor .dijitTextBox .dijitInputField {
+	width: 100%;
+}
+
+.EDUFeature,
+.EDUFeature .contentPane {
+	width: 100%;
+	height: 100%;
+}
+
+.EDUFeature .dijitContentPane {
+	padding: 0px !important;
+}
+
+.EDUFeature .paneNoOverflow {
+	width: 225px;
+	margin: 0;
+	overflow: hidden;
+	padding-top: 2px;
+}
+
+.EDUFeature .dojoxGrid {
+    border: 0;
+}
+
+.EDUFeature .idxSplitter {
+	background-color: #EDEDED;
+}
+
+.EDUFeature .dijitSplitterV.idxSplitterV {
+	margin: 0 !important;
+}
+
+.EDUFeature .dijitMenuPassive,
+.EDUFeature .dijitMenuItemHover, 
+.EDUFeature .dijitMenuItemSelected {
+	background-color: #DDDDDD;
+}

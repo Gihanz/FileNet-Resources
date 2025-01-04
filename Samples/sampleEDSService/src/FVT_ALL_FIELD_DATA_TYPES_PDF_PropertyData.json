@@ -1,0 +1,34 @@
+[
+{
+	"symbolicName": "FVT_DECFLOAT34",
+    "value": 1009.99000,
+    "displayMode": "readonly"
+},
+{
+	"symbolicName": "FVT_DATE",
+    "value": ["2011-07-23T00:00:00","2011-07-24T00:00:00"]
+},
+{
+	"symbolicName": "FVT_STRING",
+	"value": "TEST ALL DATA TYPES",
+	"choiceList": {
+		"displayName": "FVT_STRING",
+		"choices": [{
+			"displayName": "TEST ALL DATA TYPES",
+			"value": "TEST ALL DATA TYPES"
+		},
+		{
+			"displayName": "NEXUS",
+			"value": "NEXUS"
+		},
+		{
+			"displayName": "LATIN1",
+			"value": "LATIN1"
+		}]
+	}
+},
+{
+	"symbolicName": "FVT_INTEGER",
+	"validateAs": "NoThrees"
+}
+]

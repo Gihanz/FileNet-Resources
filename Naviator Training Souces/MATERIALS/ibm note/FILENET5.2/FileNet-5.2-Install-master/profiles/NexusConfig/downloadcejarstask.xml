@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration description="Important: Ensure that you are running a supported version of Content Engine before you complete this task. &#10;&#10;When you install IBM Content Navigator, a version of the Content Engine client connector files are installed on the IBM Content Navigator server. &#10;&#10;If the version of the files that are installed with IBM Content Navigator do not match the version of the files on your Content Engine server, you can connect to the server to download and install the correct version of the files.&#10;&#10;" displayName="Update the Content Engine Client Connector Files" enabled="true" implementorid="one">
+<property name="CEHost">
+        <value>localhost</value>
+        <description>Enter the short name, long name, or IP address of the Content Engine server. You can point to a node in your deployment or to the web services load balancer. You cannot point to the deployment manager. The server can be local or remote. For a local server, enter the short name of the server. For a remote server, enter the long name or the IP address of the server.</description>
+        <displayName>Content Engine server host name</displayName>
+    </property>
+    <property name="CEPortNumber">
+        <value>9080</value>
+        <description>Specify the HTTP or HTTPS port number of your Content Engine deployment. You can get this information from your Content Engine administrator or from the web application server where Content Engine is deployed.</description>
+        <displayName>Port number</displayName>
+    </property>
+    <property name="tempDir">
+        <value>C:\Program Files (x86)\IBM\ECMClient\configure\tmp</value>
+        <description>Enter the fully qualified path of a temporary directory that the configuration and deployment tool can use when running this task.
+
+You must have read and write access for the directory.
+
+The default directory is: C:\Program Files (x86)\IBM\ECMClient\configure\tmp.</description>
+        <displayName>Temporary directory</displayName>
+    </property>
+</configuration>
